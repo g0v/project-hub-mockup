@@ -10,7 +10,7 @@
       medium: "",
       long: ""
     },
-    category: ['Application'],
+    category: [],
     tag: [],
     participant: {
       _role: ['userid']

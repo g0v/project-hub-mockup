@@ -30,3 +30,25 @@ a, a:link {
 .no.margin {
   margin: 0;
 }
+
+#sidebar {
+  width: 20rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+#sidebar #search {
+  padding: 0.5rem;
+}
+#sidebar #search .input {
+  width: 100%;
+}
+#sidebar #index {
+  position: absolute;
+  top: 6rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+}

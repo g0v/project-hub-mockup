@@ -26,7 +26,7 @@ Fire.app
 Jade -> HTML
 ------------
 * use Fire.app to build views/ to public/
-* if build doesn't work: jade -w views -o public
+* if build doesn't work: jade views -o public
 
 LiveScript -> Json
 ------------
