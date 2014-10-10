@@ -3,27 +3,32 @@ html
     meta(charset="utf-8")
 
     // Favicon (TODO)
-    link(rel='icon', href='/assets/img/favicon/favicon.ico', type='image/x-icon')
-    link(rel='shortcut icon', href='/assets/img/favicon/favicon.ico', type='image/x-icon')
+    link(rel='icon', href='assets/img/favicon/favicon.ico', type='image/x-icon')
+    link(rel='shortcut icon', href='assets/img/favicon/favicon.ico', type='image/x-icon')
 
     // For iOS (TODO)
-    meta(name="viewport",content="width=device-width, initial-scale=1")
     meta(name="apple-mobile-web-app-capable" content="yes")
-    link(rel="apple-touch-icon-precomposed" href="/assets/img/app-icon/icon-60.png")
-    link(rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/img/app-icon/icon-76.png")
-    link(rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/img/app-icon/icon-60@2x.png")
-    link(rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/app-icon/icon-76@2x.png")
+    link(rel="apple-touch-icon-precomposed" href="assets/img/app-icon/icon-60.png")
+    link(rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/img/app-icon/icon-76.png")
+    link(rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/img/app-icon/icon-60@2x.png")
+    link(rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/img/app-icon/icon-76@2x.png")
 
     // jquery
-    script(type="text/javascript",src="/assets/jquery-2.1.1.min.js")
+    script(type="text/javascript",src="assets/jquery-2.1.1.min.js")
 
     // semantic ui
-    link(rel="stylesheet",type="text/css",href="/assets/semantic-ui/0.19.3/css/semantic.min.css")
-    script(type="text/javascript",src="/assets/semantic-ui/0.19.0/javascript/semantic.min.js")
+    link(rel="stylesheet",type="text/css",href="assets/semantic-ui/0.19.3/css/semantic.min.css")
+    script(type="text/javascript",src="assets/semantic-ui/0.19.0/javascript/semantic.min.js")
+
+    // handlebars
+    script(type="text/javascript",src="assets/handlebars-v1.3.0.js")
 
     // custom
-    link(rel="stylesheet",href="/css/global.css")
-    script(type="text/javascript",src="/js/global.js")
+    link(rel="stylesheet",href="css/global.css")
+    script(type="text/javascript",src="js/global.js")
+
+    // for mobile, responsive
+    meta(name="viewport",content="width=device-width, initial-scale=1")
 
     block head
 

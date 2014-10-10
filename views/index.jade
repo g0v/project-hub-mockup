@@ -6,4 +6,46 @@ block title
 
 block body
 
+
+
+
 block script
+  script.
+    $(document).ready(function() {
+
+      // settings
+
+      var participant_role = [ "planning", "ui", "visual", "art", "frontend", "backend", "ios", "android", "txt", "misc", "consult" ];
+      var achievement_type = [ "website", "android", "ios", "api", "document" ];
+      var achievement_progress = [ "idea", "plan", "wireframe", "mockup", "prototype", "pre-alpha", "alpha", "beta", "production", "maintenance" ];
+      var workspace_type = [ "hackpad", "hackfoldr", "google drive", "google groups", "google plus community", "facebook community", "irc channel", "github", "google calendar", "facebook group" ];
+
+      // data
+
+      var csv_api_source = 'https://ethercalc.org/_/g0v-project-hub-mockup/csv';
+
+      // function
+
+      var compile_json = function(rows){
+
+        var link_template_source ='<a href="{{url}}" target="{{target}}" id="{{id}}" class="{{type}} item"><i class="icon {{icon}}" data-content="{{subject}}"></i>{{subject}}</a>';
+        var link_template = Handlebars.compile(link_template_source);
+
+        var link_label_template_source ='<div class="ui label {{color}}">{{label}}</div>';
+        var link_label_template = Handlebars.compile(link_label_template_source);
+
+        $.each(rows, function(row_index, row){
+
+          if(!row[0]){
+            row[0] = "";
+          }
+
+          row = row.map(function (content) {
+            return content.toString();
+          });
+      }
+
+      $.get(csv_api_source).pipe(CSV.parse).done(compile_json);
+
+    });
+
