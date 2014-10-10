@@ -8,84 +8,102 @@ block body
 
   nav#sidebar
     .ui.menu.no.margin
-      a.item g0v projects pilot
+      .ui.dropdown.item g0v pilot for Asperger's
+        i.icon.dropdown
+        .menu
+          a.item g0v pilot for Asperger's
+          a.item g0v pilot for Human
       .right.menu
         a.icon.item
           i.icon.help
-    .field#search
+    #search.field
       .ui.icon.input
         input(placeholder="search...", type="text")
         i.icon.search
-    .ui.vertical.fluid.menu.no.margin#index
-      .ui.accordion#categories
+    #index.ui.vertical.fluid.menu.no.margin
+      #categories.ui.accordion
         .title.header.item.active categories
           i.icon.dropdown
         .content.ui.small.menu.active
           .menu
-      .ui.accordion#types
+      #types.ui.accordion
         .title.header.item types
           i.icon.dropdown
         .content.ui.small.menu
           .menu
-      .ui.accordion#phases
+      #phases.ui.accordion
         .title.header.item phases
           i.icon.dropdown
         .content.ui.small.menu
           .menu
-      .ui.accordion#licenses
+      #licenses.ui.accordion
         .title.header.item licenses
           i.icon.dropdown
         .content.ui.small.menu
           .menu
-      .ui.accordion#tools
+      #tools.ui.accordion
         .title.header.item tools
           i.icon.dropdown
         .content.ui.small.menu
           .menu
-      .ui.accordion#tags
+      //-.ui.accordion#tags
         .title.header.item tags
           i.icon.dropdown
         .content.ui.small.menu
           .menu
 
+  section#projects
+    #filter
+    #list.ui.two.column.stackable.grid
+      .column blah
+      .column blah
+      .column blah
+      .column blah
 
 block script
   script.
 
     $(document).ready(function(){
 
-      var categories = ["open government", "open data", "civil participation", "media 2.0", "g0v infrastructure", "policy wiki", "miscellaneous"];
-      var types = ["website", "android app", "ios app", "windows phone app", "linux software", "mac software", "windows software", "chrome extension", "firefox extension", "api", "document", "miscellaneous"];
-      var phases = ["idea", "plan", "wireframe", "mockup", "prototype", "pre-alpha", "alpha", "beta", "production", "maintenance", "miscellaneous"];
-      var licenses = ["CC0", "CC-By", "CC-By-NC", "CC-By-ND", "CC-By-SA", "CC-By-NC-SA", "CC-By-NC-ND", "Apache", "BSD", "GPL", "LGPL", "MIT", "miscellaneous"];
-      var tools = [];
-      var tags = [];
-      var workspaces = ["hackpad", "hackfoldr", "google drive", "google groups", "google plus community", "facebook community", "irc channel", "github", "google calendar", "facebook group", "miscellaneous"];
-      var roles = ["research", "planning", "ui", "visual", "art", "web frontend", "web backend", "ios", "android", "mac", "linux", "windows", "txt", "consult", "miscellaneous"];
-
+      var menus = {
+        categories : ["open government", "open data", "civil participation", "media 2.0", "g0v infrastructure", "policy wiki", "miscellaneous"],
+        types : ["website", "android app", "ios app", "windows phone app", "linux software", "mac software", "windows software", "chrome extension", "firefox extension", "api", "document", "miscellaneous"],
+        phases : ["idea", "plan", "wireframe", "mockup", "prototype", "alpha", "beta", "production", "maintenance", "memory", "miscellaneous"],
+        licenses : ["CC0", "CC-By", "CC-By-NC", "CC-By-ND", "CC-By-SA", "CC-By-NC-SA", "CC-By-NC-ND", "Apache", "BSD", "GPL", "LGPL", "MIT", "miscellaneous"],
+        tools : [],
+        //tags : [],
+      };
       var attribute_template_source ='<a class="{{attribute_class}} item">{{attribute_text}}<div class="ui label"></div></a>';
       var attribute_template = Handlebars.compile(attribute_template_source);
+      var filter_template_source = '<div class="ui label {{attribute_class}}">{{attribute_text}}<i class="icon delete"></i></div>';
+      var filter_template = Handlebars.compile(filter_template_source);
       var render_attributes = function(target_menu_name, attributes){
         $.each(attributes, function(attribute_index, attribute){
           var attribute_class = target_menu_name + "-" + attribute_index;
           var attribute_text = attribute;
           var context = {attribute_class: attribute_class, attribute_text: attribute_text};
           var $attribute_element = $(attribute_template(context));
+          var $filter_element = $(filter_template(context));
           $("#" + target_menu_name + " .content .menu").append($attribute_element);
+          $("#filter").append($filter_element);
         });
       }
-      render_attributes("categories", categories);
-      render_attributes("types", types);
-      render_attributes("phases", phases);
-      render_attributes("licenses", licenses);
-      render_attributes("tools", tools);
-      render_attributes("tags", tags);
+      $.each(menus, function(menu_id, menu_items){
+        render_attributes(menu_id, menu_items);        
+      });
 
+      var workspaces = ["hackpad", "hackfoldr", "google drive", "google groups", "google plus community", "facebook community", "irc channel", "github", "google calendar", "facebook group", "miscellaneous"];
+      var roles = ["research", "planning", "ui", "visual", "art", "web frontend", "web backend", "ios", "android", "mac", "linux", "windows", "txt", "consult", "miscellaneous"];
+
+      var compile_json = function(rows){
+      
+      };
       var csv_api_source = 'https://ethercalc.org/_/g0v-project-hub-mockup/csv';
-
       $.get(csv_api_source).pipe(CSV.parse).done().then(function(){
-        //-$(".ui.dropdown").dropdown();
+        $(".ui.dropdown").dropdown();
         $(".ui.accordion").accordion();
+        $("#index").on("click tap", ".content .item", function(){
+        });
       });
 
     });
