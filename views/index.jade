@@ -55,10 +55,14 @@ block body
   section#projects
     #filter
     #list.ui.two.column.stackable.grid
-      .column blah
-      .column blah
-      .column blah
-      .column blah
+      .column
+        .ui.segment blah
+      .column
+        .ui.segment blah
+      .column
+        .ui.segment blah
+      .column
+        .ui.segment blah
 
 block script
   script.
@@ -73,15 +77,15 @@ block script
         tools : [],
         //tags : [],
       };
-      var attribute_template_source ='<a class="{{attribute_class}} item">{{attribute_text}}<div class="ui label"></div></a>';
+      var attribute_template_source ='<a class="item" name="{{attribute_id}}">{{attribute_text}}<div class="ui label"></div></a>';
       var attribute_template = Handlebars.compile(attribute_template_source);
-      var filter_template_source = '<div class="ui label {{attribute_class}}">{{attribute_text}}<i class="icon delete"></i></div>';
+      var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
       var filter_template = Handlebars.compile(filter_template_source);
       var render_attributes = function(target_menu_name, attributes){
         $.each(attributes, function(attribute_index, attribute){
-          var attribute_class = target_menu_name + "-" + attribute_index;
+          var attribute_id = target_menu_name + "-" + attribute_index;
           var attribute_text = attribute;
-          var context = {attribute_class: attribute_class, attribute_text: attribute_text};
+          var context = {attribute_id: attribute_id, attribute_text: attribute_text};
           var $attribute_element = $(attribute_template(context));
           var $filter_element = $(filter_template(context));
           $("#" + target_menu_name + " .content .menu").append($attribute_element);
@@ -102,7 +106,15 @@ block script
       $.get(csv_api_source).pipe(CSV.parse).done().then(function(){
         $(".ui.dropdown").dropdown();
         $(".ui.accordion").accordion();
+        $("#filter .ui.label").hide();
         $("#index").on("click tap", ".content .item", function(){
+          $(this).toggleClass("active");
+          $("#filter").show();
+          $("#filter .ui.label").filter("[name='" + $(this).attr("name") + "']").toggle();
+        });
+        $("#filter").on("click tap", ".ui.label .delete.icon", function(){
+          $(this).parent().hide();
+          $("#index .item").filter("[name='" + $(this).parent().attr("name") + "']").removeClass("active");
         });
       });
 
