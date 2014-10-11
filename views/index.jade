@@ -55,19 +55,21 @@ block body
   section#projects
     #filter
     #list.ui.two.column.stackable.grid
-      .column
-        .ui.segment blah
-      .column
-        .ui.segment blah
-      .column
-        .ui.segment blah
-      .column
-        .ui.segment blah
+      .column.categories-1
+        .ui.segment 求職小幫手
+      .column.categories-0
+        .ui.segment 國會大代誌
+      .column.categories-1
+        .ui.segment 萌典
+      .column.categories-2
+        .ui.segment 翻桌啦
 
 block script
   script.
 
     $(document).ready(function(){
+
+      // render sidebar menu
 
       var menus = {
         categories : ["open government", "open data", "civil participation", "media 2.0", "g0v infrastructure", "policy wiki", "miscellaneous"],
@@ -96,26 +98,62 @@ block script
         render_attributes(menu_id, menu_items);        
       });
 
+      // TBD
+
       var workspaces = ["hackpad", "hackfoldr", "google drive", "google groups", "google plus community", "facebook community", "irc channel", "github", "google calendar", "facebook group", "miscellaneous"];
       var roles = ["research", "planning", "ui", "visual", "art", "web frontend", "web backend", "ios", "android", "mac", "linux", "windows", "txt", "consult", "miscellaneous"];
 
-      var compile_json = function(rows){
-      
-      };
-      var csv_api_source = 'https://ethercalc.org/_/g0v-project-hub-mockup/csv';
-      $.get(csv_api_source).pipe(CSV.parse).done().then(function(){
+      // dom manipulation
+
+      var initialize_pilot = function(){
+
+        // for semantic ui
         $(".ui.dropdown").dropdown();
         $(".ui.accordion").accordion();
+
+        // for ux
         $("#filter .ui.label").hide();
+
+        // for filter and list items
+        var current_classes = [];
+        var current_classes_string = "";
+        var target_attribute = "";
+        var toggle_classes = function(original_classes, target_class){
+          if( _.contains( current_classes, target_attribute )){
+            current_classes = _.without(current_classes, target_attribute);
+          }else{
+            current_classes.push(target_attribute);
+          };
+          current_classes_string = "";
+          _.each(current_classes, function(css_class){
+            current_classes_string = current_classes_string + "." + css_class;
+          });
+          $("#list .column").hide();
+          $("#list .column" + current_classes_string ).show();
+        };
         $("#index").on("click tap", ".content .item", function(){
           $(this).toggleClass("active");
           $("#filter").show();
-          $("#filter .ui.label").filter("[name='" + $(this).attr("name") + "']").toggle();
+          target_attribute = $(this).attr("name");
+          $("#filter .ui.label").filter("[name='" + target_attribute + "']").toggle();
+          toggle_classes(current_classes, target_attribute);
         });
         $("#filter").on("click tap", ".ui.label .delete.icon", function(){
           $(this).parent().hide();
-          $("#index .item").filter("[name='" + $(this).parent().attr("name") + "']").removeClass("active");
+          target_attribute = $(this).parent().attr("name");
+          $("#index .item").filter("[name='" + target_attribute + "']").removeClass("active");
+          toggle_classes(current_classes, target_attribute);
         });
-      });
+      };
+      initialize_pilot();      
+      var compile_json = function(rows){
+      
+      };
+
+      // get data
+
+      var csv_api_source = 'https://ethercalc.org/_/g0v-project-hub-mockup/csv';
+      //$.get(csv_api_source).pipe(CSV.parse).done().then(function(){
+      //});
 
     });
