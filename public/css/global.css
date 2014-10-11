@@ -68,8 +68,12 @@ a, a:link {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 #projects #filter {
+  display: none;
   padding: 0.5rem;
 }
 #projects #filter .ui.label {
   margin: 0.2rem;
+}
+#projects #list {
+  padding: 1rem;
 }
