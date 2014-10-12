@@ -54,6 +54,7 @@ block body
 
   section#projects
     #filter
+    #count
     #list.ui.two.column.stackable.grid
       //-article.column.category-1
         a.ui.image(href="")
@@ -126,6 +127,7 @@ block script
         var active_classes = [];
         var active_classes_string = "";
         var target_attribute = "";
+        var all_projects_count = $("#list .column").length;
         var toggle_classes = function(original_classes, target_class){
           if( _.contains( active_classes, target_attribute )){
             active_classes = _.without(active_classes, target_attribute);
@@ -139,18 +141,24 @@ block script
           $("#list .column").hide();
           $("#list .column" + active_classes_string ).show();
         };
+        var count_projects = function(){
+          $("#count").text("showing " + $("#list").find(active_classes_string).length + " out of " + all_projects_count +" projects");
+        }
+        $("#count").text(all_projects_count + " projects");
         $("#index").on("click tap", ".content .item", function(){
           $(this).toggleClass("active");
           $("#filter").show();
           target_attribute = $(this).attr("name");
           $("#filter .ui.label").filter("[name='" + target_attribute + "']").fadeToggle();
           toggle_classes(active_classes, target_attribute);
+          count_projects();
         });
         $("#filter").on("click tap", ".ui.label .delete.icon", function(){
           $(this).parent().fadeOut();
           target_attribute = $(this).parent().attr("name");
           $("#index .content .item").filter("[name='" + target_attribute + "']").removeClass("active");
           toggle_classes(active_classes, target_attribute);
+          count_projects();
         });
       };
 

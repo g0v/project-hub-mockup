@@ -31,6 +31,10 @@ a, a:link {
   margin: 0;
 }
 
+.float.right {
+  float: right;
+}
+
 #sidebar {
   width: 20rem;
   position: absolute;
@@ -74,6 +78,11 @@ a, a:link {
 }
 #projects #filter .ui.label {
   margin: 0.2rem;
+}
+#projects #count {
+  padding-right: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: right;
 }
 #projects #list {
   padding: 1rem;
