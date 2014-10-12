@@ -6,7 +6,7 @@
   var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
   var filter_template = Handlebars.compile(filter_template_source);
   
-  var list_template_source ='<article class="column {{classes}}"><div class="wrapper"><a href="{{homepage}}" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="hidden text">{{content}}</div></div></article>';
+  var list_template_source ='<article class="column"><div class="wrapper"><a href="{{homepage}}" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="hidden text">{{content}}</div></div></article>';
   var list_template = Handlebars.compile(list_template_source);
   
   var label_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{type}} - {{phase}}</a>'
@@ -41,7 +41,7 @@
       $("#filter").append($filter_element);
     });
     var menu_items_count = $("#" + target_menu_name + " .content .menu .item").length;
-    $("#" + target_menu_name + " .title").append("(" + menu_items_count + ")");
+    $("#" + target_menu_name + " .title").append(" (" + menu_items_count + ")");
   }
   
   var initialize_pilot = function(){
@@ -95,7 +95,6 @@
       var name = project.name.zh;
       var intro = project.intro.zh.short;
       var classes = [];
-      var classes_string = ""
       var content = "";
       
       var add_classes = function(attribute_type){
@@ -122,7 +121,13 @@
       add_classes("tool");
       add_classes("license");
       
-      var context = {classes: classes_string, homepage: homepage, logo: logo, name: name, intro: intro, content: content};
+      if(homepage.length == 0){
+        homepage = project.achievement[0].url;
+      };
+      if(logo.length == 0){
+        logo = "http://i.jimmyhub.net/shot/" + homepage;
+      };
+      var context = {homepage: homepage, logo: logo, name: name, intro: intro, content: content};
       var $list_element = $(list_template(context));
       
       $.each(project.achievement, function(achievement_index, achievement){
