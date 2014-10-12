@@ -157,7 +157,7 @@ block script
             active_classes_string = active_classes_string + "." + css_class;
           });
           $("#list .column").hide();
-          $("#list .column" + active_classes_string ).show();
+          $("#list .column" + active_classes_string ).fadeToggle("show");
         };
         var count_projects = function(){
           if(active_classes_string.length > 0){
@@ -169,7 +169,6 @@ block script
         count_projects();
         $("#index").on("click tap", ".content .item", function(){
           $(this).toggleClass("active");
-          $("#filter").show();
           target_attribute = $(this).attr("name");
           $("#filter .ui.label").filter("[name='" + target_attribute + "']").fadeToggle();
           toggle_classes(active_classes, target_attribute);
