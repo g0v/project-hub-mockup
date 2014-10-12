@@ -14,7 +14,7 @@
   license: <[ ]>
   achievement:
     * type: "" # website / android app / ios app / api / api spec doc
-      progress: "" # idea / plan / wireframe / mockup / prototype / pre-alpha / alpha / beta / production / null
+      phase: "" # idea / plan / wireframe / mockup / prototype / pre-alpha / alpha / beta / production / null
       url: ""
   workspace:
     * type: "" # hackpad / hackfoldr / google drive / google group / google plus community / facebook community / irc channel / github / coocle calendar / facebook group

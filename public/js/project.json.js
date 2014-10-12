@@ -19,7 +19,7 @@
     license: [],
     achievement: {
       type: "",
-      progress: "",
+      phase: "",
       url: ""
     },
     workspace: {
