@@ -35,6 +35,10 @@ a, a:link {
   float: right;
 }
 
+.align.center {
+  text-align: center;
+}
+
 #sidebar {
   width: 20rem;
   position: absolute;
@@ -58,7 +62,7 @@ a, a:link {
   overflow-x: hidden;
 }
 
-#projects {
+#projects, #about {
   background-color: #efefef;
   position: absolute;
   left: 20rem;
@@ -71,6 +75,7 @@ a, a:link {
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
+
 #projects #filter {
   padding: 0.5rem;
   min-height: 3rem;
@@ -101,4 +106,19 @@ a, a:link {
 }
 #projects #list .column .ui.label {
   margin: 0.2rem;
+}
+
+#about {
+  display: none;
+  padding: 2em;
+}
+#about p {
+  line-height: 2em;
+}
+#about a:link {
+  padding: 0.2em 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  background-color: rgba(0, 0, 0, 0.05);
 }
