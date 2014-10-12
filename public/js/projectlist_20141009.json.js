@@ -6,6 +6,7 @@
         "zh": "2014九合一選舉黃頁",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -23,6 +24,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -41,6 +43,7 @@
         "zh": "g0v summit 2014",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -58,6 +61,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -76,6 +80,7 @@
         "zh": "inLive 直播與活動",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "不受主流媒體控制，inLive.TW成為「公民之眼」，直播、事件、真相24小時不漏接，同時成為公民記者最有力的發聲管道。",
@@ -93,6 +98,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -111,6 +117,7 @@
         "zh": "社會運動資訊平台",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -128,6 +135,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -146,6 +154,7 @@
         "zh": "直播教學",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -163,6 +172,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -181,6 +191,7 @@
         "zh": "小蜜蜂戰鬥地圖",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -198,6 +209,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -216,6 +228,7 @@
         "zh": "自己的活動自己拍",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -233,6 +246,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -251,6 +265,7 @@
         "zh": "G8V電視牆",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -268,6 +283,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -286,6 +302,7 @@
         "zh": "台灣歷史四大報",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -303,6 +320,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -321,6 +339,7 @@
         "zh": "NewsDiff官方新聞稿異動情況站",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -338,6 +357,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -356,6 +376,7 @@
         "zh": "新聞詞頻統計",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -373,6 +394,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -391,6 +413,7 @@
         "zh": "新聞趨勢統計",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -408,6 +431,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -426,6 +450,7 @@
         "zh": "新聞小幫手",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "協助判別含有誤導資訊的新聞！安裝後，在臉書上看到錯誤、不實、謠言新聞，會直接跳出警告頁面。",
@@ -443,6 +468,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -461,6 +487,7 @@
         "zh": "網站抵制小幫手",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -478,6 +505,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -496,6 +524,7 @@
         "zh": "問題電視節目查詢",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -513,6 +542,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -531,6 +561,7 @@
         "zh": "公民記者證產生器",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "公民也有採訪新聞的自由，只要上傳照片，輸入名字，即可列印產生公民記者證，讓人前往事件現場，立即採訪第一手新聞最新消息！",
@@ -548,6 +579,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -566,6 +598,7 @@
         "zh": "自經區立法辯論比較表",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -583,6 +616,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -601,6 +635,7 @@
         "zh": "政誌",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "以維基百科為內容基礎的公共事件時間軸，希望透過更清楚的事件呈現，讓人民不再健忘，也讓公民能積極參與政治事件的紀錄。",
@@ -618,6 +653,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -636,6 +672,7 @@
         "zh": "市長，給問嗎？",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -653,6 +690,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -671,6 +709,7 @@
         "zh": "法規易讀器",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -688,6 +727,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -706,6 +746,7 @@
         "zh": "法規立法狀態查詢",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -723,6 +764,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -741,6 +783,7 @@
         "zh": "律師幫幫我",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -758,6 +801,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -776,6 +820,7 @@
         "zh": "立委聯絡資訊",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -793,6 +838,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -811,6 +857,7 @@
         "zh": "政府通訊錄分析器",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -828,6 +875,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -846,6 +894,7 @@
         "zh": "台灣各種組織不推薦立委名單",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -863,6 +912,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -881,6 +931,7 @@
         "zh": "公務人員出國考察網",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -898,6 +949,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -916,6 +968,7 @@
         "zh": "國會大代誌",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "即時顯示國會行程、修法進度，還推播到 Twitter 供人訂閱。除了文字之外還整合了國會影像，標示每一位委員的發言時間供搜尋。",
@@ -933,6 +986,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -951,6 +1005,7 @@
         "zh": "你被服貿了嗎?",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -968,6 +1023,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -986,6 +1042,7 @@
         "zh": "太陽花學運全記錄 by g0v",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1003,6 +1060,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1021,6 +1079,7 @@
         "zh": "三動作護台灣",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "g0v整理全國立委電話和名單，讓你可以打電話給立委，讓立委先立法後審議，讓在立法院的學生早點回家，反服貿協議，修公投法停建核四。",
@@ -1038,6 +1097,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1056,6 +1116,7 @@
         "zh": "選票成分分析系統",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "選票成份分析蒐集呈現民選政治人物（如立法委員）的立場，同時使用者也可透過設定自身對各議題偏好，來找出最相投的政治人物。",
@@ -1073,6 +1134,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1091,6 +1153,7 @@
         "zh": "立院影城",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "打破立法院影音系統限制，讓公民在家上網就可以監督國會，比出門看電影有趣萬倍，還能以丟鞋、架網等方式互動。",
@@ -1108,6 +1171,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1126,6 +1190,7 @@
         "zh": "立委投票指南",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "替立委排名，依數據列出缺席、不投票、脫黨跑票、修正法案數、臨時提案數等的立委排行。也提供表決視覺化名單，表決、法案、臨時提案的關鍵字搜尋。",
@@ -1143,6 +1208,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1161,6 +1227,7 @@
         "zh": "議員投票指南",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1178,6 +1245,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1196,6 +1264,7 @@
         "zh": "台南市議會 議員觀測中心",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1213,6 +1282,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1231,6 +1301,7 @@
         "zh": "立法卡到陰",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1248,6 +1319,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1266,6 +1338,7 @@
         "zh": "[教學] 法案闖天關流程圖",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1283,6 +1356,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1301,6 +1375,7 @@
         "zh": "求職小幫手",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "在使用者瀏覽求職網站時，主動告知一些求職網站不會主動揭露的事情，例如：這家公司最近是否有因為違反勞基法被罰錢。",
@@ -1318,6 +1393,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1336,6 +1412,7 @@
         "zh": "台灣公司登記資料",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1353,6 +1430,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1371,6 +1449,7 @@
         "zh": "台灣公司關係圖",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "輸入統一編號，就可以查詢子公司、母公司、持股公司…（？？？）",
@@ -1388,6 +1467,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1406,6 +1486,7 @@
         "zh": "勞工薪資預算程式",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1423,6 +1504,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1441,6 +1523,7 @@
         "zh": "69K薪水工作查詢",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1458,6 +1541,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1476,6 +1560,7 @@
         "zh": "萌典",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "教育部國語、臺語、客語辭典民間版，提供筆順動畫、真人發音、英、法、德文對照、兩岸詞彙對照等功能。網站目前每月提供數百萬人次的服務，行動裝置 App 用戶逾十萬人。",
@@ -1488,11 +1573,12 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['字典', '辭典', '成語'],
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1511,6 +1597,7 @@
         "zh": "萌典桌面離線版",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1523,11 +1610,12 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['字典', '辭典', '成語'],
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1546,6 +1634,7 @@
         "zh": "萌典字宙反應爐",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1558,11 +1647,12 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['字典', '辭典', '中文字探索'],
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1581,6 +1671,7 @@
         "zh": "萌典閃卡",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1598,6 +1689,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1616,6 +1708,7 @@
         "zh": "斧頭幫大挑戰",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1633,6 +1726,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1651,6 +1745,7 @@
         "zh": "政治獻金數位化(資料建立)",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1668,6 +1763,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1686,6 +1782,7 @@
         "zh": "g0v開放政治獻金",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1703,6 +1800,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1721,6 +1819,7 @@
         "zh": "政治獻金視覺化",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1738,6 +1837,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1756,6 +1856,7 @@
         "zh": "金錢報",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1773,6 +1874,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1791,6 +1893,7 @@
         "zh": "金錢報(分流)",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1808,6 +1911,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1826,6 +1930,7 @@
         "zh": "3D雨量圖 (需要WebGL)",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1843,6 +1948,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1861,6 +1967,7 @@
         "zh": "環境儀表板",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "將中央氣象局的雨量資訊、環保署的空氣污染資訊視覺化，以臺灣地圖著色的方式，一目瞭然呈現目前各地的氣候資訊。",
@@ -1878,6 +1985,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1896,6 +2004,7 @@
         "zh": "公有地大行動",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1913,6 +2022,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1931,6 +2041,7 @@
         "zh": "高雄地下管線地圖",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1948,6 +2059,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -1966,6 +2078,7 @@
         "zh": "高雄歷年氣爆時序圖",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -1983,6 +2096,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2001,6 +2115,7 @@
         "zh": "台南百年文史古地圖",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2018,6 +2133,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2036,6 +2152,7 @@
         "zh": "Bad Driver",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2053,6 +2170,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2071,6 +2189,7 @@
         "zh": "台灣地址門牌查詢",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2088,6 +2207,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2106,6 +2226,7 @@
         "zh": "路見不平",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2123,6 +2244,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2141,6 +2263,7 @@
         "zh": "台北市建照記錄",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2158,6 +2281,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2176,6 +2300,7 @@
         "zh": "台灣背景輻射值檢測地圖",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2193,6 +2318,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2211,6 +2337,7 @@
         "zh": "國道一號電子收費價錢試算",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2228,6 +2355,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2246,6 +2374,7 @@
         "zh": "開放資料建立與普查",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2263,6 +2392,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2281,6 +2411,7 @@
         "zh": "政府開放資料平臺備份",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2298,6 +2429,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2316,6 +2448,7 @@
         "zh": "開放資料諮詢中心",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2333,6 +2466,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2351,6 +2485,7 @@
         "zh": "g0v零時資料中心",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2368,6 +2503,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2386,6 +2522,7 @@
         "zh": "全國醫院急診即時看板",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2403,6 +2540,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2421,6 +2559,7 @@
         "zh": "虎神快閃",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2438,6 +2577,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2456,6 +2596,7 @@
         "zh": "福利請聽",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "「一個成功的社會並不是看富裕的人過得多優渥，而是弱勢如何自在的生存！」用搜尋技術，讓你能夠依個人需求、條件，找到社會福利，還提供法規協助及網友問答服務。",
@@ -2473,6 +2614,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2491,6 +2633,7 @@
         "zh": "植物疫情與藥劑查詢系統",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2508,6 +2651,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2526,6 +2670,7 @@
         "zh": "農業學地圖",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2543,6 +2688,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2561,6 +2707,7 @@
         "zh": "g0v官方網站",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2578,6 +2725,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2596,6 +2744,7 @@
         "zh": "逐字稿工具",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2613,6 +2762,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2631,6 +2781,7 @@
         "zh": "短講計時器",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2648,6 +2799,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2666,6 +2818,7 @@
         "zh": "hackfoldr2.0",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2683,6 +2836,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2701,6 +2855,7 @@
         "zh": "割闌尾小遊戲",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2718,6 +2873,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2736,6 +2892,7 @@
         "zh": "g0v公報",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "每月以電子發送公報，讓g0v全體知道正在進行的專案、活動，所有活動皆有超連結，可以點回頁面，更深入了解專案活動。",
@@ -2753,6 +2910,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2771,6 +2929,7 @@
         "zh": "g0v.asia",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2788,6 +2947,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2806,6 +2966,7 @@
         "zh": "g0v.hackpad分析器",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2823,6 +2984,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2841,6 +3003,7 @@
         "zh": "g0v貢獻者地圖",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2858,6 +3021,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2876,6 +3040,7 @@
         "zh": "g0v授權中心",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2893,6 +3058,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2911,6 +3077,7 @@
         "zh": "g0v新手村 8bit",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "g0v協助新手快速入門，使用動畫小遊戲讓人了解g0v如何運作、進入和入坑。",
@@ -2928,6 +3095,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2946,6 +3114,7 @@
         "zh": "g0v所有專案",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2963,6 +3132,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -2981,6 +3151,7 @@
         "zh": "台灣隨機統計",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -2998,6 +3169,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3016,6 +3188,7 @@
         "zh": "財政部關貿署進出口資料",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3033,6 +3206,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3051,6 +3225,7 @@
         "zh": "各年度各縣市總預算視覺化",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3068,6 +3243,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3086,6 +3262,7 @@
         "zh": "台北捷運各站出站人數變化圖",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3103,6 +3280,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3121,6 +3299,7 @@
         "zh": "Pet Need Me",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "運用彩色照片牆，即時將被台北市政府安樂死的寵物資訊，一目了然放於網站上，協助尋找主人。",
@@ -3138,6 +3317,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3156,6 +3336,7 @@
         "zh": "中央政府總預算",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "運用鳥瞰圖、變化圖、國債鐘等互動圖表，依比例呈現中央政府各部門的預算，開放網友評論。",
@@ -3173,6 +3354,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3191,6 +3373,7 @@
         "zh": "公眾人物關係圖",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "輸入公眾人物人名，就能呈現人物間的關係，方便製作懶人包、新聞圖表以及利用已建立的資料發掘潛在的特殊關係，未來可搭配政府標案、立院專案使用。",
@@ -3208,6 +3391,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3226,6 +3410,7 @@
         "zh": "[Chrome] 萌典",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3243,6 +3428,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3261,6 +3447,7 @@
         "zh": "[Chrome] 新聞小幫手",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3278,6 +3465,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3296,6 +3484,7 @@
         "zh": "[Chrome] 求職小幫手",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3313,6 +3502,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3331,6 +3521,7 @@
         "zh": "[Chrome] 法規易讀器",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3348,6 +3539,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3366,6 +3558,7 @@
         "zh": "[Chrome] inLiveTW",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3383,6 +3576,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3401,6 +3595,7 @@
         "zh": "[Firefox] 求職小幫手",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3418,6 +3613,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3436,6 +3632,7 @@
         "zh": "[Firefox] 新聞小幫手",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3453,6 +3650,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3471,6 +3669,7 @@
         "zh": "[Firefox] 法規易讀器",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3488,6 +3687,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3506,6 +3706,7 @@
         "zh": "[Safari] 新聞小幫手",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3523,6 +3724,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3541,6 +3743,7 @@
         "zh": "[Android] 聾通訊",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3558,6 +3761,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3576,6 +3780,7 @@
         "zh": "[Android] inLiveTW",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3593,6 +3798,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3611,6 +3817,7 @@
         "zh": "[Android] 社會運動資訊平台",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3628,6 +3835,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3646,6 +3854,7 @@
         "zh": "[Android] 萌典",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3663,6 +3872,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3681,6 +3891,7 @@
         "zh": "[iOS] inLiveTW",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3698,6 +3909,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3716,6 +3928,7 @@
         "zh": "[iOS] 萌典",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3733,6 +3946,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3751,6 +3965,7 @@
         "zh": "[Firefox OS] 萌典",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3768,6 +3983,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3786,6 +4002,7 @@
         "zh": "[WP] 萌典",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3803,6 +4020,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Production",
@@ -3821,6 +4039,7 @@
         "zh": "g0v所有專案清單",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3838,6 +4057,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -3856,6 +4076,7 @@
         "zh": "summit 2014 工作區",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3873,6 +4094,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -3891,6 +4113,7 @@
         "zh": "g0v.today 反黑箱服貿",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3908,6 +4131,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -3926,6 +4150,7 @@
         "zh": "nonuke.today 反核四",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3943,6 +4168,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -3961,6 +4187,7 @@
         "zh": "hack.g0v 黑客松專區",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -3978,6 +4205,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -3996,6 +4224,7 @@
         "zh": "文資法大進化",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4013,6 +4242,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4031,6 +4261,7 @@
         "zh": "立法院線路松",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4048,6 +4279,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4066,6 +4298,7 @@
         "zh": "零時基礎建設",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4083,6 +4316,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4101,6 +4335,7 @@
         "zh": "萌典",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4118,6 +4353,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4136,6 +4372,7 @@
         "zh": "第五權電視牆「評」台",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4153,6 +4390,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4171,6 +4409,7 @@
         "zh": "經貿國是會議線上參與",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4188,6 +4427,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4206,6 +4446,7 @@
         "zh": "新聞松",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4223,6 +4464,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4241,6 +4483,7 @@
         "zh": "公有地大行動",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "彙整各式各樣土地開發中的公有土地資料，提供地圖查詢功能，鼓勵更多人關注公有土地的公共監理制度。",
@@ -4258,6 +4501,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4276,6 +4520,7 @@
         "zh": "台北都市農業與園圃",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4293,6 +4538,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4311,6 +4557,7 @@
         "zh": "公務人員出國考察追蹤網",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4328,6 +4575,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4346,6 +4594,7 @@
         "zh": "農業系統",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4363,6 +4612,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4381,6 +4631,7 @@
         "zh": "COSCUP 2014 開源人年會",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4398,6 +4649,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4416,6 +4668,7 @@
         "zh": "動民主家族",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4433,6 +4686,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4451,6 +4705,7 @@
         "zh": "開放政治獻金",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4468,6 +4723,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4486,6 +4742,7 @@
         "zh": "g0v文化部 資料集散地",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4503,6 +4760,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4521,6 +4779,7 @@
         "zh": "g0v教育部 教學中心",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4538,6 +4797,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4556,6 +4816,7 @@
         "zh": "InLiveTW",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4573,6 +4834,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4591,6 +4853,7 @@
         "zh": "經貿國是會議線上參與",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4608,6 +4871,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4626,6 +4890,7 @@
         "zh": "自經區第二次溝通會",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "自盡區",
@@ -4643,6 +4908,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4661,6 +4927,7 @@
         "zh": "高雄大爆炸",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4678,6 +4945,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4696,6 +4964,7 @@
         "zh": "復興航空澎湖空難",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4713,6 +4982,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4731,6 +5001,7 @@
         "zh": "全民除黴計畫",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4748,6 +5019,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4766,6 +5038,7 @@
         "zh": "柯P農場",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4783,6 +5056,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4801,6 +5075,7 @@
         "zh": "2014 NTU CCSP",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4818,6 +5093,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4836,6 +5112,7 @@
         "zh": "318太陽花學運活動專題網",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4853,6 +5130,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4871,6 +5149,7 @@
         "zh": "遍地開腸花",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4888,6 +5167,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4906,6 +5186,7 @@
         "zh": "自由機器貓示範區",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4923,6 +5204,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4941,6 +5223,7 @@
         "zh": "透明連線",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4958,6 +5241,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -4976,6 +5260,7 @@
         "zh": "懶人藝術家",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -4993,6 +5278,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -5011,6 +5297,7 @@
         "zh": "雙和蜂巢資訊集散地",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5028,6 +5315,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -5046,6 +5334,7 @@
         "zh": "島嶼天光學潮紀錄",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5063,6 +5352,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -5081,6 +5371,7 @@
         "zh": "Code4HK計畫",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5098,6 +5389,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -5116,6 +5408,7 @@
         "zh": "新界東北立法會報導整理",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5133,6 +5426,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -5151,6 +5445,7 @@
         "zh": "HKnow.today",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5168,6 +5463,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -5186,6 +5482,7 @@
         "zh": "立法會直播",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5203,6 +5500,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "hackfoldr",
         "phase": "",
@@ -5221,6 +5519,7 @@
         "zh": "時間地圖",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "使用者可自訂事件時序與分類、地理定位，打造含時間軸、事件說明（含連結）、與相對地理位置的事件簿。",
@@ -5238,6 +5537,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5256,6 +5556,7 @@
         "zh": "資訊補食獸",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5273,6 +5574,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5291,6 +5593,7 @@
         "zh": "萌典啄木鳥計畫",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "萌典響應國語辭典啄木鳥而架的短期網站，開放字詞讓全民修訂資料，所有資料已送回教育部訂正。",
@@ -5308,6 +5611,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5326,6 +5630,7 @@
         "zh": "動民主0.5",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5343,6 +5648,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5361,6 +5667,7 @@
         "zh": "動民主1.0",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5378,6 +5685,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5396,6 +5704,7 @@
         "zh": "動民主2.0",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5413,6 +5722,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5431,6 +5741,7 @@
         "zh": "新g0v後勤中心",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5448,6 +5759,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5466,6 +5778,7 @@
         "zh": "雨量圖形化1",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5483,6 +5796,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5501,6 +5815,7 @@
         "zh": "雨量圖形化2",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5518,6 +5833,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5536,6 +5852,7 @@
         "zh": "g0v導覽小精靈",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5553,6 +5870,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5571,6 +5889,7 @@
         "zh": "小農故事",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5588,6 +5907,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5606,6 +5926,7 @@
         "zh": "g0v開發資訊",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5623,6 +5944,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5641,6 +5963,7 @@
         "zh": "全民記者會",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5658,6 +5981,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",
@@ -5676,6 +6000,7 @@
         "zh": "我的活動地圖 - 零時廣場",
         "en": ""
       },
+      "logo": "",
       "intro": {
         "zh": {
           "short": "",
@@ -5693,6 +6018,7 @@
       "participant": {},
       "tool": [],
       "license": [],
+      "homepage": "",
       "achievement": {
         "type": "",
         "phase": "Beta",

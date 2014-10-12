@@ -46,7 +46,7 @@ block body
           i.icon.dropdown
         .content.ui.small.menu
           .menu
-      //-.ui.accordion#tags
+      #tags.ui.accordion
         .title.header.item tags
           i.icon.dropdown
         .content.ui.small.menu
@@ -55,34 +55,50 @@ block body
   section#projects
     #filter
     #list.ui.two.column.stackable.grid
-      .column.categories-1
-        .ui.segment 求職小幫手
-      .column.categories-0
-        .ui.segment 國會大代誌
-      .column.categories-1
-        .ui.segment 萌典
-      .column.categories-2
-        .ui.segment 翻桌啦
+      //-article.column.categories-1
+        a.ui.image(href="")
+          img(src="")
+        .text
+          h3.ui.header 求職小幫手
+          p.description blah blah
+          p.achievement
+            a.ui.label(href="") blah
+        .hidden.text hidden
 
 block script
   script.
 
     $(document).ready(function(){
 
-      // render sidebar menu
-
-      var menus = {
-        categories : ["open government", "open data", "civil participation", "media 2.0", "g0v infrastructure", "policy wiki", "miscellaneous"],
-        types : ["website", "android app", "ios app", "windows phone app", "linux software", "mac software", "windows software", "chrome extension", "firefox extension", "api", "document", "miscellaneous"],
-        phases : ["idea", "plan", "wireframe", "mockup", "prototype", "alpha", "beta", "production", "maintenance", "memory", "miscellaneous"],
-        licenses : ["CC0", "CC-By", "CC-By-NC", "CC-By-ND", "CC-By-SA", "CC-By-NC-SA", "CC-By-NC-ND", "Apache", "BSD", "GPL", "LGPL", "MIT", "miscellaneous"],
-        tools : [],
-        //tags : [],
-      };
       var attribute_template_source ='<a class="item" name="{{attribute_id}}">{{attribute_text}}<div class="ui label"></div></a>';
       var attribute_template = Handlebars.compile(attribute_template_source);
+
       var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
       var filter_template = Handlebars.compile(filter_template_source);
+
+      var list_template_source ='<article class="column {{classes}}"><a href="{{homepage}}" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="hidden text">{{content}}</div></article>';
+      var list_template = Handlebars.compile(list_template_source);
+
+      var label_template_source = '<a href="{{url}}" class="ui label">{{type}} ({{phase}})</a>'
+      var label_template = Handlebars.compile(label_template_source);
+
+      var menus = {
+        categories : [],
+        types : [],
+        phases : [],
+        licenses : [],
+        tools : [],
+        tags : [],
+      };
+      //var menus = {
+      //  categories : ["open government", "open data", "civil participation", "media 2.0", "g0v infrastructure", "policy wiki", "miscellaneous"],
+      //  types : ["website", "android app", "ios app", "windows phone app", "linux software", "mac software", "windows software", "chrome extension", "firefox extension", "api", "document", "miscellaneous"],
+      //  phases : ["idea", "plan", "wireframe", "mockup", "prototype", "alpha", "beta", "production", "maintenance", "memory", "miscellaneous"],
+      //  licenses : ["CC0", "CC-By", "CC-By-NC", "CC-By-ND", "CC-By-SA", "CC-By-NC-SA", "CC-By-NC-ND", "Apache", "BSD", "GPL", "LGPL", "MIT", "miscellaneous"],
+      //  tools : [],
+      //  tags : [],
+      //};
+
       var render_attributes = function(target_menu_name, attributes){
         $.each(attributes, function(attribute_index, attribute){
           var attribute_id = target_menu_name + "-" + attribute_index;
@@ -94,16 +110,16 @@ block script
           $("#filter").append($filter_element);
         });
       }
-      $.each(menus, function(menu_id, menu_items){
-        render_attributes(menu_id, menu_items);        
-      });
 
-      // TBD
-
-      var workspaces = ["hackpad", "hackfoldr", "google drive", "google groups", "google plus community", "facebook community", "irc channel", "github", "google calendar", "facebook group", "miscellaneous"];
-      var roles = ["research", "planning", "ui", "visual", "art", "web frontend", "web backend", "ios", "android", "mac", "linux", "windows", "txt", "consult", "miscellaneous"];
-
-      // dom manipulation
+      var count_attributes_by_id = function(){
+        $.each(menus, function(menu_index, menu_items){
+          $.each(menu_items, function(item_index, item){
+            var attribute_id = $("#index .item").filter(":contains('" + item + "')").attr("name");
+            var count = $("#list ." + attribute_id).not("[style='display: none']").length;
+            $("#index .item").filter("[name='" + attribute_id + "']").find(".label").text(count);
+          });
+        });
+      };
 
       var initialize_pilot = function(){
 
@@ -135,25 +151,59 @@ block script
           $(this).toggleClass("active");
           $("#filter").show();
           target_attribute = $(this).attr("name");
-          $("#filter .ui.label").filter("[name='" + target_attribute + "']").toggle();
+          $("#filter .ui.label").filter("[name='" + target_attribute + "']").fadeToggle();
           toggle_classes(current_classes, target_attribute);
+          count_attributes_by_id();
         });
         $("#filter").on("click tap", ".ui.label .delete.icon", function(){
-          $(this).parent().hide();
+          $(this).parent().fadeOut();
           target_attribute = $(this).parent().attr("name");
           $("#index .item").filter("[name='" + target_attribute + "']").removeClass("active");
           toggle_classes(current_classes, target_attribute);
+          count_attributes_by_id();
         });
       };
-      initialize_pilot();      
-      var compile_json = function(rows){
-      
-      };
 
-      // get data
+      // get data and then get everything work
 
-      var csv_api_source = 'https://ethercalc.org/_/g0v-project-hub-mockup/csv';
-      //$.get(csv_api_source).pipe(CSV.parse).done().then(function(){
-      //});
+      $.getJSON("json/project-list.json", function(projects){
+        $.each(projects, function(project_index, project){
+          var classes = [];
+          var classes_string = ""
+          var homepage = project.homepage;
+          var logo = project.logo;
+          var name = project.name.zh;
+          var intro = project.intro.zh.short;
+          var content = "";
+          $.each(project.category, function(index, category){
+            if( !_.contains(menus.categories, category)){
+              menus.categories.push(category);
+            }
+            var category_id = "categories-" + (menus.categories.length -1);
+            classes.push(category_id);
+          });
+          $.each(classes, function(class_index, class_name){
+            classes_string = classes_string + " " + class_name;
+          });
+          var context = {classes: classes_string, homepage: homepage, logo: logo, name: name, intro: intro, content: content};
+          var $list_element = $(list_template(context));
+          $("#list").append($list_element);
+        });
+      }).done(function(){
+        // render sidebar menu
+        $.each(menus, function(menu_id, menu_items){
+          render_attributes(menu_id, menu_items);
+        });
+      }).done(function(){
+        // dom manipulation
+        initialize_pilot();
+      }).done(function(){
+        count_attributes_by_id();
+      });
+
+      // TBD
+
+      var workspaces = ["hackpad", "hackfoldr", "google drive", "google groups", "google plus community", "facebook community", "irc channel", "github", "google calendar", "facebook group", "miscellaneous"];
+      var roles = ["research", "planning", "ui", "visual", "art", "web frontend", "web backend", "ios", "android", "mac", "linux", "windows", "txt", "consult", "miscellaneous"];
 
     });
