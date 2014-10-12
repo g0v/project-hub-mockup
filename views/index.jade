@@ -175,13 +175,20 @@ block script
               classes.push(attribute_id);
             });
           };
+          var add_sub_classes =  function(attribute_type, attribute){
+            if( !_.contains(menus[attribute_type], attribute)){
+              menus[attribute_type].push(attribute);
+            }
+            var attribute_id = attribute_type + "-" + menus[attribute_type].indexOf(attribute);
+            if( !_.contains(classes, attribute_id) ){
+              classes.push(attribute_id);
+            };
+          };
+
           add_classes("category");
           add_classes("tag");
           add_classes("tool");
           add_classes("license");
-          $.each(classes, function(class_index, class_name){
-            classes_string = classes_string + " " + class_name;
-          });
 
           var context = {classes: classes_string, homepage: homepage, logo: logo, name: name, intro: intro, content: content};
           var $list_element = $(list_template(context));
@@ -193,6 +200,12 @@ block script
             var context = {type: achievement_type, phase: achievement_phase, url: achievement_url};
             var $label_element = $(label_template(context));
             $list_element.find(".achievement").append($label_element);
+            add_sub_classes("type", achievement_type);
+            add_sub_classes("phase", achievement_phase);
+          });
+
+          $.each(classes, function(class_index, class_name){
+            $list_element.addClass(class_name);
           });
 
           $("#list").append($list_element);
