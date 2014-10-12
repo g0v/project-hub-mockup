@@ -27,6 +27,9 @@ a, a:link
 .float.right
   float: right
 
+.align.center
+  text-align: center
+
 #sidebar
   width: 20rem
   position: absolute
@@ -46,7 +49,7 @@ a, a:link
     overflow-y: auto
     overflow-x: hidden
 
-#projects
+#projects, #about
   background-color: #efefef
   position: absolute
   left: 20rem
@@ -56,6 +59,7 @@ a, a:link
   overflow-y: auto
   overflow-x: hidden
   +box-shadow(0 0 1px rgba(#000,0.5))
+#projects
   #filter
     padding: 0.5rem
     min-height: 3rem
@@ -79,3 +83,12 @@ a, a:link
           width: 100%
       .ui.label
         margin: 0.2rem
+#about
+  display: none
+  padding: 2em
+  p
+    line-height: 2em
+  a:link
+    padding: 0.2em 0.5em
+    +border-radius(0.5em)
+    background-color: rgba(#000, 0.05)

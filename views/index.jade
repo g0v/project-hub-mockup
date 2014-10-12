@@ -65,6 +65,24 @@ block body
           p.achievement
             a.ui.label(href="") blah
         .hidden.text hidden
+  section#about
+    .ui.header.align.center g0v.tw Project Pilot
+    .ui.divider
+    p.align.center
+      a(href="https://github.com/g0v/project-hub-mockup") The source code is on github here.
+    p.align.center
+      a(href="https://github.com/g0v/project-hub-mockup/blob/master/livescripts/projectlist_20141009.json.ls") To complete the data, please edit this .ls file,
+    p.align.center
+      a(href="https://github.com/g0v/project-hub-mockup/blob/master/public/json/project-list.json") and i will convert it to this .json file.
+    p.align.center
+      a(href="http://g0v.github.io/project-hub-mockup/public/") And this webpage will be updated after deploying.
+    p.align.center
+      a(href="https://github.com/g0v/project-hub-mockup/issues") If you are familiar with javascript, please help me with these issues
+    p.align.center
+      a(href="https://g0v.hackpad.com/hQ9RdcSw7Gd") For more info, please check out this hackpad
+    p.align.center We can discuss this project on irc.freenode.net#g0v.tw
+      br
+      | (mention ipa, jimyhuang, ETBlue)
 
 block script
   script.
@@ -235,6 +253,11 @@ block script
 
         // for ux
         $("#filter .ui.label").hide();
+
+        // about page
+        $("#sidebar .menu .help").parent(".item").on("click tap", function(){
+          $("#about, #projects").fadeToggle();
+        });
 
         // dom manipulation
         initialize_pilot();
