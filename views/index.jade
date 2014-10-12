@@ -89,7 +89,7 @@ block script
 
     $(document).ready(function(){
 
-      var attribute_template_source ='<a class="item" name="{{attribute_id}}">{{attribute_text}}<div class="ui label"></div></a>';
+      var attribute_template_source ='<a class="item" name="{{attribute_id}}">{{attribute_text}}<div class="ui label">{{count}}</div></a>';
       var attribute_template = Handlebars.compile(attribute_template_source);
 
       var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
@@ -122,24 +122,16 @@ block script
         $.each(attributes, function(attribute_index, attribute){
           var attribute_id = target_menu_name + "-" + attribute_index;
           var attribute_text = attribute;
-          var context = {attribute_id: attribute_id, attribute_text: attribute_text};
+          var count = $("#list ." + attribute_id).length; 
+          var context = {attribute_id: attribute_id, attribute_text: attribute_text, count: count};
           var $attribute_element = $(attribute_template(context));
           var $filter_element = $(filter_template(context));
           $("#" + target_menu_name + " .content .menu").append($attribute_element);
           $("#filter").append($filter_element);
         });
+        var menu_items_count = $("#" + target_menu_name + " .content .menu .item").length;
+        $("#" + target_menu_name + " .title").append("(" + menu_items_count + ")");
       }
-
-      var count_attributes_by_id = function(){
-        $.each(menus, function(menu_index, menu_items){
-          $.each(menu_items, function(item_index, item){
-            var attribute_id = $("#index .item").filter(":contains('" + item + "')").attr("name");
-            var count = $("#list ." + attribute_id).length;
-            $("#index .content .item").filter("[name='" + attribute_id + "']").find(".label").text(count);
-          });
-          $("#index .title").filter(":contains('" + menu_index + "')").append(" (" + menu_items.length + ")");
-        });
-      };
 
       var initialize_pilot = function(){
         var active_classes = [];
@@ -261,8 +253,6 @@ block script
         // dom manipulation
         initialize_pilot();
 
-      }).done(function(){
-        count_attributes_by_id();
       }).done(function(){
         // TODO: sort menu items
       });
