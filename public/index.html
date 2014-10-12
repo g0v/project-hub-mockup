@@ -92,10 +92,10 @@
       var logo = project.logo;
       var name = project.name.zh;
       var intro = project.intro.zh.short;
-      var achievements = project.achievement;
       var classes = [];
       var classes_string = ""
       var content = "";
+      
       var add_classes = function(attribute_type){
         $.each(project[attribute_type], function(index, attribute){
           if( !_.contains(menus[attribute_type], attribute)){
@@ -112,8 +112,19 @@
       $.each(classes, function(class_index, class_name){
         classes_string = classes_string + " " + class_name;
       });
+      
       var context = {classes: classes_string, homepage: homepage, logo: logo, name: name, intro: intro, content: content};
       var $list_element = $(list_template(context));
+      
+      $.each(project.achievement, function(achievement_index, achievement){
+        var achievement_type = achievement.type;
+        var achievement_phase = achievement.phase;
+        var achievement_url = achievement.url;
+        var context = {type: achievement_type, phase: achievement_phase, url: achievement_url};
+        var $label_element = $(label_template(context));
+        $list_element.find(".achievement").append($label_element);
+      });
+      
       $("#list").append($list_element);
     });
   }).done(function(){
