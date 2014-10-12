@@ -8,11 +8,11 @@ block body
 
   nav#sidebar
     .ui.menu.no.margin
-      .ui.dropdown.item g0v pilot for Asperger's
+      .ui.dropdown.item for Asperger's
         i.icon.dropdown
         .menu
-          a.item g0v pilot for Asperger's
-          a.item g0v pilot for Human
+          a.item for Asperger's
+          a.item for Human
       .right.menu
         a.icon.item
           i.icon.help
@@ -95,7 +95,7 @@ block script
       var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
       var filter_template = Handlebars.compile(filter_template_source);
 
-      var list_template_source ='<article class="column {{classes}}"><a href="{{homepage}}" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="hidden text">{{content}}</div></article>';
+      var list_template_source ='<article class="column {{classes}}"><div class="wrapper"><a href="{{homepage}}" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="hidden text">{{content}}</div></div></article>';
       var list_template = Handlebars.compile(list_template_source);
 
       var label_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{type}} - {{phase}}</a>'
