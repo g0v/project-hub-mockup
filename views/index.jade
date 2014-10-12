@@ -95,7 +95,7 @@ block script
       var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
       var filter_template = Handlebars.compile(filter_template_source);
 
-      var list_template_source ='<article class="column"><div class="wrapper"><a href="{{homepage}}" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="hidden text">{{content}}</div></div></article>';
+      var list_template_source ='<article class="column"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="hidden text">{{content}}</div></div></article>';
       var list_template = Handlebars.compile(list_template_source);
 
       var label_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{type}} - {{phase}}</a>'
