@@ -31,7 +31,7 @@ a, a:link
   text-align: center
 
 #sidebar
-  width: 18rem
+  width: 15rem
   position: absolute
   top: 0
   bottom: 0
@@ -52,7 +52,7 @@ a, a:link
 #projects, #about
   background-color: #efefef
   position: absolute
-  left: 18rem
+  left: 15rem
   top: 0
   right: 0
   bottom: 0
@@ -73,14 +73,17 @@ a, a:link
   #list
     padding: 1rem
     .column
+      .wrapper
+        background-color: rgba(#fff, 0.7)
+        +box-shadow(0 0 1px rgba(#000,0.2))
       .image
-        float: left
-        width: 10rem
-        height: 10rem
-        +border-radius(0.5rem)
-        margin: 0 1rem 0 0
+        float: right
+        width: 30%
+        margin: 0 0 0 1rem
         img
           width: 100%
+      .text
+        padding: 1rem
       .ui.label
         margin: 0.2rem
 #about
