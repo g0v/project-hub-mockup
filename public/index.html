@@ -1,4 +1,4 @@
-<html><head><meta charset="utf-8"/><!-- Favicon (TODO)--><link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"/><link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"/><!-- For iOS (TODO)--><meta name="apple-mobile-web-app-capable" content="yes"/><link rel="apple-touch-icon-precomposed" href="assets/img/app-icon/icon-60.png"/><link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/img/app-icon/icon-76.png"/><link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/img/app-icon/icon-60@2x.png"/><link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/img/app-icon/icon-76@2x.png"/><!-- jquery--><script type="text/javascript" src="assets/jquery-2.1.1.min.js"></script><!-- semantic ui--><link rel="stylesheet" type="text/css" href="assets/semantic-ui/0.19.3/css/semantic.min.css"/><script type="text/javascript" src="assets/semantic-ui/0.19.3/javascript/semantic.min.js"></script><!-- handlebars--><script type="text/javascript" src="assets/handlebars-v1.3.0.js"></script><!-- underscore--><script type="text/javascript" src="assets/underscore-min.js"></script><!-- csv parser--><script type="text/javascript" src="assets/csv.js"></script><!-- custom--><link rel="stylesheet" href="css/global.css"/><!-- for mobile, responsive--><meta name="viewport" content="width=device-width, initial-scale=1"/><title>g0v project hub mockup</title></head><body><nav id="sidebar"><div class="ui menu no margin"><div class="ui dropdown item">g0v pilot for Asperger's<i class="icon dropdown"></i><div class="menu"><a class="item">g0v pilot for Asperger's</a><a class="item">g0v pilot for Human</a></div></div><div class="right menu"><a class="icon item"><i class="icon help"></i></a></div></div><div id="search" class="field"><div class="ui icon input"><input placeholder="search..." type="text"/><i class="icon search"></i></div></div><div id="index" class="ui vertical fluid menu no margin"><div id="categories" class="ui accordion"><div class="title header item active">categories<i class="icon dropdown"></i></div><div class="content ui small menu active"><div class="menu"></div></div></div><div id="types" class="ui accordion"><div class="title header item">types<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div><div id="phases" class="ui accordion"><div class="title header item">phases<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div><div id="licenses" class="ui accordion"><div class="title header item">licenses<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div><div id="tools" class="ui accordion"><div class="title header item">tools<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div><div id="tags" class="ui accordion"><div class="title header item">tags<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div></div></nav><section id="projects"><div id="filter"></div><div id="list" class="ui two column stackable grid"></div></section><script>$(document).ready(function(){
+<html><head><meta charset="utf-8"/><!-- Favicon (TODO)--><link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"/><link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"/><!-- For iOS (TODO)--><meta name="apple-mobile-web-app-capable" content="yes"/><link rel="apple-touch-icon-precomposed" href="assets/img/app-icon/icon-60.png"/><link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/img/app-icon/icon-76.png"/><link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/img/app-icon/icon-60@2x.png"/><link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/img/app-icon/icon-76@2x.png"/><!-- jquery--><script type="text/javascript" src="assets/jquery-2.1.1.min.js"></script><!-- semantic ui--><link rel="stylesheet" type="text/css" href="assets/semantic-ui/0.19.3/css/semantic.min.css"/><script type="text/javascript" src="assets/semantic-ui/0.19.3/javascript/semantic.min.js"></script><!-- handlebars--><script type="text/javascript" src="assets/handlebars-v1.3.0.js"></script><!-- underscore--><script type="text/javascript" src="assets/underscore-min.js"></script><!-- csv parser--><script type="text/javascript" src="assets/csv.js"></script><!-- custom--><link rel="stylesheet" href="css/global.css"/><!-- for mobile, responsive--><meta name="viewport" content="width=device-width, initial-scale=1"/><title>g0v project hub mockup</title></head><body><nav id="sidebar"><div class="ui menu no margin"><div class="ui dropdown item">g0v pilot for Asperger's<i class="icon dropdown"></i><div class="menu"><a class="item">g0v pilot for Asperger's</a><a class="item">g0v pilot for Human</a></div></div><div class="right menu"><a class="icon item"><i class="icon help"></i></a></div></div><div id="search" class="field"><div class="ui icon input"><input placeholder="search..." type="text"/><i class="icon search"></i></div></div><div id="index" class="ui vertical fluid menu no margin"><div id="category" class="ui accordion"><div class="title header item active">category<i class="icon dropdown"></i></div><div class="content ui small menu active"><div class="menu"></div></div></div><div id="type" class="ui accordion"><div class="title header item">type<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div><div id="phase" class="ui accordion"><div class="title header item">phase<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div><div id="license" class="ui accordion"><div class="title header item">license<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div><div id="tool" class="ui accordion"><div class="title header item">tool<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div><div id="tag" class="ui accordion"><div class="title header item">tag<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div></div></nav><section id="projects"><div id="filter"></div><div id="list" class="ui two column stackable grid"></div></section><script>$(document).ready(function(){
 
   var attribute_template_source ='<a class="item" name="{{attribute_id}}">{{attribute_text}}<div class="ui label"></div></a>';
   var attribute_template = Handlebars.compile(attribute_template_source);
@@ -13,20 +13,20 @@
   var label_template = Handlebars.compile(label_template_source);
   
   var menus = {
-    categories : [],
-    types : [],
-    phases : [],
-    licenses : [],
-    tools : [],
-    tags : [],
+    category : [],
+    type : [],
+    phase : [],
+    license : [],
+    tool : [],
+    tag : [],
   };
   //var menus = {
-  //  categories : ["open government", "open data", "civil participation", "media 2.0", "g0v infrastructure", "policy wiki", "miscellaneous"],
-  //  types : ["website", "android app", "ios app", "windows phone app", "linux software", "mac software", "windows software", "chrome extension", "firefox extension", "api", "document", "miscellaneous"],
-  //  phases : ["idea", "plan", "wireframe", "mockup", "prototype", "alpha", "beta", "production", "maintenance", "memory", "miscellaneous"],
-  //  licenses : ["CC0", "CC-By", "CC-By-NC", "CC-By-ND", "CC-By-SA", "CC-By-NC-SA", "CC-By-NC-ND", "Apache", "BSD", "GPL", "LGPL", "MIT", "miscellaneous"],
-  //  tools : [],
-  //  tags : [],
+  //  category : ["open government", "open data", "civil participation", "media 2.0", "g0v infrastructure", "policy wiki", "miscellaneous"],
+  //  type : ["website", "android app", "ios app", "windows phone app", "linux software", "mac software", "windows software", "chrome extension", "firefox extension", "api", "document", "miscellaneous"],
+  //  phase : ["idea", "plan", "wireframe", "mockup", "prototype", "alpha", "beta", "production", "maintenance", "memory", "miscellaneous"],
+  //  license : ["CC0", "CC-By", "CC-By-NC", "CC-By-ND", "CC-By-SA", "CC-By-NC-SA", "CC-By-NC-ND", "Apache", "BSD", "GPL", "LGPL", "MIT", "miscellaneous"],
+  //  tool : [],
+  //  tag : [],
   //};
   
   var render_attributes = function(target_menu_name, attributes){
@@ -45,52 +45,42 @@
     $.each(menus, function(menu_index, menu_items){
       $.each(menu_items, function(item_index, item){
         var attribute_id = $("#index .item").filter(":contains('" + item + "')").attr("name");
-        var count = $("#list ." + attribute_id).not("[style='display: none']").length;
-        $("#index .item").filter("[name='" + attribute_id + "']").find(".label").text(count);
+        var count = $("#list ." + attribute_id).length;
+        $("#index .content .item").filter("[name='" + attribute_id + "']").find(".label").text(count);
       });
+      $("#index .title").filter(":contains('" + menu_index + "')").append(" (" + menu_items.length + ")");
     });
   };
   
   var initialize_pilot = function(){
-  
-    // for semantic ui
-    $(".ui.dropdown").dropdown();
-    $(".ui.accordion").accordion();
-    
-    // for ux
-    $("#filter .ui.label").hide();
-    
-    // for filter and list items
-    var current_classes = [];
-    var current_classes_string = "";
+    var active_classes = [];
+    var active_classes_string = "";
     var target_attribute = "";
     var toggle_classes = function(original_classes, target_class){
-      if( _.contains( current_classes, target_attribute )){
-        current_classes = _.without(current_classes, target_attribute);
+      if( _.contains( active_classes, target_attribute )){
+        active_classes = _.without(active_classes, target_attribute);
       }else{
-        current_classes.push(target_attribute);
+        active_classes.push(target_attribute);
       };
-      current_classes_string = "";
-      _.each(current_classes, function(css_class){
-        current_classes_string = current_classes_string + "." + css_class;
+      active_classes_string = "";
+      _.each(active_classes, function(css_class){
+        active_classes_string = active_classes_string + "." + css_class;
       });
       $("#list .column").hide();
-      $("#list .column" + current_classes_string ).show();
+      $("#list .column" + active_classes_string ).show();
     };
     $("#index").on("click tap", ".content .item", function(){
       $(this).toggleClass("active");
       $("#filter").show();
       target_attribute = $(this).attr("name");
       $("#filter .ui.label").filter("[name='" + target_attribute + "']").fadeToggle();
-      toggle_classes(current_classes, target_attribute);
-      count_attributes_by_id();
+      toggle_classes(active_classes, target_attribute);
     });
     $("#filter").on("click tap", ".ui.label .delete.icon", function(){
       $(this).parent().fadeOut();
       target_attribute = $(this).parent().attr("name");
-      $("#index .item").filter("[name='" + target_attribute + "']").removeClass("active");
-      toggle_classes(current_classes, target_attribute);
-      count_attributes_by_id();
+      $("#index .content .item").filter("[name='" + target_attribute + "']").removeClass("active");
+      toggle_classes(active_classes, target_attribute);
     });
   };
   
@@ -105,13 +95,19 @@
       var name = project.name.zh;
       var intro = project.intro.zh.short;
       var content = "";
-      $.each(project.category, function(index, category){
-        if( !_.contains(menus.categories, category)){
-          menus.categories.push(category);
-        }
-        var category_id = "categories-" + (menus.categories.length -1);
-        classes.push(category_id);
-      });
+      var add_classes = function(attribute_type){
+        $.each(project[attribute_type], function(index, attribute){
+          if( !_.contains(menus[attribute_type], attribute)){
+            menus[attribute_type].push(attribute);
+          }
+          var attribute_id = attribute_type + "-" + menus[attribute_type].indexOf(attribute);
+          classes.push(attribute_id);
+        });
+      };
+      add_classes("category");
+      add_classes("tag");
+      add_classes("tool");
+      add_classes("license");
       $.each(classes, function(class_index, class_name){
         classes_string = classes_string + " " + class_name;
       });
@@ -125,10 +121,21 @@
       render_attributes(menu_id, menu_items);
     });
   }).done(function(){
+  
+    // for semantic ui
+    $(".ui.dropdown").dropdown();
+    $(".ui.accordion").accordion();
+    
+    // for ux
+    $("#filter .ui.label").hide();
+    
     // dom manipulation
     initialize_pilot();
+    
   }).done(function(){
     count_attributes_by_id();
+  }).done(function(){
+    // TODO: sort menu items
   });
   
   // TBD
