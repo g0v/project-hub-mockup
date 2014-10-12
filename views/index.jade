@@ -79,7 +79,7 @@ block script
       var list_template_source ='<article class="column {{classes}}"><a href="{{homepage}}" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="hidden text">{{content}}</div></article>';
       var list_template = Handlebars.compile(list_template_source);
 
-      var label_template_source = '<a href="{{url}}" class="ui label">{{type}} ({{phase}})</a>'
+      var label_template_source = '<a href="{{url}}" class="ui label">{{type}} - {{phase}}</a>'
       var label_template = Handlebars.compile(label_template_source);
 
       var menus = {
