@@ -93,7 +93,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['直播', '活動', '宣傳'],
       "participant": {},
       "tool": [],
@@ -278,7 +278,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['第五權', '評台', '評臺'],
       "participant": {},
       "tool": [],
@@ -315,7 +315,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['新聞', '媒體', '報紙', '宣傳'],
       "participant": {},
       "tool": [],
@@ -352,7 +352,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['新聞', '媒體', '宣傳'],
       "participant": {},
       "tool": [],
@@ -389,7 +389,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": [],
       "participant": {},
       "tool": [],
@@ -426,7 +426,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": [],
       "participant": {},
       "tool": [],
@@ -463,7 +463,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['假新聞節目', '問題媒體', '報紙', '小幫手'],
       "participant": {},
       "tool": [],
@@ -537,7 +537,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['你媽知道你在看假新聞嗎', '問題節目', '媒體', '小幫手'],
       "participant": {},
       "tool": [],
@@ -574,7 +574,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與', '新媒體'],
       "tag": ['新聞', '媒體', '宣傳'],
       "participant": {},
       "tool": [],
@@ -611,7 +611,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['政治', '政府', '政黨', '事件', '立法', '黑箱作業', '自盡', 'hacktable'],
       "participant": {},
       "tool": [],
@@ -648,7 +648,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['政治', '政府', '政黨', '事件', '立法', '黑箱作業', '違法', '造假'],
       "participant": {},
       "tool": [],
@@ -722,7 +722,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['立法', '法律', '法規條文查詢'],
       "participant": {},
       "tool": [],
@@ -759,7 +759,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['法律', '法規條文查詢'],
       "participant": {},
       "tool": [],
@@ -870,7 +870,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['政府機關代碼'],
       "participant": {},
       "tool": [],
@@ -944,7 +944,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['立委', '公務人員', '出國', '考察', '夭壽讚'],
       "participant": {},
       "tool": [],
@@ -981,7 +981,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['立法院', '國會', '立委', '議事', '表決'],
       "participant": {},
       "tool": [],
@@ -1018,7 +1018,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['立法', '黑箱作業', '服貿', '太陽花學運'],
       "participant": {},
       "tool": [],
@@ -1092,7 +1092,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['聯絡', '立委', '立法', '黑箱作業', '服貿', '太陽花學運'],
       "participant": {},
       "tool": [],
@@ -1129,7 +1129,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['立法', '立委', '表決', '社會議題', '傾向', '政黨'],
       "participant": {},
       "tool": [],
@@ -1166,7 +1166,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與', '開放政府'],
       "tag": ['立法', '立委', 'ivod', '國會', '表決', '監督', '直播', '丟鞋', '獻花'],
       "participant": {},
       "tool": [],
@@ -1203,7 +1203,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['立法', '立委', '國會', '表決', '傾向', '政黨'],
       "participant": {},
       "tool": [],
@@ -1240,7 +1240,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['立法', '議員', '議會', '表決', '傾向', '政黨'],
       "participant": {},
       "tool": [],
@@ -1277,7 +1277,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['台南', '立法', '議員', '表決', '傾向', '政黨'],
       "participant": {},
       "tool": [],
@@ -1314,7 +1314,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['立院', '法律', '法規', '遊戲'],
       "participant": {},
       "tool": [],
@@ -1388,7 +1388,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['工作', '老闆', '公司', '企業'],
       "participant": {},
       "tool": [],
@@ -1425,7 +1425,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['工作', '老闆', '公司', '企業'],
       "participant": {},
       "tool": [],
@@ -1462,7 +1462,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['工作', '老闆', '公司', '企業'],
       "participant": {},
       "tool": [],
@@ -1536,7 +1536,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['公司', '企業'],
       "participant": {},
       "tool": [],
@@ -1721,7 +1721,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['g0v基礎建設'],
       "tag": ['練習', '砍柴', '爬資料'],
       "participant": {},
       "tool": [],
@@ -1758,7 +1758,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['監察', '公務人員財產申報'],
       "participant": {},
       "tool": [],
@@ -1795,7 +1795,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['監察', '公務人員財產申報', '討論區'],
       "participant": {},
       "tool": [],
@@ -1832,7 +1832,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['監察', '公務人員財產申報', '圖形'],
       "participant": {},
       "tool": [],
@@ -1943,7 +1943,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['氣象', '觀測'],
       "participant": {},
       "tool": [],
@@ -1980,7 +1980,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['空氣品質', '雨量', '觀測'],
       "participant": {},
       "tool": [],
@@ -2017,7 +2017,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['天龍國特公地', '台北', '臺北'],
       "participant": {},
       "tool": [],
@@ -2165,7 +2165,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['駕駛'],
       "participant": {},
       "tool": [],
@@ -2387,7 +2387,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['opendata', '開放資料', '建立', '砍柴', '爬資料', '政府', 'csv', 'json', 'xml'],
       "participant": {},
       "tool": [],
@@ -2424,7 +2424,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['opendata', '開放資料', '政府', 'csv', 'json', 'xml'],
       "participant": {},
       "tool": [],
@@ -2461,7 +2461,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['opendata', '開放資料', '建立', '砍柴', '爬資料', '政府', 'csv', 'json', 'xml'],
       "participant": {},
       "tool": [],
@@ -2498,7 +2498,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['opendata', '開放資料', '建立', '砍柴', '爬資料', '政府', 'csv', 'json', 'xml'],
       "participant": {},
       "tool": [],
@@ -2535,7 +2535,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['醫療', '醫學中心', '重度級急救責任', '住院', '滿床', '加護病房'],
       "participant": {},
       "tool": [],
@@ -2609,7 +2609,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['補助', '輔助', '法規', '法條', '身心障礙'],
       "participant": {},
       "tool": [],
@@ -2646,7 +2646,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['超農域', '農夫', '種苗', '農藥', '景觀', '植栽', '綠美化', '綠地'],
       "participant": {},
       "tool": [],
@@ -2683,7 +2683,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['超農域', '地理', '農夫', '種苗', '農藥', '景觀', '植栽', '綠美化', '綠地'],
       "participant": {},
       "tool": [],
@@ -2831,7 +2831,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['黑客', '工作'],
       "participant": {},
       "tool": [],
@@ -2905,7 +2905,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['g0v基礎建設'],
       "tag": ['自製', 'g0v', '公告'],
       "participant": {},
       "tool": [],
@@ -3053,7 +3053,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['g0v基礎建設'],
       "tag": ['自製', '創用CC', '創作', '藝術'],
       "participant": {},
       "tool": [],
@@ -3090,7 +3090,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['g0v基礎建設'],
       "tag": ['自製', '遊戲'],
       "participant": {},
       "tool": [],
@@ -3127,7 +3127,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['g0v基礎建設'],
       "tag": ['自製', '專案池', '基礎建設'],
       "participant": {},
       "tool": [],
@@ -3238,7 +3238,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['統計'],
       "participant": {},
       "tool": [],
@@ -3275,7 +3275,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['統計'],
       "participant": {},
       "tool": [],
@@ -3312,7 +3312,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['寵物需要我', '流浪動物', '認養'],
       "participant": {},
       "tool": [],
@@ -3349,7 +3349,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['政府', '負債', '國債鐘'],
       "participant": {},
       "tool": [],
@@ -3386,7 +3386,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['政治', '洪仲丘案'],
       "participant": {},
       "tool": [],
@@ -3423,7 +3423,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['瀏覽器擴充套件', '附加元件', '字典', '辭典'],
       "participant": {},
       "tool": [],
@@ -3460,7 +3460,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['瀏覽器擴充套件', '附加元件', '媒體'],
       "participant": {},
       "tool": [],
@@ -3497,7 +3497,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['瀏覽器擴充套件', '附加元件', '工作', '違反勞基法事業名單'],
       "participant": {},
       "tool": [],
@@ -3534,7 +3534,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['瀏覽器擴充套件', '附加元件', '法律', '法條', '查詢'],
       "participant": {},
       "tool": [],
@@ -3571,7 +3571,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['瀏覽器擴充套件', '附加元件', '直播'],
       "participant": {},
       "tool": [],
@@ -3608,7 +3608,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['瀏覽器擴充套件', '附加元件', '工作', '違反勞基法事業名單'],
       "participant": {},
       "tool": [],
@@ -3645,7 +3645,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['瀏覽器擴充套件', '附加元件', '媒體'],
       "participant": {},
       "tool": [],
@@ -3682,7 +3682,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['瀏覽器擴充套件', '附加元件', '法律', '法條', '查詢'],
       "participant": {},
       "tool": [],
@@ -3719,7 +3719,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['瀏覽器擴充套件', '附加元件', '媒體'],
       "participant": {},
       "tool": [],
@@ -3756,7 +3756,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['福利', '智慧型手機', 'app', '平板'],
       "participant": {},
       "tool": [],
@@ -3793,7 +3793,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['直播', '智慧型手機', 'app', '平板'],
       "participant": {},
       "tool": [],
@@ -3867,7 +3867,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['字典', '辭典', '智慧型手機', 'app', '平板'],
       "participant": {},
       "tool": [],
@@ -3904,7 +3904,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['直播', '智慧型手機', 'app', '平板'],
       "participant": {},
       "tool": [],
@@ -3941,7 +3941,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['字典', '辭典', '智慧型手機', 'app', '平板'],
       "participant": {},
       "tool": [],
@@ -3978,7 +3978,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['智慧型手機', 'app', '平板', '字典', '辭典'],
       "participant": {},
       "tool": [],
@@ -4015,7 +4015,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['字典', '辭典', '智慧型手機', 'app', '平板'],
       "participant": {},
       "tool": [],
@@ -4126,7 +4126,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['hackfoldr', '太陽花學運', '學生運動', '社會運動', '政治', '政府', '罷免'],
       "participant": {},
       "tool": [],
@@ -4163,7 +4163,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['hackfoldr', '社會運動', '政治', '政府', '罷免', '林義雄禁食'],
       "participant": {},
       "tool": [],
@@ -4274,7 +4274,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['hackfoldr'],
       "participant": {},
       "tool": [],
@@ -4348,7 +4348,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['hackfoldr'],
       "participant": {},
       "tool": [],
@@ -4385,7 +4385,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['hackfoldr', 'g8v.tv'],
       "participant": {},
       "tool": [],
@@ -4422,7 +4422,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['hackfoldr'],
       "participant": {},
       "tool": [],
@@ -4459,7 +4459,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['hackfoldr', '黑客松', '小聚'],
       "participant": {},
       "tool": [],
@@ -4496,7 +4496,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['hackfoldr', '天龍國'],
       "participant": {},
       "tool": [],
@@ -4533,7 +4533,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['超農域', '植栽'],
       "participant": {},
       "tool": [],
@@ -4570,7 +4570,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['hackfoldr'],
       "participant": {},
       "tool": [],
@@ -4681,7 +4681,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['hackfoldr'],
       "participant": {},
       "tool": [],
@@ -4718,7 +4718,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府', '社會參與'],
       "tag": ['hackfoldr', '監察', '公務人員財產申報'],
       "participant": {},
       "tool": [],
@@ -4829,7 +4829,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['hackfoldr', '直播', '活動', '宣傳'],
       "participant": {},
       "tool": [],
@@ -4866,7 +4866,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['hackfoldr'],
       "participant": {},
       "tool": [],
@@ -4903,7 +4903,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放政府'],
       "tag": ['hackfoldr'],
       "participant": {},
       "tool": [],
@@ -4940,7 +4940,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['hackfoldr', '氣爆', '災害', '地下管線'],
       "participant": {},
       "tool": [],
@@ -5532,7 +5532,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['新媒體'],
       "tag": ['timeline'],
       "participant": {},
       "tool": [],
@@ -5606,7 +5606,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料', '社會參與'],
       "tag": ['字典', '辭典', '成語', '挑錯字', '分類'],
       "participant": {},
       "tool": [],
@@ -5643,7 +5643,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['社會實事議題討論', '投票', '表決'],
       "participant": {},
       "tool": [],
@@ -5680,7 +5680,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['社會實事議題討論', '投票', '表決'],
       "participant": {},
       "tool": [],
@@ -5717,7 +5717,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['社會實事議題討論', '投票', '表決'],
       "participant": {},
       "tool": [],
@@ -5791,7 +5791,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['環境', '降雨'],
       "participant": {},
       "tool": [],
@@ -5828,7 +5828,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['環境', '降雨'],
       "participant": {},
       "tool": [],
@@ -5902,7 +5902,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['開放資料'],
       "tag": ['農業', '超農域'],
       "participant": {},
       "tool": [],
@@ -6013,7 +6013,7 @@
           "long": ""
         }
       },
-      "category": [],
+      "category": ['社會參與'],
       "tag": ['社會實事議題討論'],
       "participant": {},
       "tool": [],
