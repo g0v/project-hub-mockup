@@ -88,12 +88,13 @@
   
   $.getJSON("json/project-list.json", function(projects){
     $.each(projects, function(project_index, project){
-      var classes = [];
-      var classes_string = ""
       var homepage = project.homepage;
       var logo = project.logo;
       var name = project.name.zh;
       var intro = project.intro.zh.short;
+      var achievements = project.achievement;
+      var classes = [];
+      var classes_string = ""
       var content = "";
       var add_classes = function(attribute_type){
         $.each(project[attribute_type], function(index, attribute){
