@@ -49,7 +49,7 @@ a, a:link
     overflow-y: auto
     overflow-x: hidden
 
-#projects, #about
+#projects, #about, #submit, #edit
   background-color: #efefef
   position: absolute
   left: 15rem
@@ -87,8 +87,9 @@ a, a:link
         padding: 1rem
       .ui.label
         margin: 0.2rem
-#about
+#about, #submit, #edit
   display: none
+#about
   padding: 2em
   p
     line-height: 2em
@@ -96,3 +97,8 @@ a, a:link
     padding: 0.2em 0.5em
     +border-radius(0.5em)
     background-color: rgba(#000, 0.05)
+#submit
+  padding: 2rem
+  .description
+    color: rgba(#000, 0.5)
+    margin-top: 0.5em
