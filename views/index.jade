@@ -14,8 +14,18 @@ block body
           a.item for Asperger's
           a.item for Human
       .right.menu
-        a.icon.item
-          i.icon.help
+        .ui.dropdown.icon.item
+          i.icon.ellipsis.vertical
+          .menu
+            .item
+              i.icon.add
+              | Submit a project
+            .item
+              i.icon.pencil
+              | Edit pending data
+            .item
+              i.icon.help
+              | About
     #search.field
       .ui.icon.input
         input(placeholder="search...", type="text")
@@ -52,7 +62,7 @@ block body
         .content.ui.small.menu
           .menu
 
-  section#projects
+  section#projects.views
     #filter
     #count
     #list.ui.two.column.stackable.grid
@@ -65,24 +75,188 @@ block body
           p.achievement
             a.ui.label(href="") blah
         .hidden.text hidden
-  section#about
+  section#about.views
     .ui.header.align.center g0v.tw Project Pilot
     .ui.divider
     p.align.center
-      a(href="https://github.com/g0v/project-hub-mockup") The source code is on github here.
+      a(href="https://github.com/g0v/project-hub-mockup", target="_blank") The source code is on github here.
+        i.icon.forward.mail
     p.align.center
-      a(href="https://github.com/g0v/project-hub-mockup/blob/master/livescripts/projectlist_20141009.json.ls") To complete the data, please edit this .ls file,
+      a(href="https://github.com/g0v/project-hub-mockup/blob/master/livescripts/projectlist_20141009.json.ls", target="_blank") To complete the data, please edit this .ls file,
+        i.icon.forward.mail
     p.align.center
-      a(href="https://github.com/g0v/project-hub-mockup/blob/master/public/json/project-list.json") and i will convert it to this .json file.
+      a(href="https://github.com/g0v/project-hub-mockup/blob/master/public/json/project-list.json", target="_blank") and I will convert it to this .json file.
+        i.icon.forward.mail
     p.align.center
-      a(href="http://g0v.github.io/project-hub-mockup/public/") And this webpage will be updated after deploying.
+      a(href="http://g0v.github.io/project-hub-mockup/public/", target="_blank") And this webpage will be updated after deploying.
+        i.icon.forward.mail
     p.align.center
-      a(href="https://github.com/g0v/project-hub-mockup/issues") If you are familiar with javascript, please help me with these issues
+      a(href="https://github.com/g0v/project-hub-mockup/issues", target="_blank") If you are familiar with javascript, please help me with these issues.
+        i.icon.forward.mail
     p.align.center
-      a(href="https://g0v.hackpad.com/hQ9RdcSw7Gd") For more info, please check out this hackpad
+      a(href="https://g0v.hackpad.com/hQ9RdcSw7Gd", target="_blank") For more info, please check out this hackpad
+        i.icon.forward.mail
     p.align.center We can discuss this project on irc.freenode.net#g0v.tw
       br
-      | (mention ipa, jimyhuang, ETBlue)
+      | (mention ipa, jimyhuang, Lee1092, ETBlue)
+  section#submit.views
+    .ui.header.align.center Submit a g0v Project
+    .ui.divider
+    form.ui.warning.form
+      .ui.error.message
+      .two.fields
+        .field
+          label 專案中文名稱
+          .ui.input
+            input(name="name-zh",required)
+            .ui.corner.label
+              i.icon.asterisk
+        .field
+          label Project Name in English
+          .ui.input
+            input(name="name-en")
+      .two.fields
+        .field
+          label 專案簡介
+          .ui.input
+            textarea(name="intro-zh-short",required)
+            .ui.corner.label
+              i.icon.asterisk
+        .field
+          label Project Summary in English
+          .ui.input
+            textarea(name="intro-en-short")
+      .two.fields
+        .field
+          label 授權
+          .ui.input
+            input(placeholder="e.g. CC0, MIT",name="license",required)
+            .ui.corner.label
+              i.icon.asterisk
+          .description 若同時有多種授權，以半形逗號隔開
+        .field
+          label 專案分類
+          .ui.selection.dropdown
+            input(name="category", type="hidden")
+            .default.text 其他
+            i.icon.dropdown
+            .menu.ui.transition.hidden
+              .item(data-value="開放政府") 開放政府
+              .item(data-value="開放資料") 開放資料
+              .item(data-value="社會參與") 社會參與
+              .item(data-value="政策共筆") 政策共筆
+              .item(data-value="新媒體") 新媒體
+              .item(data-value="g0v基礎建設") g0v基礎建設
+              .item(data-value="其他") 其他
+      .ui.horizontal.divider 現有成果
+      .inline.fields
+        .field
+          label 網址
+          .ui.left.labeled.icon.input
+            input(placeholder="http://",type="url",name="achievement-0-url",required)
+            i.icon.url
+            .ui.corner.label
+              i.icon.asterisk
+        .field
+          label 類型
+          .ui.selection.dropdown
+            input(name="achievement-0-type", type="hidden")
+            .default.text website
+            i.icon.dropdown
+            .menu.ui.transition.hidden
+              .item(data-value="web") website
+              .item(data-value="android") Android app
+              .item(data-value="ios") iOS app
+              .item(data-value="wp") Windows Phone app
+              .item(data-value="firefoxos") Firefox OS
+              .item(data-value="linux") Linux software
+              .item(data-value="mac") Mac software
+              .item(data-value="windows") Windows software
+              .item(data-value="chrome") Chrome extension
+              .item(data-value="firefox") Firefox extension
+              .item(data-value="safari") Safari extension
+              .item(data-value="api") application interface (api)
+              .item(data-value="document") document
+              .item(data-value="miscmiscellaneous") miscellaneous
+        .field
+          label 開發階段
+          .ui.selection.dropdown
+            input(name="achievement-0-phase", type="hidden")
+            .default.text idea
+            i.icon.dropdown
+            .menu.ui.transition.hidden
+              .item(data-value="idea") idea
+              .item(data-value="plan") plan
+              .item(data-value="wireframe") wireframe
+              .item(data-value="mockup") mockup
+              .item(data-value="prototype") prototype
+              .item(data-value="alpha") alpha
+              .item(data-value="beta") beta
+              .item(data-value="production") production
+              .item(data-value="memory") memory
+              .item(data-value="miscellaneous") miscellaneous
+        .ui.button 新增一筆
+      .ui.horizontal.divider 工作區
+      .inline.fields
+        .field
+          label 網址
+          .ui.left.labeled.icon.input
+            input(placeholder="http://",type="url",name="workspace-0-url",required)
+            i.icon.url
+            .ui.corner.label
+              i.icon.asterisk
+        .field
+          label 類型
+          .ui.selection.dropdown
+            input(name="workspace-0-type", type="hidden")
+            .default.text github
+            i.icon.dropdown
+            .menu.ui.transition.hidden
+              .item(data-value="hackpad") hackpad
+              .item(data-value="hackfoldr") hackfoldr
+              .item(data-value="github") github
+              .item(data-value="drive") google drive
+              .item(data-value="groups") google groups
+              .item(data-value="plus") google plus community
+              .item(data-value="calendar") google calendar
+              .item(data-value="facebook") facebook group
+              .item(data-value="irc") irc channel
+              .item(data-value="miscellaneous") miscellaneous
+        .ui.button 新增一筆
+      .ui.horizontal.divider 以下選填
+      .field
+        label 使用工具
+        .ui.input
+          input(name="tool", placeholder="e.g. moqups, illustrator, photoshop, garageband, sass, jade, semantic ui, fire.app, gulp, jquery, underscore js, handlebar js, angular js, react js, rails, django, travis ci, ")
+        .description 以半形逗號隔開
+      .two.fields
+        .field
+          label 專案 logo 圖檔網址
+          .ui.left.labeled.icon.input
+            input(placeholder="http://",type="url",name="logo")
+            i.icon.url
+          .description 若不填，會自動以網頁抓圖代替
+        .field
+          label 專案首頁網址
+          .ui.left.labeled.icon.input
+            input(placeholder="http://",type="url",name="homepage")
+            i.icon.url
+          .description 按下專案縮圖後開啟的頁面，若不填，會自動以第一個成果網址代替
+      .two.fields
+        .field
+          label 標籤
+          .ui.input
+            input(name="tag")
+          .description 以半形逗號隔開
+        .field
+          label 相關專案
+          .ui.input
+            input(name="related")
+          .description 以半形逗號隔開
+      button.ui.submit.right.icon.labeled.button.green submit project
+        i.icon.add
+
+  section#edit.views edit
 
 block script
   script.
@@ -148,8 +322,8 @@ block script
           _.each(active_classes, function(css_class){
             active_classes_string = active_classes_string + "." + css_class;
           });
-          $("#list .column").hide();
-          $("#list .column" + active_classes_string ).fadeToggle("show");
+          $("#list .column").fadeOut();
+          $("#list .column" + active_classes_string ).fadeIn();
         };
         var count_projects = function(){
           if(active_classes_string.length > 0){
@@ -159,6 +333,10 @@ block script
           }
         }
         count_projects();
+        $("#index").on("click tap", ".item", function(){
+          $("#projects").show();
+          $("#about, #submit, #edit").fadeOut();
+        });
         $("#index").on("click tap", ".content .item", function(){
           $(this).toggleClass("active");
           target_attribute = $(this).attr("name");
@@ -178,6 +356,7 @@ block script
       // get data and then get everything work
 
       $.getJSON("json/project-list.json", function(projects){
+
         $.each(projects, function(project_index, project){
           var homepage = project.homepage;
           var logo = project.logo;
@@ -248,11 +427,20 @@ block script
         $(".ui.accordion").accordion();
 
         // for ux
-        $("#filter .ui.label").hide();
+        $("#filter .ui.label").fadeOut();
 
-        // about page
+        // change views
         $("#sidebar .menu .help").parent(".item").on("click tap", function(){
-          $("#about, #projects").fadeToggle();
+          $(".views").fadeOut();
+          $("#about").fadeIn();
+        });
+        $("#sidebar .menu .add").parent(".item").on("click tap", function(){
+          $(".views").fadeOut();
+          $("#submit").fadeIn();
+        });
+        $("#sidebar .menu .pencil").parent(".item").on("click tap", function(){
+          $(".views").fadeOut();
+          $("#edit").fadeIn();
         });
 
         // dom manipulation

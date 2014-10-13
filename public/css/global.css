@@ -62,7 +62,7 @@ a, a:link {
   overflow-x: hidden;
 }
 
-#projects, #about {
+#projects, #about, #submit, #edit {
   background-color: #efefef;
   position: absolute;
   left: 15rem;
@@ -114,8 +114,11 @@ a, a:link {
   margin: 0.2rem;
 }
 
-#about {
+#about, #submit, #edit {
   display: none;
+}
+
+#about {
   padding: 2em;
 }
 #about p {
@@ -127,4 +130,12 @@ a, a:link {
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+#submit {
+  padding: 2rem;
+}
+#submit .description {
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 0.5em;
 }
