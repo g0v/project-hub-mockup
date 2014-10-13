@@ -11,8 +11,9 @@ block body
       .ui.dropdown.item for Asperger's
         i.icon.dropdown
         .menu
-          a.item for Asperger's
-          a.item for Human
+          a.item Human mode
+          a.item Asperger mode
+          a.item Charts
       .right.menu
         .ui.dropdown.icon.item
           i.icon.ellipsis.vertical
@@ -103,7 +104,6 @@ block body
     .ui.header.align.center Submit a g0v Project
     .ui.divider
     form.ui.warning.form
-      .ui.error.message
       .two.fields
         .field
           label 專案中文名稱
@@ -133,7 +133,9 @@ block body
             input(placeholder="e.g. CC0, MIT",name="license",required)
             .ui.corner.label
               i.icon.asterisk
-          .description 若同時有多種授權，以半形逗號隔開
+          .description
+            i.icon.hand.up
+            | 若同時有多種授權，以半形逗號隔開
         .field
           label 專案分類
           .ui.selection.dropdown
@@ -195,7 +197,7 @@ block body
               .item(data-value="production") production
               .item(data-value="memory") memory
               .item(data-value="miscellaneous") miscellaneous
-        .ui.button 新增一筆
+        #add-achievement.ui.button 新增一筆
       .ui.horizontal.divider 工作區
       .inline.fields
         .field
@@ -222,38 +224,48 @@ block body
               .item(data-value="facebook") facebook group
               .item(data-value="irc") irc channel
               .item(data-value="miscellaneous") miscellaneous
-        .ui.button 新增一筆
+        #add-workspace.ui.button 新增一筆
       .ui.horizontal.divider 以下選填
       .field
         label 使用工具
         .ui.input
           input(name="tool", placeholder="e.g. moqups, illustrator, photoshop, garageband, sass, jade, semantic ui, fire.app, gulp, jquery, underscore js, handlebar js, angular js, react js, rails, django, travis ci, ")
-        .description 以半形逗號隔開
+        .description
+          i.icon.hand.up
+          | 以半形逗號隔開
       .two.fields
         .field
           label 專案 logo 圖檔網址
           .ui.left.labeled.icon.input
             input(placeholder="http://",type="url",name="logo")
             i.icon.url
-          .description 若不填，會自動以網頁抓圖代替
+          .description
+            i.icon.hand.up
+            | 若不填，會自動以網頁抓圖代替
         .field
           label 專案首頁網址
           .ui.left.labeled.icon.input
             input(placeholder="http://",type="url",name="homepage")
             i.icon.url
-          .description 按下專案縮圖後開啟的頁面，若不填，會自動以第一個成果網址代替
+          .description
+            i.icon.hand.up
+            | 若不填，會自動以第一個成果網址代替
       .two.fields
         .field
           label 標籤
           .ui.input
             input(name="tag")
-          .description 以半形逗號隔開
+          .description
+            i.icon.hand.up
+            | 以半形逗號隔開
         .field
           label 相關專案
           .ui.input
             input(name="related")
-          .description 以半形逗號隔開
-      button.ui.submit.right.icon.labeled.button.green submit project
+          .description
+            i.icon.hand.up
+            | 以半形逗號隔開
+      button#submit-project.ui.submit.right.icon.labeled.button.green submit project
         i.icon.add
 
   section#edit.views
@@ -273,7 +285,7 @@ block script
       var list_template_source ='<article class="column"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="hidden text">{{content}}</div></div></article>';
       var list_template = Handlebars.compile(list_template_source);
 
-      var label_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{type}} - {{phase}}</a>'
+      var label_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{type}} - {{phase}}</a>';
       var label_template = Handlebars.compile(label_template_source);
 
       var menus = {
@@ -308,54 +320,7 @@ block script
         $("#" + target_menu_name + " .title").append(" (" + menu_items_count + ")");
       }
 
-      var initialize_pilot = function(){
-        var active_classes = [];
-        var active_classes_string = "";
-        var target_attribute = "";
-        var all_projects_count = $("#list .column").length;
-        var toggle_classes = function(original_classes, target_class){
-          if( _.contains( active_classes, target_attribute )){
-            active_classes = _.without(active_classes, target_attribute);
-          }else{
-            active_classes.push(target_attribute);
-          };
-          active_classes_string = "";
-          _.each(active_classes, function(css_class){
-            active_classes_string = active_classes_string + "." + css_class;
-          });
-          $("#list .column").fadeOut();
-          $("#list .column" + active_classes_string ).fadeIn();
-        };
-        var count_projects = function(){
-          if(active_classes_string.length > 0){
-            $("#count").text("showing " + $("#list").find(active_classes_string).length + " out of " + all_projects_count +" projects");
-          }else{
-            $("#count").text(all_projects_count + " projects");
-          }
-        }
-        count_projects();
-        $("#index").on("click tap", ".item", function(){
-          $("#projects").show();
-          $("#about, #submit, #edit").fadeOut();
-        });
-        $("#index").on("click tap", ".content .item", function(){
-          $(this).toggleClass("active");
-          target_attribute = $(this).attr("name");
-          $("#filter .ui.label").filter("[name='" + target_attribute + "']").fadeToggle();
-          toggle_classes(active_classes, target_attribute);
-          count_projects();
-        });
-        $("#filter").on("click tap", ".ui.label .delete.icon", function(){
-          $(this).parent().fadeOut();
-          target_attribute = $(this).parent().attr("name");
-          $("#index .content .item").filter("[name='" + target_attribute + "']").removeClass("active");
-          toggle_classes(active_classes, target_attribute);
-          count_projects();
-        });
-      };
-
-      // get data and then get everything work
-
+      // get data and render projects
       $.getJSON("json/project-list.json", function(projects){
 
         $.each(projects, function(project_index, project){
@@ -384,7 +349,6 @@ block script
               classes.push(attribute_id);
             };
           };
-
           add_classes("category");
           add_classes("tag");
           add_classes("tool");
@@ -396,6 +360,7 @@ block script
           if(logo.length == 0){
             logo = "http://i.jimmyhub.net/shot/" + homepage;
           };
+
           var context = {homepage: homepage, logo: logo, name: name, intro: intro, content: content};
           var $list_element = $(list_template(context));
 
@@ -417,18 +382,70 @@ block script
           $("#list").append($list_element);
         });
       }).done(function(){
+
         // render sidebar menu
         $.each(menus, function(menu_id, menu_items){
           render_attributes(menu_id, menu_items);
         });
+
+      }).done(function(){
+
+        // for ux
+        $("#filter .ui.label").hide();
+
+        // dom manipulation
+        var initialize_pilot = function(){
+          var active_classes = [];
+          var active_classes_string = "";
+          var target_attribute = "";
+          var all_projects_count = $("#list .column").length;
+          var toggle_classes = function(original_classes, target_class){
+            if( _.contains( active_classes, target_attribute )){
+              active_classes = _.without(active_classes, target_attribute);
+            }else{
+              active_classes.push(target_attribute);
+            };
+            active_classes_string = "";
+            _.each(active_classes, function(css_class){
+              active_classes_string = active_classes_string + "." + css_class;
+            });
+            $("#list .column").fadeOut();
+            $("#list .column" + active_classes_string ).fadeIn();
+          };
+          var count_projects = function(){
+            if(active_classes_string.length > 0){
+              $("#count").text("showing " + $("#list").find(active_classes_string).length + " out of " + all_projects_count +" projects");
+            }else{
+              $("#count").text(all_projects_count + " projects");
+            }
+          }
+          count_projects();
+          $("#index .item").on("click tap", function(){
+            $("#projects").show();
+            $("#about, #submit, #edit").fadeOut();
+          });
+          $("#index .content .item").on("click tap", function(){
+            $(this).toggleClass("active");
+            target_attribute = $(this).attr("name");
+            $("#filter .ui.label").filter("[name='" + target_attribute + "']").fadeToggle();
+            toggle_classes(active_classes, target_attribute);
+            count_projects();
+          });
+          $("#filter .ui.label .delete.icon").on("click tap", function(){
+            $(this).parent().fadeOut();
+            target_attribute = $(this).parent().attr("name");
+            $("#index .content .item").filter("[name='" + target_attribute + "']").removeClass("active");
+            toggle_classes(active_classes, target_attribute);
+            count_projects();
+          });
+        };
+        initialize_pilot();
+
       }).done(function(){
 
         // for semantic ui
         $(".ui.dropdown").dropdown();
         $(".ui.accordion").accordion();
-
-        // for ux
-        $("#filter .ui.label").fadeOut();
 
         // change views
         $("#sidebar .menu .help").parent(".item").on("click tap", function(){
@@ -444,16 +461,125 @@ block script
           $("#edit").fadeIn();
         });
 
-        // dom manipulation
-        initialize_pilot();
+        // initiate submit form - add achievement / add workspace
+        var achievement_template_source = '';
+        var achievement_template = Handlebars.compile(achievement_template_source);
+        var latest_achievement_index = 0;
+        $("#add-achievement").on("click tap", function(){
+          latest_achievement_index += 1;
+          var context = {number: latest_achievement_index};
+          var $achievement_element = $(achievement_template(context));
+          $("").append($achievement_element);
+        });
 
-      }).done(function(){
+        var workspace_template_source = '';
+        var workspace_template = Handlebars.compile(workspace_template_source);
+        var latest_workspace_index = 0;
+        $("#add-workspace").on("click tap", function(){
+          latest_workspace_index += 1;
+          var context = {number: latest_workspace_index};
+          var $workspace_element = $(workspace_template(context));
+          $("").append($workspace_element);
+        });
+
+        // initiate submit form - post
+        var submit_data = {};
+        submit_data.name = {};
+        submit_data.name.zh = $("[name='name-zh']").val();
+        submit_data.name.en = $("[name='name-en']").val();
+        submit_data.intro = {};
+        submit_data.intro.zh = {};
+        submit_data.intro.en = {};
+        submit_data.intro.zh.short = $("[name='intro-zh-short']").val();
+        submit_data.intro.en.short = $("[name='intro-en-short']").val();
+        submit_data.license = $("[name='license']").val();
+        submit_data.category = $("[name='category']").val();
+        submit_data.achievement = [];
+        for(var i = 0; i < latest_achievement_index+1; i++){
+          submit_data.achievement[i] = {};
+          submit_data.achievement[i].url = $("[name='achievement-"+i+"-url']").val();        
+          submit_data.achievement[i].type = $("[name='achievement-"+i+"-type']").val();        
+          submit_data.achievement[i].phase = $("[name='achievement-"+i+"-phase']").val();        
+        };
+        submit_data.workspace = [];
+        for(var i = 0; i < latest_workspace_index+1; i++){
+          submit_data.workspace[i] = {};
+          submit_data.workspace[i].url = $("[name='workspace-"+i+"-url']").val();        
+          submit_data.workspace[i].type = $("[name='workspace-"+i+"-type']").val();        
+        };
+        submit_data.tool = $("[name='tool']").val();
+        submit_data.logo = $("[name='logo']").val();
+        submit_data.homepage = $("[name='homepage']").val();
+        submit_data.tag = $("[name='tag']").val();
+        submit_data.related = $("[name='related']").val();
+        var submit_data_string = "test, test";
+        var post_ethercalc = function(new_project_row){
+          console.log(JSON.stringify(submit_data));
+          $.ajax({
+            url: "https://ethercalc.org/_/g0v-project-hub-mockup",
+            type: 'POST',
+            contentType: 'text/csv',
+            processData: false,
+            data: new_project_row
+          });
+          $("input").val("");
+        };
+        $('.ui.form').form(
+          {
+            name: {
+              identifier: 'name-zh',
+              rules: [
+                {
+                  type: 'empty'
+                }
+              ]
+            },
+            intro: {
+              identifier: 'intro-zh-short',
+              rules: [
+                {
+                  type: 'empty'
+                }
+              ]
+            },
+            license: {
+              identifier: 'license',
+              rules: [
+                {
+                  type: 'empty'
+                }
+              ]
+            },
+            achievement: {
+              identifier: 'achievement-0-url',
+              rules: [
+                {
+                  type: 'url'
+                }
+              ]
+            },
+            workspace: {
+              identifier: 'workspace-0-url',
+              rules: [
+                {
+                  type: 'url'
+                }
+              ]
+            }
+          }
+        ).submit(function(e){
+          e.preventDefault();
+          //if(){
+          //  post_ethercalc(submit_data_string);
+          //};
+          //console.log(JSON.stringify(submit_data));
+        });
+
         // TODO: sort menu items
+
       });
 
-      // TBD
-
-      var workspaces = ["hackpad", "hackfoldr", "google drive", "google groups", "google plus community", "facebook community", "irc channel", "github", "google calendar", "facebook group", "miscellaneous"];
+      // TODO: login and join projects
       var roles = ["research", "planning", "ui", "visual", "art", "web frontend", "web backend", "ios", "android", "mac", "linux", "windows", "txt", "consult", "miscellaneous"];
 
     });
