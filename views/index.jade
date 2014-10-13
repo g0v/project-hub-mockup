@@ -102,6 +102,7 @@ block body
       | (mention ipa, jimyhuang, Lee1092, ETBlue)
   section#submit.views
     .ui.header.align.center Submit a g0v Project
+    p.align.center this is not working yet! don't submit true data or you will blame me...
     .ui.divider
     form.ui.warning.form
       .two.fields
@@ -265,11 +266,11 @@ block body
           .description
             i.icon.hand.up
             | 以半形逗號隔開
-      button#submit-project.ui.submit.right.icon.labeled.button.green submit project
+      #submit-project.ui.submit.right.icon.labeled.button.green submit project
         i.icon.add
 
   section#edit.views
-    iframe#iframe(src="https://ethercalc.org/g0v-project-hub-mockup")
+    iframe#iframe(src="")
 
 block script
   script.
@@ -420,7 +421,7 @@ block script
             }
           }
           count_projects();
-          $("#index .item").on("click tap", function(){
+          $("#index").on("click tap", function(){
             $("#projects").show();
             $("#about, #submit, #edit").fadeOut();
           });
@@ -512,18 +513,27 @@ block script
         submit_data.homepage = $("[name='homepage']").val();
         submit_data.tag = $("[name='tag']").val();
         submit_data.related = $("[name='related']").val();
-        var submit_data_string = "test, test";
+        var submit_data_string = 'WIP, the submit function is not working';
+        //console.log(JSON.stringify(submit_data));
+        $.each(submit_data.name, function(key, data){
+          //submit_data_string = submit_data_string + JSON.stringify(data) + ", ";
+        });
+        var form_status = false;
         var post_ethercalc = function(new_project_row){
-          console.log(JSON.stringify(submit_data));
           $.ajax({
             url: "https://ethercalc.org/_/g0v-project-hub-mockup",
             type: 'POST',
             contentType: 'text/csv',
             processData: false,
-            data: new_project_row
+            data: new_project_row,
+            success: function(){
+              $("input, textarea").val("");
+              $(".views").fadeOut();
+              $("#edit").fadeIn();
+            }
           });
-          $("input").val("");
         };
+
         $('.ui.form').form(
           {
             name: {
@@ -565,18 +575,25 @@ block script
                   type: 'url'
                 }
               ]
-            }
+            },
+          },
+          {
+            onSuccess: function(){form_status = true;},
+            onFailure: function(){form_status = false;}
           }
         ).submit(function(e){
-          e.preventDefault();
-          //if(){
-          //  post_ethercalc(submit_data_string);
-          //};
+          if(form_status){
+            post_ethercalc(submit_data_string);
+          };
+          return false;
+          //e.preventDefault();
           //console.log(JSON.stringify(submit_data));
         });
 
         // TODO: sort menu items
 
+      }).done(function(){
+        $("#iframe").attr("src","https://ethercalc.org/g0v-project-hub-mockup");
       });
 
       // TODO: login and join projects
