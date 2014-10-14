@@ -303,7 +303,7 @@
     $('.ui.form').submit(function(e){
       if(form_status){
         var submit_data = {};
-        var submit_data_string = 'id, ';
+        var submit_data_string = ['id'];
         submit_data.name = {};
         submit_data.name.zh = $("[name='name-zh']").val();
         submit_data.name.en = $("[name='name-en']").val();
@@ -334,10 +334,10 @@
         submit_data.related = $("[name='related']").val();
         $.each(submit_data, function(key, data){
           //submit_data_string = submit_data_string + JSON.stringify(data).replace(/,/g, ";").replace(/{/g, "(").replace(/\"/g, "\"\"").replace(/\[/g, "<") + ", ";
-          submit_data_string = submit_data_string + JSON.stringify(data).replace(/,/g, ";").replace(/{/g, "(").replace(/\[/g, "<") + ", ";
+          submit_data_string.push('"' + JSON.stringify(data).replace(/"/g, '""') + '"');
         });
         //console.log(submit_data_string);
-        post_ethercalc(submit_data_string);
+        post_ethercalc(submit_data_string.join(','));
       };
       return false;
       //e.preventDefault();
