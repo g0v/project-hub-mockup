@@ -447,9 +447,9 @@ block script
           }
           count_projects();
           $("#index").on("click tap", function(){
-            //$("#projects").show();
-            //$("#about, #submit, #edit").fadeOut();
-            update_view("projects");
+            $("#projects").show();
+            $("#about, #submit, #edit").fadeOut();
+            //update_view("projects");
             update_url("");
           });
           $("#index .content .item").on("click tap", function(){
