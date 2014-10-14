@@ -308,7 +308,7 @@ block script
       //  tag : [],
       //};
 
-      var current_view = location.pathname.split('/')[1] || "";
+      var current_view = location.pathname.split('/')[3] || "";
       var update_view = function(current_url){
         $(".views").fadeOut();
         $("#"+current_url).fadeIn();
