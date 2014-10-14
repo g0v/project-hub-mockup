@@ -277,6 +277,8 @@ block script
 
     $(document).ready(function(){
 
+      // step 0: setup 
+
       var attribute_template_source ='<a class="item" name="{{attribute_id}}">{{attribute_text}}<div class="ui label">{{count}}</div></a>';
       var attribute_template = Handlebars.compile(attribute_template_source);
 
@@ -306,6 +308,20 @@ block script
       //  tag : [],
       //};
 
+      var current_view = location.pathname.split('/')[1] || "";
+      var update_view = function(current_url){
+        $(".views").fadeOut();
+        $("#"+current_url).fadeIn();
+      };
+      var update_url = function(current_view){
+        history.pushState( {}, '', '/' + current_view );
+      };
+      $.each( ["submit", "edit", "about"], function(view_index, view_value){
+        if(current_view == view_value){
+          update_view(view_value);
+        }
+      });
+
       var render_attributes = function(target_menu_name, attributes){
         $.each(attributes, function(attribute_index, attribute){
           var attribute_id = target_menu_name + "-" + attribute_index;
@@ -321,7 +337,8 @@ block script
         $("#" + target_menu_name + " .title").append(" (" + menu_items_count + ")");
       }
 
-      // get data and render projects
+      // step 1: get data and render projects
+
       $.getJSON("json/project-list.json", function(projects){
 
         $.each(projects, function(project_index, project){
@@ -384,17 +401,20 @@ block script
         });
       }).done(function(){
 
-        // render sidebar menu
+        // step 2: render sidebar menu and filter labels
+
         $.each(menus, function(menu_id, menu_items){
           render_attributes(menu_id, menu_items);
         });
 
       }).done(function(){
 
+        // step 3: start filtering rendered projects
+
         // for ux
         $("#filter .ui.label").hide();
 
-        // dom manipulation
+        // for projects filter
         var initialize_pilot = function(){
           var active_classes = [];
           var active_classes_string = "";
@@ -422,8 +442,10 @@ block script
           }
           count_projects();
           $("#index").on("click tap", function(){
-            $("#projects").show();
-            $("#about, #submit, #edit").fadeOut();
+            //$("#projects").show();
+            //$("#about, #submit, #edit").fadeOut();
+            update_view("projects");
+            update_url("");
           });
           $("#index .content .item").on("click tap", function(){
             $(this).toggleClass("active");
@@ -444,22 +466,24 @@ block script
 
       }).done(function(){
 
+        // step 4: start other interactions
+
         // for semantic ui
         $(".ui.dropdown").dropdown();
         $(".ui.accordion").accordion();
 
         // change views
         $("#sidebar .menu .help").parent(".item").on("click tap", function(){
-          $(".views").fadeOut();
-          $("#about").fadeIn();
+          update_view("about");
+          update_url("about");
         });
         $("#sidebar .menu .add").parent(".item").on("click tap", function(){
-          $(".views").fadeOut();
-          $("#submit").fadeIn();
+          update_view("submit");
+          update_url("submit");
         });
         $("#sidebar .menu .pencil").parent(".item").on("click tap", function(){
-          $(".views").fadeOut();
-          $("#edit").fadeIn();
+          update_view("edit");
+          update_url("edit");
         });
 
         // initiate submit form - add achievement / add workspace
@@ -483,41 +507,7 @@ block script
           $("").append($workspace_element);
         });
 
-        // initiate submit form - post
-        var submit_data = {};
-        submit_data.name = {};
-        submit_data.name.zh = $("[name='name-zh']").val();
-        submit_data.name.en = $("[name='name-en']").val();
-        submit_data.intro = {};
-        submit_data.intro.zh = {};
-        submit_data.intro.en = {};
-        submit_data.intro.zh.short = $("[name='intro-zh-short']").val();
-        submit_data.intro.en.short = $("[name='intro-en-short']").val();
-        submit_data.license = $("[name='license']").val();
-        submit_data.category = $("[name='category']").val();
-        submit_data.achievement = [];
-        for(var i = 0; i < latest_achievement_index+1; i++){
-          submit_data.achievement[i] = {};
-          submit_data.achievement[i].url = $("[name='achievement-"+i+"-url']").val();        
-          submit_data.achievement[i].type = $("[name='achievement-"+i+"-type']").val();        
-          submit_data.achievement[i].phase = $("[name='achievement-"+i+"-phase']").val();        
-        };
-        submit_data.workspace = [];
-        for(var i = 0; i < latest_workspace_index+1; i++){
-          submit_data.workspace[i] = {};
-          submit_data.workspace[i].url = $("[name='workspace-"+i+"-url']").val();        
-          submit_data.workspace[i].type = $("[name='workspace-"+i+"-type']").val();        
-        };
-        submit_data.tool = $("[name='tool']").val();
-        submit_data.logo = $("[name='logo']").val();
-        submit_data.homepage = $("[name='homepage']").val();
-        submit_data.tag = $("[name='tag']").val();
-        submit_data.related = $("[name='related']").val();
-        var submit_data_string = 'WIP, the submit function is not working';
-        //console.log(JSON.stringify(submit_data));
-        $.each(submit_data.name, function(key, data){
-          //submit_data_string = submit_data_string + JSON.stringify(data) + ", ";
-        });
+        // initiate submit form - validation and post
         var form_status = false;
         var post_ethercalc = function(new_project_row){
           $.ajax({
@@ -530,10 +520,10 @@ block script
               $("input, textarea").val("");
               $(".views").fadeOut();
               $("#edit").fadeIn();
+              console.log($.get("https://ethercalc.org/_/g0v-project-hub-mockup/csv"));
             }
           });
         };
-
         $('.ui.form').form(
           {
             name: {
@@ -581,8 +571,44 @@ block script
             onSuccess: function(){form_status = true;},
             onFailure: function(){form_status = false;}
           }
-        ).submit(function(e){
+        );
+        $('.ui.form').submit(function(e){
           if(form_status){
+            var submit_data = {};
+            var submit_data_string = 'id, ';
+            submit_data.name = {};
+            submit_data.name.zh = $("[name='name-zh']").val();
+            submit_data.name.en = $("[name='name-en']").val();
+            submit_data.intro = {};
+            submit_data.intro.zh = {};
+            submit_data.intro.en = {};
+            submit_data.intro.zh.short = $("[name='intro-zh-short']").val();
+            submit_data.intro.en.short = $("[name='intro-en-short']").val();
+            submit_data.license = $("[name='license']").val();
+            submit_data.category = $("[name='category']").val();
+            submit_data.achievement = [];
+            for(var i = 0; i < latest_achievement_index+1; i++){
+              submit_data.achievement[i] = {};
+              submit_data.achievement[i].url = $("[name='achievement-"+i+"-url']").val();        
+              submit_data.achievement[i].type = $("[name='achievement-"+i+"-type']").val();        
+              submit_data.achievement[i].phase = $("[name='achievement-"+i+"-phase']").val();        
+            };
+            submit_data.workspace = [];
+            for(var i = 0; i < latest_workspace_index+1; i++){
+              submit_data.workspace[i] = {};
+              submit_data.workspace[i].url = $("[name='workspace-"+i+"-url']").val();        
+              submit_data.workspace[i].type = $("[name='workspace-"+i+"-type']").val();        
+            };
+            submit_data.tool = $("[name='tool']").val();
+            submit_data.logo = $("[name='logo']").val();
+            submit_data.homepage = $("[name='homepage']").val();
+            submit_data.tag = $("[name='tag']").val();
+            submit_data.related = $("[name='related']").val();
+            $.each(submit_data, function(key, data){
+              //submit_data_string = submit_data_string + JSON.stringify(data).replace(/,/g, ";").replace(/{/g, "(").replace(/\"/g, "\"\"").replace(/\[/g, "<") + ", ";
+              submit_data_string = submit_data_string + JSON.stringify(data).replace(/,/g, ";").replace(/{/g, "(").replace(/\[/g, "<") + ", ";
+            });
+            console.log(submit_data_string);
             post_ethercalc(submit_data_string);
           };
           return false;
@@ -594,6 +620,7 @@ block script
 
       }).done(function(){
         $("#iframe").attr("src","https://ethercalc.org/g0v-project-hub-mockup");
+        //console.log($.get("https://ethercalc.org/_/g0v-project-hub-mockup/csv"));
       });
 
       // TODO: login and join projects
