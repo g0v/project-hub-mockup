@@ -140,7 +140,7 @@ block body
         .field
           label 專案分類
           .ui.selection.dropdown
-            input(name="category", type="hidden")
+            input(name="category", type="hidden", value="開放政府")
             .default.text 其他
             i.icon.dropdown
             .menu.ui.transition.hidden
@@ -152,80 +152,82 @@ block body
               .item(data-value="g0v基礎建設") g0v基礎建設
               .item(data-value="其他") 其他
       .ui.horizontal.divider 現有成果
-      .inline.fields
-        .field
-          label 網址
-          .ui.left.labeled.icon.input
-            input(placeholder="http://",type="url",name="achievement-0-url",required)
-            i.icon.url
-            .ui.corner.label
-              i.icon.asterisk
-        .field
-          label 類型
-          .ui.selection.dropdown
-            input(name="achievement-0-type", type="hidden")
-            .default.text website
-            i.icon.dropdown
-            .menu.ui.transition.hidden
-              .item(data-value="web") website
-              .item(data-value="android") Android app
-              .item(data-value="ios") iOS app
-              .item(data-value="wp") Windows Phone app
-              .item(data-value="firefoxos") Firefox OS
-              .item(data-value="linux") Linux software
-              .item(data-value="mac") Mac software
-              .item(data-value="windows") Windows software
-              .item(data-value="chrome") Chrome extension
-              .item(data-value="firefox") Firefox extension
-              .item(data-value="safari") Safari extension
-              .item(data-value="api") application interface (api)
-              .item(data-value="document") document
-              .item(data-value="miscmiscellaneous") miscellaneous
-        .field
-          label 開發階段
-          .ui.selection.dropdown
-            input(name="achievement-0-phase", type="hidden")
-            .default.text idea
-            i.icon.dropdown
-            .menu.ui.transition.hidden
-              .item(data-value="idea") idea
-              .item(data-value="plan") plan
-              .item(data-value="wireframe") wireframe
-              .item(data-value="mockup") mockup
-              .item(data-value="prototype") prototype
-              .item(data-value="alpha") alpha
-              .item(data-value="beta") beta
-              .item(data-value="production") production
-              .item(data-value="memory") memory
-              .item(data-value="miscellaneous") miscellaneous
-        #add-achievement.ui.button 新增一筆
+      #achievements
+        .inline.fields
+          .field
+            label 網址
+            .ui.left.labeled.icon.input
+              input(placeholder="http://",type="url",name="achievement-0-url",required)
+              i.icon.url
+              .ui.corner.label
+                i.icon.asterisk
+          .field
+            label 類型
+            .ui.selection.dropdown
+              input(name="achievement-0-type", type="hidden", value="web")
+              .default.text website
+              i.icon.dropdown
+              .menu.ui.transition.hidden
+                .item(data-value="web") website
+                .item(data-value="android") Android app
+                .item(data-value="ios") iOS app
+                .item(data-value="wp") Windows Phone app
+                .item(data-value="firefoxos") Firefox OS
+                .item(data-value="linux") Linux software
+                .item(data-value="mac") Mac software
+                .item(data-value="windows") Windows software
+                .item(data-value="chrome") Chrome extension
+                .item(data-value="firefox") Firefox extension
+                .item(data-value="safari") Safari extension
+                .item(data-value="api") application interface (api)
+                .item(data-value="document") document
+                .item(data-value="miscmiscellaneous") miscellaneous
+          .field
+            label 開發階段
+            .ui.selection.dropdown
+              input(name="achievement-0-phase", type="hidden", value="idea")
+              .default.text idea
+              i.icon.dropdown
+              .menu.ui.transition.hidden
+                .item(data-value="idea") idea
+                .item(data-value="plan") plan
+                .item(data-value="wireframe") wireframe
+                .item(data-value="mockup") mockup
+                .item(data-value="prototype") prototype
+                .item(data-value="alpha") alpha
+                .item(data-value="beta") beta
+                .item(data-value="production") production
+                .item(data-value="memory") memory
+                .item(data-value="miscellaneous") miscellaneous
+      #add-achievement.ui.button 新增一筆
       .ui.horizontal.divider 工作區
-      .inline.fields
-        .field
-          label 網址
-          .ui.left.labeled.icon.input
-            input(placeholder="http://",type="url",name="workspace-0-url",required)
-            i.icon.url
-            .ui.corner.label
-              i.icon.asterisk
-        .field
-          label 類型
-          .ui.selection.dropdown
-            input(name="workspace-0-type", type="hidden")
-            .default.text github
-            i.icon.dropdown
-            .menu.ui.transition.hidden
-              .item(data-value="hackpad") hackpad
-              .item(data-value="hackfoldr") hackfoldr
-              .item(data-value="github") github
-              .item(data-value="drive") google drive
-              .item(data-value="groups") google groups
-              .item(data-value="plus") google plus community
-              .item(data-value="calendar") google calendar
-              .item(data-value="facebook") facebook group
-              .item(data-value="irc") irc channel
-              .item(data-value="miscellaneous") miscellaneous
-        #add-workspace.ui.button 新增一筆
+      #workspaces
+        .inline.fields
+          .field
+            label 網址
+            .ui.left.labeled.icon.input
+              input(placeholder="http://",type="url",name="workspace-0-url",required)
+              i.icon.url
+              .ui.corner.label
+                i.icon.asterisk
+          .field
+            label 類型
+            .ui.selection.dropdown
+              input(name="workspace-0-type", type="hidden", value="github")
+              .default.text github
+              i.icon.dropdown
+              .menu.ui.transition.hidden
+                .item(data-value="hackpad") hackpad
+                .item(data-value="hackfoldr") hackfoldr
+                .item(data-value="github") github
+                .item(data-value="drive") google drive
+                .item(data-value="groups") google groups
+                .item(data-value="plus") google plus community
+                .item(data-value="calendar") google calendar
+                .item(data-value="facebook") facebook group
+                .item(data-value="irc") irc channel
+                .item(data-value="miscellaneous") miscellaneous
+      #add-workspace.ui.button 新增一筆
       .ui.horizontal.divider 以下選填
       .field
         label 使用工具
@@ -490,24 +492,26 @@ block script
         });
 
         // initiate submit form - add achievement / add workspace
-        var achievement_template_source = '';
+        var achievement_template_source = '<div class="inline fields"><div class="field"><label>網址</label><div class="ui left labeled icon input"><input placeholder="http://" type="url" name="achievement-"{{number}}"-url"><i class="icon url"></i><div class="ui corner label"><i class="icon asterisk"></i></div></div></div><div class="field"><label>類型</label><div class="ui selection dropdown"><input name="achievement-"{{number}}"-type" type="hidden" value="web"><div class="default text">website</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="web" class="item">website</div><div data-value="android" class="item">Android app</div><div data-value="ios" class="item">iOS app</div><div data-value="wp" class="item">Windows Phone app</div><div data-value="firefoxos" class="item">Firefox OS</div><div data-value="linux" class="item">Linux software</div><div data-value="mac" class="item">Mac software</div><div data-value="windows" class="item">Windows software</div><div data-value="chrome" class="item">Chrome extension</div><div data-value="firefox" class="item">Firefox extension</div><div data-value="safari" class="item">Safari extension</div><div data-value="api" class="item">application interface (api)</div><div data-value="document" class="item">document</div><div data-value="miscmiscellaneous" class="item">miscellaneous</div></div></div></div><div class="field"><label>開發階段</label><div class="ui selection dropdown"><input name="achievement-"{{number}}"-phase" type="hidden" value="idea"><div class="default text">idea</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="idea" class="item">idea</div><div data-value="plan" class="item">plan</div><div data-value="wireframe" class="item">wireframe</div><div data-value="mockup" class="item">mockup</div><div data-value="prototype" class="item">prototype</div><div data-value="alpha" class="item">alpha</div><div data-value="beta" class="item">beta</div><div data-value="production" class="item">production</div><div data-value="memory" class="item">memory</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div></div>';
         var achievement_template = Handlebars.compile(achievement_template_source);
         var latest_achievement_index = 0;
         $("#add-achievement").on("click tap", function(){
           latest_achievement_index += 1;
           var context = {number: latest_achievement_index};
           var $achievement_element = $(achievement_template(context));
-          $("").append($achievement_element);
+          $("#achievements").append($achievement_element);
+          $(".ui.dropdown").dropdown();
         });
 
-        var workspace_template_source = '';
+        var workspace_template_source = '<div class="inline fields"><div class="field"><label>網址</label><div class="ui left labeled icon input"><input placeholder="http://" type="url" name="workspace-"{{number}}"-url"><i class="icon url"></i><div class="ui corner label"><i class="icon asterisk"></i></div></div></div><div class="field"><label>類型</label><div class="ui selection dropdown"><input name="workspace-"{{number}}"-type" type="hidden" value="github"><div class="text">github</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="hackpad" class="item">hackpad</div><div data-value="hackfoldr" class="item">hackfoldr</div><div data-value="github" class="item active">github</div><div data-value="drive" class="item">google drive</div><div data-value="groups" class="item">google groups</div><div data-value="plus" class="item">google plus community</div><div data-value="calendar" class="item">google calendar</div><div data-value="facebook" class="item">facebook group</div><div data-value="irc" class="item">irc channel</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div></div>';
         var workspace_template = Handlebars.compile(workspace_template_source);
         var latest_workspace_index = 0;
         $("#add-workspace").on("click tap", function(){
           latest_workspace_index += 1;
           var context = {number: latest_workspace_index};
           var $workspace_element = $(workspace_template(context));
-          $("").append($workspace_element);
+          $("#workspaces").append($workspace_element);
+          $(".ui.dropdown").dropdown();
         });
 
         // initiate submit form - validation and post
@@ -521,9 +525,9 @@ block script
             data: new_project_row,
             success: function(){
               $("input, textarea").val("");
-              $(".views").fadeOut();
-              $("#edit").fadeIn();
-              console.log($.get("https://ethercalc.org/_/g0v-project-hub-mockup/csv"));
+              update_view("edit");
+              update_url("edit");
+              //console.log($.get("https://ethercalc.org/_/g0v-project-hub-mockup/csv"));
             }
           });
         };
@@ -611,7 +615,7 @@ block script
               //submit_data_string = submit_data_string + JSON.stringify(data).replace(/,/g, ";").replace(/{/g, "(").replace(/\"/g, "\"\"").replace(/\[/g, "<") + ", ";
               submit_data_string = submit_data_string + JSON.stringify(data).replace(/,/g, ";").replace(/{/g, "(").replace(/\[/g, "<") + ", ";
             });
-            console.log(submit_data_string);
+            //console.log(submit_data_string);
             post_ethercalc(submit_data_string);
           };
           return false;
