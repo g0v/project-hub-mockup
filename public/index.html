@@ -37,7 +37,7 @@
     $("#"+current_url).fadeIn();
   };
   var update_url = function(current_view){
-    history.pushState( {}, '', '/' + current_view );
+    history.pushState( {}, '', '/project-hub-mockup/public/' + current_view );
   };
   $.each( ["submit", "edit", "about"], function(view_index, view_value){
     if(current_view == view_value){
