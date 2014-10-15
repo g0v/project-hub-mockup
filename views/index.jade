@@ -352,7 +352,7 @@ block script
           var name = project.name.zh;
           var intro = project.intro.zh.short;
           var classes = [];
-          var content = "";
+          var content = JSON.stringify(project);
 
           var add_classes = function(attribute_type){
             $.each(project[attribute_type], function(index, attribute){
@@ -475,8 +475,6 @@ block script
           var active_content_count = 0;
           var count_searched_projects = function(){
             active_content_count = $("#list .column:contains("+active_content_string+")").length;
-            console.log(active_content_string);
-            console.log(active_content_count);
             if( active_content_count < all_projects_count ){
               $("#count").text("showing " + active_content_count + " out of " + all_projects_count +" projects");
             }else{
