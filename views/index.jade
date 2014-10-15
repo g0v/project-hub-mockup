@@ -421,11 +421,20 @@ block script
 
         // for projects filter
         var initialize_pilot = function(){
+          var all_projects_count = $("#list .column").length;
           var active_classes = [];
           var active_classes_string = "";
+          var active_classes_count = "";
           var target_attribute = "";
-          var all_projects_count = $("#list .column").length;
-          var toggle_classes = function(original_classes, target_class){
+          var reset_filter = function(){
+            active_classes = [];
+            active_classes_string = "";
+            active_classes_count = "";
+            target_attribute = "";
+            $("#filter .ui.label").fadeOut();
+            $("#index .content .item").removeClass("active");
+          }
+          var toggle_filtered_projects = function(){
             if( _.contains( active_classes, target_attribute )){
               active_classes = _.without(active_classes, target_attribute);
             }else{
@@ -438,33 +447,54 @@ block script
             $("#list .column").fadeOut();
             $("#list .column" + active_classes_string ).fadeIn();
           };
-          var count_projects = function(){
+          var count_filtered_projects = function(){
+            active_classes_count = $("#list").find(active_classes_string).length;
             if(active_classes_string.length > 0){
-              $("#count").text("showing " + $("#list").find(active_classes_string).length + " out of " + all_projects_count +" projects");
+              $("#count").text("showing " + active_classes_count + " out of " + all_projects_count +" projects");
             }else{
               $("#count").text(all_projects_count + " projects");
             }
           }
-          count_projects();
-          $("#index").on("click tap", function(){
-            $("#projects").show();
-            $("#about, #submit, #edit").fadeOut();
-            //update_view("projects");
-            update_url("");
-          });
+          $("#count").text(all_projects_count + " projects");
           $("#index .content .item").on("click tap", function(){
             $(this).toggleClass("active");
             target_attribute = $(this).attr("name");
             $("#filter .ui.label").filter("[name='" + target_attribute + "']").fadeToggle();
-            toggle_classes(active_classes, target_attribute);
-            count_projects();
+            toggle_filtered_projects();
+            count_filtered_projects();
           });
           $("#filter .ui.label .delete.icon").on("click tap", function(){
             $(this).parent().fadeOut();
             target_attribute = $(this).parent().attr("name");
             $("#index .content .item").filter("[name='" + target_attribute + "']").removeClass("active");
-            toggle_classes(active_classes, target_attribute);
-            count_projects();
+            toggle_filtered_projects();
+            count_filtered_projects();
+          });
+
+          var active_content_string = "";
+          var active_content_count = 0;
+          var count_searched_projects = function(){
+            active_content_count = $("#list .column:contains("+active_content_string+")").length;
+            console.log(active_content_string);
+            console.log(active_content_count);
+            if( active_content_count < all_projects_count ){
+              $("#count").text("showing " + active_content_count + " out of " + all_projects_count +" projects");
+            }else{
+              $("#count").text(all_projects_count + " projects");
+            }
+          };
+          // override jquery selector...
+          jQuery.expr[':'].contains = function(a, i, m) {
+            return jQuery(a).text().toUpperCase()
+                .indexOf(m[3].toUpperCase()) >= 0;
+          };
+          // ... and use it in search
+          $("#search input").change(function(){
+            active_content_string = $(this).val();
+            $("#list .column").fadeOut();
+            $("#list .column:contains(" + active_content_string + ")").fadeIn();
+            count_searched_projects();
+            reset_filter();
           });
         };
         initialize_pilot();
@@ -489,6 +519,12 @@ block script
         $("#sidebar .menu .pencil").parent(".item").on("click tap", function(){
           update_view("edit");
           update_url("edit");
+        });
+        $("#index").on("click tap", function(){
+          $("#projects").show();
+          $("#about, #submit, #edit").fadeOut();
+          //update_view("projects");
+          update_url("");
         });
 
         // initiate submit form - add achievement / add workspace
