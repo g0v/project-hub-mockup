@@ -83,13 +83,13 @@ block body
       a(href="https://github.com/g0v/project-hub-mockup", target="_blank") The source code is on github here.
         i.icon.forward.mail
     p.align.center
-      a(href="https://github.com/g0v/project-hub-mockup/blob/master/livescripts/projectlist_20141009.json.ls", target="_blank") To complete the data, please edit this .ls file,
+      a(href="https://github.com/g0v/project-hub-mockup/blob/gh-pages/livescripts/project-list.ls", target="_blank") To complete the data, please edit this .ls file,
         i.icon.forward.mail
     p.align.center
-      a(href="https://github.com/g0v/project-hub-mockup/blob/master/public/json/project-list.json", target="_blank") and I will convert it to this .json file.
+      a(href="https://github.com/g0v/project-hub-mockup/blob/gh-pages/json/project-list.json", target="_blank") and I will convert it to this .json file.
         i.icon.forward.mail
     p.align.center
-      a(href="http://g0v.github.io/project-hub-mockup/public/", target="_blank") And this webpage will be updated after deploying.
+      a(href="http://g0v.github.io/project-hub-mockup/", target="_blank") And this webpage will be updated after deploying.
         i.icon.forward.mail
     p.align.center
       a(href="https://github.com/g0v/project-hub-mockup/issues", target="_blank") If you are familiar with javascript, please help me with these issues.
@@ -279,7 +279,7 @@ block script
 
     $(document).ready(function(){
 
-      // step 0: setup 
+      // step 0: setup
 
       var attribute_template_source ='<a class="item" name="{{attribute_id}}">{{attribute_text}}<div class="ui label">{{count}}</div></a>';
       var attribute_template = Handlebars.compile(attribute_template_source);
@@ -311,14 +311,14 @@ block script
       //};
 
       //var current_view = location.pathname.split('/')[1] || "";
-      var current_view = location.pathname.split('/')[3] || "";
+      var current_view = location.pathname.split('/')[2] || "";
       var update_view = function(current_url){
         $(".views").fadeOut();
         $("#"+current_url).fadeIn();
       };
       var update_url = function(current_view){
         //history.pushState( {}, current_view + '| g0v project hub mockup', '/' + current_view );
-        history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/public/' + current_view );
+        history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/' + current_view );
       };
       $.each( ["submit", "edit", "about"], function(view_index, view_value){
         if(current_view == view_value){
@@ -331,7 +331,7 @@ block script
         $.each(attributes, function(attribute_index, attribute){
           var attribute_id = target_menu_name + "-" + attribute_index;
           var attribute_text = attribute;
-          var count = $("#list ." + attribute_id).length; 
+          var count = $("#list ." + attribute_id).length;
           var context = {attribute_id: attribute_id, attribute_text: attribute_text, count: count};
           var $attribute_element = $(attribute_template(context));
           var $filter_element = $(filter_template(context));
@@ -631,15 +631,15 @@ block script
             submit_data.achievement = [];
             for(var i = 0; i < latest_achievement_index+1; i++){
               submit_data.achievement[i] = {};
-              submit_data.achievement[i].url = $("[name='achievement-"+i+"-url']").val();        
-              submit_data.achievement[i].type = $("[name='achievement-"+i+"-type']").val();        
-              submit_data.achievement[i].phase = $("[name='achievement-"+i+"-phase']").val();        
+              submit_data.achievement[i].url = $("[name='achievement-"+i+"-url']").val();
+              submit_data.achievement[i].type = $("[name='achievement-"+i+"-type']").val();
+              submit_data.achievement[i].phase = $("[name='achievement-"+i+"-phase']").val();
             };
             submit_data.workspace = [];
             for(var i = 0; i < latest_workspace_index+1; i++){
               submit_data.workspace[i] = {};
-              submit_data.workspace[i].url = $("[name='workspace-"+i+"-url']").val();        
-              submit_data.workspace[i].type = $("[name='workspace-"+i+"-type']").val();        
+              submit_data.workspace[i].url = $("[name='workspace-"+i+"-url']").val();
+              submit_data.workspace[i].type = $("[name='workspace-"+i+"-type']").val();
             };
             submit_data.tool = $("[name='tool']").val();
             submit_data.logo = $("[name='logo']").val();

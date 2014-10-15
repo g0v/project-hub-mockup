@@ -11,3 +11,10 @@ fire_app_log.txt
 #############
 
 .editorconfig
+
+#############
+## Gulp
+#############
+
+node_modules/
+_public/
