@@ -212,7 +212,7 @@
       // ... and use it in search
       $("#search input").keyup(function(){
         active_content_string = $(this).val();
-        $("#list .column").fadeOut();
+        $("#list .column").hide();
         $("#list .column:contains(" + active_content_string + ")").fadeIn();
         count_searched_projects();
         reset_filter();
