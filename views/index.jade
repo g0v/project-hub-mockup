@@ -489,7 +489,7 @@ block script
                 .indexOf(m[3].toUpperCase()) >= 0;
           };
           // ... and use it in search
-          $("#search input").change(function(){
+          $("#search input").keyup(function(){
             active_content_string = $(this).val();
             $("#list .column").fadeOut();
             $("#list .column:contains(" + active_content_string + ")").fadeIn();
