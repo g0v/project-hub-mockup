@@ -287,7 +287,7 @@ block script
       var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
       var filter_template = Handlebars.compile(filter_template_source);
 
-      var list_template_source ='<article class="column"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="hidden text">{{content}}</div></div></article>';
+      var list_template_source ='<article class="column" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui modal" name="{{id}}"><p>{{content}}</p></div></div><div class="hidden text">{{content}}</div></article>';
       var list_template = Handlebars.compile(list_template_source);
 
       var label_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{type}} - {{phase}}</a>';
@@ -347,6 +347,7 @@ block script
       $.getJSON("json/project-list.json", function(projects){
 
         $.each(projects, function(project_index, project){
+          var id = project_index;
           var homepage = project.homepage;
           var logo = project.logo;
           var name = project.name.zh;
@@ -384,7 +385,7 @@ block script
             logo = "http://i.jimmyhub.net/shot/" + homepage;
           };
 
-          var context = {homepage: homepage, logo: logo, name: name, intro: intro, content: content};
+          var context = {id: id, homepage: homepage, logo: logo, name: name, intro: intro, content: content};
           var $list_element = $(list_template(context));
 
           $.each(project.achievement, function(achievement_index, achievement){
@@ -523,6 +524,10 @@ block script
           $("#about, #submit, #edit").fadeOut();
           //update_view("projects");
           update_url("");
+        });
+        $("#list .column .header .text").on("click tap", function(){
+          var active_modal_name = $(this).parents(".column").attr("id");
+          $(".modal").filter("[name='" + active_modal_name +"']").modal("show");
         });
 
         // initiate submit form - add achievement / add workspace
