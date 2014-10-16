@@ -411,7 +411,12 @@ block script
 
         var current_project = _.last( document.URL.split('/') );
         if(current_project.match(/^#/)){
-          $(".ui.modal").filter("[name='" + current_project.replace("#","") + "']").modal("show");
+          var active_modal_name = current_project.replace("#","");
+          var active_project_position = $("#" + active_modal_name).offset().top;
+          $(".ui.modal").filter("[name='" + active_modal_name + "']").modal("show");
+          $("#projects").animate({
+             scrollTop: active_project_position
+          });
         }
 
         // step 2-2: render sidebar menu and filter labels
@@ -532,6 +537,7 @@ block script
           //update_view("projects");
           update_url("");
         });
+
         $("#list .column .header .text").on("click tap", function(){
           var active_modal_name = $(this).parents(".column").attr("id");
           $(".ui.modal").filter("[name='" + active_modal_name +"']").modal("show");
