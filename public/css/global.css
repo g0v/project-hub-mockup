@@ -43,6 +43,10 @@ a, a:link {
   text-align: center;
 }
 
+.clear.both {
+  clear: both;
+}
+
 #sidebar {
   width: 15rem;
   position: absolute;
@@ -125,6 +129,24 @@ a, a:link {
 }
 #projects #list .column .wrapper .ui.label {
   margin: 0.2rem;
+}
+
+.ui.modal {
+  padding: 1rem;
+}
+.ui.modal .header {
+  padding: 0;
+}
+.ui.modal .image {
+  width: 30%;
+  max-width: 10rem;
+  margin: 0 0 0 1rem;
+}
+.ui.modal .ui.stackable.grid .row {
+  margin: 0 !important;
+}
+.ui.modal .ui.stackable.grid .row .column {
+  margin: 0 !important;
 }
 
 #about, #submit, #edit {
