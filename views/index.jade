@@ -287,7 +287,7 @@ block script
       var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
       var filter_template = Handlebars.compile(filter_template_source);
 
-      var list_template_source ='<article class="column" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui modal" name="{{id}}"><p>{{content}}</p></div></div><div class="hidden text">{{content}}</div></article>';
+      var list_template_source ='<article class="column" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui large modal" name="{{id}}"><p>{{content}}</p></div></div><div class="hidden text">{{content}}</div></article>';
       var list_template = Handlebars.compile(list_template_source);
 
       var label_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{type}} - {{phase}}</a>';
@@ -407,7 +407,14 @@ block script
         });
       }).done(function(){
 
-        // step 2: render sidebar menu and filter labels
+        // step 2-1: detect modals
+
+        var current_project = _.last( document.URL.split('/') );
+        if(current_project.match(/^#/)){
+          $(".ui.modal").filter("[name='" + current_project.replace("#","") + "']").modal("show");
+        }
+
+        // step 2-2: render sidebar menu and filter labels
 
         $.each(menus, function(menu_id, menu_items){
           render_attributes(menu_id, menu_items);
@@ -527,7 +534,13 @@ block script
         });
         $("#list .column .header .text").on("click tap", function(){
           var active_modal_name = $(this).parents(".column").attr("id");
-          $(".modal").filter("[name='" + active_modal_name +"']").modal("show");
+          $(".ui.modal").filter("[name='" + active_modal_name +"']").modal("show");
+          update_url("#" + active_modal_name);
+        });
+        $(".ui.modal").modal("setting", {
+          onHide: function(){
+            update_url("");
+          }
         });
 
         // initiate submit form - add achievement / add workspace
