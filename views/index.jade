@@ -336,21 +336,16 @@ block script
       //  tag : [],
       //};
 
-      var current_view = location.pathname.split('/')[1] || "";
-      //var current_view = location.pathname.split('/')[3] || "";
+      //var current_view = location.pathname.split('/')[1] || "";
+      var current_view = location.pathname.split('/')[3] || "";
       var update_view = function(current_url){
         $(".views").fadeOut();
         $("#"+current_url).fadeIn();
       };
       var update_url = function(current_view){
-<<<<<<< HEAD
-        history.pushState( {}, current_view + '| g0v project hub mockup', '/' + current_view );
-        //history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/public/' + current_view );
-=======
         //history.pushState( {}, current_view + '| g0v project hub mockup', '/' + current_view );
         //history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/public/' + current_view );
         history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/public/' + current_view );
->>>>>>> master
       };
       $.each( ["submit", "edit", "about"], function(view_index, view_value){
         if(current_view == view_value){
@@ -717,7 +712,7 @@ block script
         // TODO: sort menu items
 
       }).done(function(){
-        //$("#iframe").attr("src","https://ethercalc.org/g0v-project-hub-mockup");
+        $("#iframe").attr("src","https://ethercalc.org/g0v-project-hub-mockup");
         //console.log($.get("https://ethercalc.org/_/g0v-project-hub-mockup/csv"));
       });
 
