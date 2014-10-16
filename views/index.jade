@@ -343,8 +343,14 @@ block script
         $("#"+current_url).fadeIn();
       };
       var update_url = function(current_view){
+<<<<<<< HEAD
         history.pushState( {}, current_view + '| g0v project hub mockup', '/' + current_view );
         //history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/public/' + current_view );
+=======
+        //history.pushState( {}, current_view + '| g0v project hub mockup', '/' + current_view );
+        //history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/public/' + current_view );
+        history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/public/' + current_view );
+>>>>>>> master
       };
       $.each( ["submit", "edit", "about"], function(view_index, view_value){
         if(current_view == view_value){
