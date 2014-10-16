@@ -73,25 +73,27 @@ a, a:link
   #list
     padding: 1rem
     .column
+      margin-top: 0
+      padding-top: 1rem
       .wrapper
         background-color: rgba(#fff, 0.7)
         +box-shadow(0 0 1px rgba(#000,0.2))
-      .image
-        float: right
-        width: 30%
-        max-width: 8rem
-        margin: 0 0 0 1rem
-        img
-          width: 100%
-      .text
-        padding: 1rem
-      .ui.label
-        margin: 0.2rem
-      .header
+        .image
+          float: right
+          width: 30%
+          max-width: 8rem
+          margin: 0 0 0 1rem
+          img
+            width: 100%
         .text
           padding: 1rem
-          margin: -1rem
-          cursor: pointer
+        .header
+          .text
+            padding: 1rem
+            margin: -1rem
+            cursor: pointer
+        .ui.label
+          margin: 0.2rem
 #about, #submit, #edit
   //#about, #edit
   display: none
