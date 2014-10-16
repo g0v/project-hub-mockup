@@ -66,33 +66,44 @@ block body
   section#projects.views
     #filter
     #count
+    //-.ui.segment
+      a.ui.image(href="").float.right
+        img(src="")
+      h3.ui.header 萌典
+      p.description 教育部國語、臺語、客語辭典民間版，提供筆順動畫、真人發音、英、法、德文對照、兩岸詞彙對照等功能。網站目前每月提供數百萬人次的服務，行動裝置 App 用戶逾十萬人。
+      p.achievements
+        a(href="").ui.label
+      .ui.divider
+      .ui.two.column.stackable.grid
+        .column
+          .ui.stackable.grid
+            .row.category
+              .column.four.wide {{}}
+              .column.twelve.wide
+                a.ui.label {{}}
+            .row.tag
+              .column.four.wide {{}}
+              .column.twelve.wide
+                a.ui.label {{}}
+            .row.related
+              .column.four.wide {{}}
+              .column.twelve.wide
+                  a(href="").ui.label {{}}
+        .column
+          .ui.stackable.grid
+            .row.license
+              .column.four.wide {{}}
+              .column.twelve.wide
+                a.ui.label {{}}
+            .row.tool
+              .column.four.wide {{}}
+              .column.twelve.wide
+                a.ui.label {{}}
+            .row.workspaces
+              .column.four.wide {{}}
+              .column.twelve.wide
+                a(href="").ui.label {{}}
     #list.ui.two.column.stackable.grid
-      //-.sixteen.wide.column
-        .wrapper
-          a.ui.image(href="")
-            img(src="https://www.moedict.tw/icon.png")
-          .text
-            h3.ui.header 萌典
-            p.description 教育部國語、臺語、客語辭典民間版，提供筆順動畫、真人發音、英、法、德文對照、兩岸詞彙對照等功能。網站目前每月提供數百萬人次的服務，行動裝置 App 用戶逾十萬人。
-            .ui.divider
-            p.achievements 現有成果
-              a(href="").ui.label web - production
-              a(href="").ui.label web - production
-              a(href="").ui.label web - production
-            p.category 分類
-              a.ui.label 開放資料
-            p.tag 標籤
-              a.ui.label 字典
-              a.ui.label 教育部
-            p.license 授權
-              a.ui.label CC0
-            p.tool 使用工具
-              a(href="").ui.label react js
-            p.workspaces 工作區
-              a(href="").ui.label hackfoldr
-              a(href="").ui.label github
-            p.related 相關專案
-              a(href="").ui.label 萌典啄木鳥
       //-article.column.category-1
         a.ui.image(href="")
           img(src="")
@@ -313,10 +324,16 @@ block script
       var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
       var filter_template = Handlebars.compile(filter_template_source);
 
-      var list_template_source ='<article class="column" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui large modal" name="{{id}}"><p>{{content}}</p></div></div><div class="hidden text">{{content}}</div></article>';
+      var list_template_source ='<article class="column" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui large modal" name="{{id}}"><a href="{{homepage}}" target="_blank" class="ui image float right"><img src="{{logo}}"></a><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p><div class="ui divider clear both"></div><div class="ui two column stackable grid"><div class="column"><div class="ui stackable grid"><div class="row"><div class="column four wide">專案分類</div><div class="column twelve wide category"></div></div><div class="row"><div class="column four wide">標籤</div><div class="column twelve wide tag"></div></div><div class="row"><div class="column four wide">相關專案</div><div class="column twelve wide related"></div></div></div></div><div class="column"><div class="ui stackable grid"><div class="row"><div class="column four wide">授權</div><div class="column twelve wide license"></div></div><div class="row"><div class="column four wide">使用工具</div><div class="column twelve wide tool"></div></div><div class="row"><div class="column four wide">工作區</div><div class="column twelve wide workspace"></div></div></div></div></div></div></div><div class="hidden text">{{content}}</div></article>';
       var list_template = Handlebars.compile(list_template_source);
 
-      var label_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{type}} - {{phase}}</a>';
+      var achievement_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{type}} - {{phase}}</a>';
+      var achievement_template = Handlebars.compile(achievement_template_source);
+
+      var workspace_template_source = '<a href="{{url}}" class="ui label">{{type}}</a>';
+      var workspace_template = Handlebars.compile(workspace_template_source);
+
+      var label_template_source = '<a class="ui label">{{name}}</a>';
       var label_template = Handlebars.compile(label_template_source);
 
       var menus = {
@@ -344,7 +361,6 @@ block script
       };
       var update_url = function(current_view){
         //history.pushState( {}, current_view + '| g0v project hub mockup', '/' + current_view );
-        //history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/public/' + current_view );
         history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/public/' + current_view );
       };
       $.each( ["submit", "edit", "about"], function(view_index, view_value){
@@ -375,13 +391,14 @@ block script
 
         $.each(projects, function(project_index, project){
           var id = project_index;
-          var homepage = project.homepage;
-          var logo = project.logo;
-          var name = project.name.zh;
-          var intro = project.intro.zh.short;
-          var classes = [];
-          var content = JSON.stringify(project);
+          var homepage = project.homepage || "";
+          var logo = project.logo || "";
+          var name = project.name.zh || "";
+          var intro = project.intro.zh.short || "";
 
+          var content = JSON.stringify(project) || "";
+
+          var classes = [];
           var add_classes = function(attribute_type){
             $.each(project[attribute_type], function(index, attribute){
               if( !_.contains(menus[attribute_type], attribute)){
@@ -415,13 +432,28 @@ block script
           var context = {id: id, homepage: homepage, logo: logo, name: name, intro: intro, content: content};
           var $list_element = $(list_template(context));
 
+          var add_labels = function(label_type, data_array){
+            $.each(data_array, function(array_index, array_value){
+              var context = {name: array_value};
+              var $label_element = $(label_template(context));
+              $list_element.find("."+label_type).append($label_element);
+            });
+          };
+          add_labels("category", project.category);
+          add_labels("tag", project.tag);
+          add_labels("tool", project.tool);
+          add_labels("license", project.license);
+
+          var related = project.related || [];
+          // TODO: related, workspace
+
           $.each(project.achievement, function(achievement_index, achievement){
             var achievement_type = achievement.type;
             var achievement_phase = achievement.phase;
             var achievement_url = achievement.url;
             var context = {type: achievement_type, phase: achievement_phase, url: achievement_url};
-            var $label_element = $(label_template(context));
-            $list_element.find(".achievement").append($label_element);
+            var $achievement_element = $(achievement_template(context));
+            $list_element.find(".achievement").append($achievement_element);
             add_sub_classes("type", achievement_type);
             add_sub_classes("phase", achievement_phase);
           });

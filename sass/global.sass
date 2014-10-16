@@ -33,6 +33,9 @@ a, a:link
 .align.center
   text-align: center
 
+.clear.both
+  clear: both
+
 #sidebar
   width: 15rem
   position: absolute
@@ -78,7 +81,6 @@ a, a:link
     .column
       margin-top: 0
       padding-top: 1rem
-
       .wrapper
         background-color: rgba(#fff, 0.7)
         +box-shadow(0 0 1px rgba(#000,0.2))
@@ -98,6 +100,19 @@ a, a:link
             cursor: pointer
         .ui.label
           margin: 0.2rem
+.ui.modal
+  padding: 1rem
+  .header
+    padding: 0
+  .image
+    width: 30%
+    max-width: 10rem
+    margin: 0 0 0 1rem
+  .ui.stackable.grid
+    .row
+      margin: 0!important
+      .column
+        margin: 0!important
 #about, #submit, #edit
   //#about, #edit
   display: none
