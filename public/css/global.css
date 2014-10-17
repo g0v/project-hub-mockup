@@ -132,7 +132,11 @@ a, a:link {
   margin: 0 !important;
 }
 .ui.modal .ui.stackable.grid .row .four.wide.column {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem 0.5rem 0;
+  text-align: right;
+}
+.ui.modal .ui.stackable.grid .row .twelve.wide.column {
+  border-left: 1px #cccccc solid;
 }
 
 .project .image {
@@ -147,7 +151,7 @@ a, a:link {
 .project .ui.label {
   margin: 0.2rem;
 }
-.project .ui.label .icon {
+.project .ui.label .icon:last-child {
   margin-left: 0.5rem;
 }
 
