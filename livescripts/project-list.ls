@@ -3771,7 +3771,7 @@
       "short": ""
       "medium": ""
       "long": ""
-  "category": <[]>
+  "category": <[ g0v基礎建設 ]>
   "tag": <[ hackfoldr 專案池 基礎建設 ]>
   "participant": {}
   "tool": <[]>
@@ -4132,28 +4132,40 @@
       "medium": ""
       "long": ""
   "category": <[ 社會參與 ]>
-  "tag": <[ hackfoldr ]>
+  "tag": <[ 反黑箱 服貿 經貿 行政院 國發會 中研院 蔡玉玲政務委員 ]>
   "participant": {}
   "tool": <[]>
   "license": <[]>
   "homepage": ""
   "achievement":
     [{
-      "type": "hackfoldr"
-      "phase": ""
-      "url": "http://hackfoldr.org/NECTW2014/"
+      "type": "Event - Loomio 1"
+      "phase": "Memory"
+      "url": "https://www.loomio.org/g/1uSV3IFq"
       "openwith": "_blank"
+    }
+    {
+      "type": "Event - Loomio 2"
+      "phase": "Memory"
+      "url": "https://www.loomio.org/g/txfpAWOC"
+      "openwith": "_blank"
+    }
+    {
+      "type": "Event - Google Moderator"
+      "phase": "Memory"
+      "url": "http://www.google.com/moderator/?hl=zh-TW#15/e=214458&t=214458.40"
     }]
   "workspace":
     [{
-      "type": ""
-      "url": ""
+      "type": "hackfoldr"
+      "url": "http://hackfoldr.org/NECTW2014/"
+    }
+    {
+      "type": "mailing list"
+      "url": "http://www.iis.sinica.edu.tw/pipermail/online4nacet/"
     }]
   "resource":
     [{
-      "type": ""
-      "name": ""
-      "url": ""
     }]
   "follower": <[]>
   "related": <[]>
@@ -4399,7 +4411,7 @@
   "related": <[]>
 * "id": ""
   "name":
-    "zh": "動民主家族"
+    "zh": "動民主 1.0 Pirate Feedback"
     "en": ""
   "logo": ""
   "intro":
@@ -4412,22 +4424,20 @@
       "medium": ""
       "long": ""
   "category": <[ 社會參與 ]>
-  "tag": <[ hackfoldr ]>
+  "tag": <[ 社會實事議題討論 投票 表決 ]>
   "participant": {}
   "tool": <[]>
   "license": <[]>
   "homepage": ""
   "achievement":
     [{
-      "type": "hackfoldr"
-      "phase": ""
-      "url": "http://hackfoldr.org/don-democracy"
+      "type": "Web"
+      "phase": "Beta"
+      "url": "http://lqfb-test.g0v.tw/pf/"
       "openwith": "_blank"
     }]
   "workspace":
     [{
-      "type": ""
-      "url": ""
     }]
   "resource":
     [{
@@ -4437,6 +4447,162 @@
     }]
   "follower": <[]>
   "related": <[]>
+* "id": ""
+  "name":
+    "zh": "動民主家族"
+    "en": ""
+  "logo": ""
+  "intro":
+    "zh":
+      "short": "動民主專案群可歸類為三大區塊：網路民主研究、外國平台本地化、以及程式開發"
+      "medium": ""
+      "long": ""
+    "en":
+      "short": ""
+      "medium": ""
+      "long": ""
+  "category": <[ 社會參與 ]>
+  "tag": <[ 社會實事議題討論 投票 表決 網路參與 審議民主 動民主 ]>
+  "participant": {}
+  "tool": <[]>
+  "license": <[]>
+  "homepage": ""
+  "achievement":
+    [{
+      "type": "Research"
+      "phase": "Beta"
+      "url": "http://hack.etblue.tw/don-democracy"
+    }]
+  "workspace":
+    [{
+      "type": "hackfoldr"
+      "url": "http://hack.etblue.tw/don-democracy"
+    }]
+  "resource":
+    [{
+    }]
+  "follower": <[]>
+  "related": <[]>
+* "id": ""
+  "name":
+    "zh": "動民主 2.0 公民臉書"
+    "en": ""
+  "logo": ""
+  "intro":
+    "zh":
+      "short": ""
+      "medium": ""
+      "long": ""
+    "en":
+      "short": ""
+      "medium": ""
+      "long": ""
+  "category": <[ 社會參與 ]>
+  "tag": <[ 社會實事議題討論 投票 表決 審議民主 網路民主 ]>
+  "participant": {}
+  "tool": <[]>
+  "license": <[]>
+  "homepage": ""
+  "achievement":
+    [{
+      "type": "Web"
+      "phase": "Mockup"
+      "url": "http://g0v.github.io/don-republic-mockup/public/index.html"
+    }]
+  "workspace":
+    [{
+      "type": "hackfoldr"
+      "url": "http://hack.etblue.tw/don-democracy"
+    }
+    {
+      "type": "Github"
+      "url": "https://github.com/g0v/don-republic-mockup"
+    }
+    {
+      "type": "Github"
+      "url": "https://github.com/g0v/don-republic"
+    }]
+  "resource":
+    [{
+    }]
+  "follower": <[]>
+  "related": <[ bindola listrgb prfb lqfb loomio ]>
+* "id": ""
+  "name":
+    "zh": "動民主 0.5 Bindola"
+    "en": ""
+  "logo": ""
+  "intro":
+    "zh":
+      "short": ""
+      "medium": ""
+      "long": ""
+    "en":
+      "short": ""
+      "medium": ""
+      "long": ""
+  "category": <[ 社會參與 ]>
+  "tag": <[ 動民主 社會實事議題討論 投票 表決 ]>
+  "participant": {}
+  "tool": <[]>
+  "license": <[]>
+  "homepage": ""
+  "achievement":
+    [{
+      "type": "Web"
+      "phase": "Beta"
+      "url": "http://bindo.la/"
+    }]
+  "workspace":
+    [{
+      "type": "hackfoldr"
+      "url": "http://hack.etblue.tw/don-democracy"
+    }
+    {
+      "type": "Github"
+      "url": "https://github.com/g0v/donvote"
+    }]
+  "resource":
+    [{
+    }]
+  "follower": <[]>
+  "related": <[ bindola listrgb prfb lqfb loomio ]>
+* "id": ""
+  "name":
+    "zh": "ListRGB"
+    "en": ""
+  "logo": ""
+  "intro":
+    "zh":
+      "short": ""
+      "medium": ""
+      "long": ""
+    "en":
+      "short": ""
+      "medium": ""
+      "long": ""
+  "category": <[ 社會參與 ]>
+  "tag": <[ 動民主 ]>
+  "participant": {}
+  "tool": <[]>
+  "license": <[]>
+  "homepage": ""
+  "achievement":
+    [{
+      "type": "Web"
+      "phase": "Beta"
+      "url": "http://listrgb.org/"
+    }]
+  "workspace":
+    [{
+      "type": "hackfoldr"
+      "url": "http://hack.etblue.tw/don-democracy"
+    }]
+  "resource":
+    [{
+    }]
+  "follower": <[]>
+  "related": <[ bindola listrgb prfb lqfb loomio ]>
 * "id": ""
   "name":
     "zh": "開放政治獻金"
@@ -4617,46 +4783,6 @@
   "related": <[]>
 * "id": ""
   "name":
-    "zh": "經貿國是會議線上參與"
-    "en": ""
-  "logo": ""
-  "intro":
-    "zh":
-      "short": ""
-      "medium": ""
-      "long": ""
-    "en":
-      "short": ""
-      "medium": ""
-      "long": ""
-  "category": <[ 社會參與 ]>
-  "tag": <[ hackfoldr ]>
-  "participant": {}
-  "tool": <[]>
-  "license": <[]>
-  "homepage": ""
-  "achievement":
-    [{
-      "type": "hackfoldr"
-      "phase": ""
-      "url": "http://hackfoldr.org/NECTW2014"
-      "openwith": "_blank"
-    }]
-  "workspace":
-    [{
-      "type": ""
-      "url": ""
-    }]
-  "resource":
-    [{
-      "type": ""
-      "name": ""
-      "url": ""
-    }]
-  "follower": <[]>
-  "related": <[]>
-* "id": ""
-  "name":
     "zh": "自經區第二次溝通會"
     "en": ""
   "logo": ""
@@ -4817,7 +4943,7 @@
   "related": <[]>
 * "id": ""
   "name":
-    "zh": "柯P農場"
+    "zh": "柯文農場"
     "en": ""
   "logo": ""
   "intro":
@@ -4830,28 +4956,25 @@
       "medium": ""
       "long": ""
   "category": <[]>
-  "tag": <[ hackfoldr 柯文哲 選舉 政治 ]>
+  "tag": <[ hackfoldr 柯文哲 選舉 政治 柯P 柯柯松 ]>
   "participant": {}
   "tool": <[]>
   "license": <[]>
   "homepage": ""
   "achievement":
     [{
-      "type": "hackfoldr"
-      "phase": ""
-      "url": "http://hackfoldr.org/kp-farm/"
+      "type": "Web"
+      "phase": "Production"
+      "url": "http://hack.etblue.tw/kp-farm/"
       "openwith": "_blank"
     }]
   "workspace":
     [{
-      "type": ""
-      "url": ""
+      "type": "Hackfoldr"
+      "url": "http://hack.etblue.tw/unlimited"
     }]
   "resource":
     [{
-      "type": ""
-      "name": ""
-      "url": ""
     }]
   "follower": <[]>
   "related": <[]>
@@ -5062,7 +5185,7 @@
   "logo": ""
   "intro":
     "zh":
-      "short": ""
+      "short": "重要的社會議題往往結構龐大、內容繁雜（例：服貿協議、能源政策），學者做了深入的研究、寫了落落長的文章，卻很少人有耐心看。這些珍貴的論述需要被消化、理解、以圖像形式傳達給大眾。"
       "medium": ""
       "long": ""
     "en":
@@ -5070,28 +5193,25 @@
       "medium": ""
       "long": ""
   "category": <[]>
-  "tag": <[ hackfoldr ]>
+  "tag": <[ 插畫 漫畫 平面設計 社會議題 NGO 社運松 公民團體 ]>
   "participant": {}
-  "tool": <[]>
-  "license": <[]>
+  "tool": <[ photoshop illustrator ]>
+  "license": <[ CC0 CC-By ]>
   "homepage": ""
   "achievement":
     [{
-      "type": "hackfoldr"
-      "phase": ""
-      "url": "http://hackfoldr.org/lazy-artist"
+      "type": "插畫"
+      "phase": "完稿"
+      "url": "https://g0v.hackpad.com/-x--3pKTjb5MCj4"
       "openwith": "_blank"
     }]
   "workspace":
     [{
-      "type": ""
-      "url": ""
+      "type": "hackfoldr"
+      "url": "http://hack.etblue.tw/lazy-artist"
     }]
   "resource":
     [{
-      "type": ""
-      "name": ""
-      "url": ""
     }]
   "follower": <[]>
   "related": <[]>
@@ -5457,126 +5577,6 @@
   "related": <[]>
 * "id": ""
   "name":
-    "zh": "動民主0.5"
-    "en": ""
-  "logo": ""
-  "intro":
-    "zh":
-      "short": ""
-      "medium": ""
-      "long": ""
-    "en":
-      "short": ""
-      "medium": ""
-      "long": ""
-  "category": <[ 社會參與 ]>
-  "tag": <[ 社會實事議題討論 投票 表決 ]>
-  "participant": {}
-  "tool": <[]>
-  "license": <[]>
-  "homepage": ""
-  "achievement":
-    [{
-      "type": "Web"
-      "phase": "Beta"
-      "url": "http://bindo.la"
-      "openwith": "_blank"
-    }]
-  "workspace":
-    [{
-      "type": ""
-      "url": ""
-    }]
-  "resource":
-    [{
-      "type": ""
-      "name": ""
-      "url": ""
-    }]
-  "follower": <[]>
-  "related": <[]>
-* "id": ""
-  "name":
-    "zh": "動民主1.0"
-    "en": ""
-  "logo": ""
-  "intro":
-    "zh":
-      "short": ""
-      "medium": ""
-      "long": ""
-    "en":
-      "short": ""
-      "medium": ""
-      "long": ""
-  "category": <[ 社會參與 ]>
-  "tag": <[ 社會實事議題討論 投票 表決 ]>
-  "participant": {}
-  "tool": <[]>
-  "license": <[]>
-  "homepage": ""
-  "achievement":
-    [{
-      "type": "Web"
-      "phase": "Beta"
-      "url": "http://lqfb-test.g0v.tw/pf/"
-      "openwith": "_blank"
-    }]
-  "workspace":
-    [{
-      "type": ""
-      "url": ""
-    }]
-  "resource":
-    [{
-      "type": ""
-      "name": ""
-      "url": ""
-    }]
-  "follower": <[]>
-  "related": <[]>
-* "id": ""
-  "name":
-    "zh": "動民主2.0"
-    "en": ""
-  "logo": ""
-  "intro":
-    "zh":
-      "short": ""
-      "medium": ""
-      "long": ""
-    "en":
-      "short": ""
-      "medium": ""
-      "long": ""
-  "category": <[ 社會參與 ]>
-  "tag": <[ 社會實事議題討論 投票 表決 ]>
-  "participant": {}
-  "tool": <[]>
-  "license": <[]>
-  "homepage": ""
-  "achievement":
-    [{
-      "type": "Web"
-      "phase": "Beta"
-      "url": "http://g0v.github.io/don-republic-mockup/"
-      "openwith": "_blank"
-    }]
-  "workspace":
-    [{
-      "type": ""
-      "url": ""
-    }]
-  "resource":
-    [{
-      "type": ""
-      "name": ""
-      "url": ""
-    }]
-  "follower": <[]>
-  "related": <[]>
-* "id": ""
-  "name":
     "zh": "新g0v後勤中心"
     "en": ""
   "logo": ""
@@ -5817,7 +5817,7 @@
   "related": <[]>
 * "id": ""
   "name":
-    "zh": "全民記者會"
+    "zh": "動民主 1.337 全民記者會"
     "en": ""
   "logo": ""
   "intro":
@@ -5829,8 +5829,8 @@
       "short": ""
       "medium": ""
       "long": ""
-  "category": <[]>
-  "tag": <[ 社會實事議題討論 投票 表決 ]>
+  "category": <[ 社會參與 ]>
+  "tag": <[ 動民主 ]>
   "participant": {}
   "tool": <[]>
   "license": <[]>
@@ -5840,18 +5840,14 @@
       "type": "Web"
       "phase": "Beta"
       "url": "http://g0v.github.io/don-press/public/"
-      "openwith": "_blank"
     }]
   "workspace":
     [{
-      "type": ""
-      "url": ""
+      "type": "Github"
+      "url": "https://github.com/g0v/don-press"
     }]
   "resource":
     [{
-      "type": ""
-      "name": ""
-      "url": ""
     }]
   "follower": <[]>
   "related": <[]>
@@ -5870,7 +5866,7 @@
       "medium": ""
       "long": ""
   "category": <[ 社會參與 ]>
-  "tag": <[ 社會實事議題討論 ]>
+  "tag": <[ 社會實事議題討論 動民主 ]>
   "participant": {}
   "tool": <[]>
   "license": <[]>
@@ -5892,6 +5888,46 @@
       "type": ""
       "name": ""
       "url": ""
+    }]
+  "follower": <[]>
+  "related": <[]>
+* "id": ""
+  "name":
+    "zh": "g0v project hub"
+    "en": ""
+  "logo": ""
+  "intro":
+    "zh":
+      "short": "g0v 專案導航"
+      "medium": ""
+      "long": ""
+    "en":
+      "short": ""
+      "medium": ""
+      "long": ""
+  "category": <[ g0v基礎建設 ]>
+  "tag": <[]>
+  "participant": {}
+  "tool":
+    * "Sass"
+      "Jade"
+      "Semantic UI"
+      "Fire.app"
+  "license": <[ CC0 ]>
+  "homepage": ""
+  "achievement":
+    [{
+      "type": "Web"
+      "phase": "Mockup"
+      "url": "http://g0v.github.io/project-hub-mockup/"
+    }]
+  "workspace":
+    [{
+      "type": "Github"
+      "url": "https://github.com/g0v/project-hub-mockup"
+    }]
+  "resource":
+    [{
     }]
   "follower": <[]>
   "related": <[]>
