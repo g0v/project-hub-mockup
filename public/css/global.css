@@ -110,15 +110,6 @@ a, a:link {
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }
-#projects #list .column .wrapper .image {
-  float: right;
-  width: 30%;
-  max-width: 8rem;
-  margin: 0 0 0 1rem;
-}
-#projects #list .column .wrapper .image img {
-  width: 100%;
-}
 #projects #list .column .wrapper .text {
   padding: 1rem;
 }
@@ -127,26 +118,37 @@ a, a:link {
   margin: -1rem;
   cursor: pointer;
 }
-#projects #list .column .wrapper .ui.label {
-  margin: 0.2rem;
-}
 
 .ui.modal {
   padding: 1rem;
 }
 .ui.modal .header {
-  padding: 0;
-}
-.ui.modal .image {
-  width: 30%;
-  max-width: 10rem;
-  margin: 0 0 0 1rem;
+  padding: 0 0 1rem 0;
 }
 .ui.modal .ui.stackable.grid .row {
   margin: 0 !important;
 }
 .ui.modal .ui.stackable.grid .row .column {
   margin: 0 !important;
+}
+.ui.modal .ui.stackable.grid .row .four.wide.column {
+  padding: 0.5rem 0;
+}
+
+.project .image {
+  float: right;
+  width: 30%;
+  max-width: 10rem;
+  margin: 0 0 0 1rem;
+}
+.project .image img {
+  width: 100%;
+}
+.project .ui.label {
+  margin: 0.2rem;
+}
+.project .ui.label .icon {
+  margin-left: 0.5rem;
 }
 
 #about, #submit, #edit {

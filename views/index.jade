@@ -218,7 +218,7 @@ block body
                 .item(data-value="safari") Safari extension
                 .item(data-value="api") application interface (api)
                 .item(data-value="document") document
-                .item(data-value="miscmiscellaneous") miscellaneous
+                .item(data-value="miscellaneous") miscellaneous
           .field
             label 開發階段
             .ui.selection.dropdown
@@ -324,16 +324,16 @@ block script
       var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
       var filter_template = Handlebars.compile(filter_template_source);
 
-      var list_template_source ='<article class="column" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui large modal" name="{{id}}"><a href="{{homepage}}" target="_blank" class="ui image float right"><img src="{{logo}}"></a><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p><div class="ui divider clear both"></div><div class="ui two column stackable grid"><div class="column"><div class="ui stackable grid"><div class="row"><div class="column four wide">專案分類</div><div class="column twelve wide category"></div></div><div class="row"><div class="column four wide">標籤</div><div class="column twelve wide tag"></div></div><div class="row"><div class="column four wide">相關專案</div><div class="column twelve wide related"></div></div></div></div><div class="column"><div class="ui stackable grid"><div class="row"><div class="column four wide">授權</div><div class="column twelve wide license"></div></div><div class="row"><div class="column four wide">使用工具</div><div class="column twelve wide tool"></div></div><div class="row"><div class="column four wide">工作區</div><div class="column twelve wide workspace"></div></div></div></div></div></div></div><div class="hidden text">{{content}}</div></article>';
+      var list_template_source ='<article class="column project" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui large modal project" name="{{id}}"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p><div class="ui divider clear both"></div><div class="ui two column stackable grid"><div class="column"><div class="ui stackable grid"><div class="row"><div class="column four wide">專案分類</div><div class="column twelve wide category"></div></div><div class="row"><div class="column four wide">標籤</div><div class="column twelve wide tag"></div></div><div class="row"><div class="column four wide">相關專案</div><div class="column twelve wide related"></div></div></div></div><div class="column"><div class="ui stackable grid"><div class="row"><div class="column four wide">授權</div><div class="column twelve wide license"></div></div><div class="row"><div class="column four wide">使用工具</div><div class="column twelve wide tool"></div></div><div class="row"><div class="column four wide">工作區</div><div class="column twelve wide workspace"></div></div></div></div></div></div></div><div class="hidden text">{{content}}</div></article>';
       var list_template = Handlebars.compile(list_template_source);
 
-      var achievement_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{type}} - {{phase}}</a>';
+      var achievement_template_source = '<a href="{{url}}" target="_blank" class="ui label"><i class="icon {{icon}}"></i>{{type}}{{phase}}<i class="icon forward mail"></i></a>';
       var achievement_template = Handlebars.compile(achievement_template_source);
 
       var workspace_template_source = '<a href="{{url}}" class="ui label">{{type}}</a>';
       var workspace_template = Handlebars.compile(workspace_template_source);
 
-      var label_template_source = '<a class="ui label">{{name}}</a>';
+      var label_template_source = '<a class="ui large label">{{name}}</a>';
       var label_template = Handlebars.compile(label_template_source);
 
       var menus = {
@@ -449,9 +449,18 @@ block script
 
           $.each(project.achievement, function(achievement_index, achievement){
             var achievement_type = achievement.type;
-            var achievement_phase = achievement.phase;
             var achievement_url = achievement.url;
-            var context = {type: achievement_type, phase: achievement_phase, url: achievement_url};
+            var achievement_phase = "";
+            var achievement_icon = "";
+            if(achievement.phase != "Production"){
+              achievement_phase = " (" + achievement.phase + ")";
+            };
+            $.each({"Android": "android", "iOS": "apple", "WP": "windows", "Firefox OS": "mobile", "Linux": "linux", "Mac": "apple", "Windows": "windows", "Firefox": "browser", "Chrome": "browser", "Safari": "browser", "Web": "", "API": "setting", "Document": "text file", "Miscellaneous": ""}, function(type_name, type_icon){
+              if(achievement_type == type_name){
+                achievement_icon = type_icon;
+              }
+            });
+            var context = {type: achievement_type, phase: achievement_phase, url: achievement_url, icon: achievement_icon};
             var $achievement_element = $(achievement_template(context));
             $list_element.find(".achievement").append($achievement_element);
             add_sub_classes("type", achievement_type);
@@ -609,7 +618,7 @@ block script
         });
 
         // initiate submit form - add achievement / add workspace
-        var achievement_template_source = '<div class="inline fields added"><div class="field"><label>網址</label><div class="ui left labeled icon input"><input placeholder="http://" type="url" name="achievement-{{number}}-url"><i class="icon url"></i><div class="ui corner label"><i class="icon asterisk"></i></div></div></div><div class="field"><label>類型</label><div class="ui selection dropdown"><input name="achievement-{{number}}-type" type="hidden" value="web"><div class="default text">website</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="web" class="item">website</div><div data-value="android" class="item">Android app</div><div data-value="ios" class="item">iOS app</div><div data-value="wp" class="item">Windows Phone app</div><div data-value="firefoxos" class="item">Firefox OS</div><div data-value="linux" class="item">Linux software</div><div data-value="mac" class="item">Mac software</div><div data-value="windows" class="item">Windows software</div><div data-value="chrome" class="item">Chrome extension</div><div data-value="firefox" class="item">Firefox extension</div><div data-value="safari" class="item">Safari extension</div><div data-value="api" class="item">application interface (api)</div><div data-value="document" class="item">document</div><div data-value="miscmiscellaneous" class="item">miscellaneous</div></div></div></div><div class="field"><label>開發階段</label><div class="ui selection dropdown"><input name="achievement-{{number}}-phase" type="hidden" value="idea"><div class="default text">idea</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="idea" class="item">idea</div><div data-value="plan" class="item">plan</div><div data-value="wireframe" class="item">wireframe</div><div data-value="mockup" class="item">mockup</div><div data-value="prototype" class="item">prototype</div><div data-value="alpha" class="item">alpha</div><div data-value="beta" class="item">beta</div><div data-value="production" class="item">production</div><div data-value="memory" class="item">memory</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div></div>';
+        var achievement_template_source = '<div class="inline fields added"><div class="field"><label>網址</label><div class="ui left labeled icon input"><input placeholder="http://" type="url" name="achievement-{{number}}-url"><i class="icon url"></i><div class="ui corner label"><i class="icon asterisk"></i></div></div></div><div class="field"><label>類型</label><div class="ui selection dropdown"><input name="achievement-{{number}}-type" type="hidden" value="web"><div class="default text">website</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="web" class="item">website</div><div data-value="android" class="item">Android app</div><div data-value="ios" class="item">iOS app</div><div data-value="wp" class="item">Windows Phone app</div><div data-value="firefoxos" class="item">Firefox OS</div><div data-value="linux" class="item">Linux software</div><div data-value="mac" class="item">Mac software</div><div data-value="windows" class="item">Windows software</div><div data-value="chrome" class="item">Chrome extension</div><div data-value="firefox" class="item">Firefox extension</div><div data-value="safari" class="item">Safari extension</div><div data-value="api" class="item">application interface (api)</div><div data-value="document" class="item">document</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div><div class="field"><label>開發階段</label><div class="ui selection dropdown"><input name="achievement-{{number}}-phase" type="hidden" value="idea"><div class="default text">idea</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="idea" class="item">idea</div><div data-value="plan" class="item">plan</div><div data-value="wireframe" class="item">wireframe</div><div data-value="mockup" class="item">mockup</div><div data-value="prototype" class="item">prototype</div><div data-value="alpha" class="item">alpha</div><div data-value="beta" class="item">beta</div><div data-value="production" class="item">production</div><div data-value="memory" class="item">memory</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div></div>';
         var achievement_template = Handlebars.compile(achievement_template_source);
         var latest_achievement_index = 0;
         $("#add-achievement").on("click tap", function(){
