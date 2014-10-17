@@ -25,11 +25,21 @@ Using:
 
 Local server and compilation:
 * Fire.app
-* Gulp (TBD)
+* Gulp
 
 Deploy to gh-pages:
 * for Windows: run deploy.bat on master branch
 * future: Travis (TBD)
+
+Structure
+------------
+* assets
+* livescripts
+* sass
+* views
+
+Fire.app
+============
 
 Local Server
 ------------
@@ -45,3 +55,16 @@ Jade -> HTML
 LiveScript -> Json
 ------------
 * compile json.ls data: lsc -cj test.json
+
+Gulp
+============
+
+* pre-dev:
+    * install: [node](http://nodejs.org/)
+    * install: ruby 2.0.0 (use [rubyuinstaller](http://rubyinstaller.org) on windows, use `rvm install 2.0.0` on linux/mac)
+    * install sass (`gem install sass --version "3.4.5"`)
+    * install compass (`gem install compass --version "1.0.1"`)
+    * `npm i`
+* devlopment:
+    * `npm start`
+    * open `http://localhost:3000/` to see the result.
