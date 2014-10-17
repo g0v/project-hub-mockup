@@ -8,7 +8,7 @@ block body
 
   nav#sidebar
     .ui.menu.no.margin
-      .ui.dropdown.item for Asperger's
+      .ui.dropdown.item Asperger mode
         i.icon.dropdown
         .menu
           a.item Human mode
@@ -324,14 +324,20 @@ block script
       var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
       var filter_template = Handlebars.compile(filter_template_source);
 
-      var list_template_source ='<article class="column project" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui large modal project" name="{{id}}"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p><div class="ui divider clear both"></div><div class="ui two column stackable grid"><div class="column"><div class="ui stackable grid"><div class="row"><div class="column four wide">專案分類</div><div class="column twelve wide category"></div></div><div class="row"><div class="column four wide">標籤</div><div class="column twelve wide tag"></div></div><div class="row"><div class="column four wide">相關專案</div><div class="column twelve wide related"></div></div></div></div><div class="column"><div class="ui stackable grid"><div class="row"><div class="column four wide">授權</div><div class="column twelve wide license"></div></div><div class="row"><div class="column four wide">使用工具</div><div class="column twelve wide tool"></div></div><div class="row"><div class="column four wide">工作區</div><div class="column twelve wide workspace"></div></div></div></div></div></div></div><div class="hidden text">{{content}}</div></article>';
+      var list_template_source ='<article class="column project" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui large modal project" name="{{id}}"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p><div class="ui divider clear both"></div><div class="ui two column stackable grid"><div class="column"><div class="ui stackable grid"><div class="row"><div class="column four wide">專案分類</div><div class="column twelve wide category"></div></div><div class="row"><div class="column four wide">標籤</div><div class="column twelve wide tag"></div></div><div class="row"><div class="column four wide">相關專案</div><div class="column twelve wide related"></div></div></div></div><div class="column"><div class="ui stackable grid"><div class="row"><div class="column four wide">授權</div><div class="column twelve wide license"></div></div><div class="row"><div class="column four wide">使用工具</div><div class="column twelve wide tool"></div></div><div class="row"><div class="column four wide">資料來源</div><div class="column twelve wide resource"></div></div><div class="row"><div class="column four wide">工作區</div><div class="column twelve wide workspace"></div></div></div></div></div></div></div><div class="hidden text">{{content}}</div></article>';
       var list_template = Handlebars.compile(list_template_source);
 
       var achievement_template_source = '<a href="{{url}}" target="_blank" class="ui label"><i class="icon {{icon}}"></i>{{type}}{{phase}}<i class="icon forward mail"></i></a>';
       var achievement_template = Handlebars.compile(achievement_template_source);
 
-      var workspace_template_source = '<a href="{{url}}" class="ui label">{{type}}</a>';
+      var workspace_template_source = '<a href="{{url}}" target="_blank" class="ui label"><i class="icon {{icon}}"></i>{{type}}<i class="icon forward mail"></i></a>';
       var workspace_template = Handlebars.compile(workspace_template_source);
+
+      var resource_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{name}} ({{type}})<i class="icon forward mail"></i></a>';
+      var resource_template = Handlebars.compile(resource_template_source);
+
+      var related_template_source = '<a href="#{{id}}" class="ui label">{{name}}<i class="icon exchange"></i></a>';
+      var related_template = Handlebars.compile(related_template_source);
 
       var label_template_source = '<a class="ui large label">{{name}}</a>';
       var label_template = Handlebars.compile(label_template_source);
@@ -353,15 +359,15 @@ block script
       //  tag : [],
       //};
 
-      //var current_view = location.pathname.split('/')[1] || "";
-      var current_view = location.pathname.split('/')[3] || "";
+      var current_view = location.pathname.split('/')[1] || "";
+      //var current_view = location.pathname.split('/')[3] || "";
       var update_view = function(current_url){
         $(".views").fadeOut();
         $("#"+current_url).fadeIn();
       };
       var update_url = function(current_view){
-        //history.pushState( {}, current_view + '| g0v project hub mockup', '/' + current_view );
-        history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/public/' + current_view );
+        history.pushState( {}, current_view + '| g0v project hub mockup', '/' + current_view );
+        //history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/public/' + current_view );
       };
       $.each( ["submit", "edit", "about"], function(view_index, view_value){
         if(current_view == view_value){
@@ -444,8 +450,36 @@ block script
           add_labels("tool", project.tool);
           add_labels("license", project.license);
 
-          var related = project.related || [];
-          // TODO: related, workspace
+          $.each(project.related, function(related_index, related){
+            var related_name = related.name;
+            var related_id = related.id;
+            var context = {id: related_url, name: related_name};
+            var $related_element = $(related_template(context));
+            $list_element.find(".related").append($related_element);
+          });
+
+          $.each(project.resource, function(resource_index, resource){
+            var resource_type = resource.type;
+            var resource_name = resource.name;
+            var resource_url = resource.url;
+            var context = {type: resource_type, url: resource_url, name: resource_name};
+            var $resource_element = $(resource_template(context));
+            $list_element.find(".resource").append($resource_element);
+          });
+
+          $.each(project.workspace, function(workspace_index, workspace){
+            var workspace_type = workspace.type;
+            var workspace_url = workspace.url;
+            var workspace_icon = "";
+            $.each({"hackpad":"file", "hackfoldr":"folder", "github":"github", "google group":"mail", "google drive":"cloud", "google plus community":"google plus", "facebook group":"facebook", "irc channel":"chat", "google calendar":"calendar"}, function(type_name, type_icon){
+              if(workspace_type == type_name){
+                workspace_icon = type_icon;
+              }
+            });
+            var context = {type: workspace_type, url: workspace_url, icon: workspace_icon};
+            var $workspace_element = $(workspace_template(context));
+            $list_element.find(".workspace").append($workspace_element);
+          });
 
           $.each(project.achievement, function(achievement_index, achievement){
             var achievement_type = achievement.type;
@@ -654,7 +688,6 @@ block script
               $(".added").remove();
               update_view("edit");
               update_url("edit");
-              //console.log($.get("https://ethercalc.org/_/g0v-project-hub-mockup/csv"));
             }
           });
         };
@@ -739,22 +772,18 @@ block script
             submit_data.tag = $("[name='tag']").val();
             submit_data.related = $("[name='related']").val();
             $.each(submit_data, function(key, data){
-              //submit_data_string = submit_data_string + JSON.stringify(data).replace(/,/g, ";").replace(/{/g, "(").replace(/\"/g, "\"\"").replace(/\[/g, "<") + ", ";
               submit_data_string.push('"' + JSON.stringify(data).replace(/"/g, '""') + '"');
             });
-            //console.log(submit_data_string);
             post_ethercalc(submit_data_string.join(','));
           };
           return false;
           //e.preventDefault();
-          //console.log(JSON.stringify(submit_data));
         });
 
         // TODO: sort menu items
 
       }).done(function(){
         $("#iframe").attr("src","https://ethercalc.org/g0v-project-hub-mockup");
-        //console.log($.get("https://ethercalc.org/_/g0v-project-hub-mockup/csv"));
       });
 
       // TODO: login and join projects
