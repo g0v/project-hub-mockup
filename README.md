@@ -29,7 +29,7 @@ Local server and compilation:
 
 Deploy to gh-pages:
 * for Windows: run deploy.bat on master branch
-* future: Travis (TBD)
+* If you commit into master, then Travis-ci would auto-deploy
 
 Structure
 ------------
