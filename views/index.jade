@@ -324,19 +324,19 @@ block script
       var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
       var filter_template = Handlebars.compile(filter_template_source);
 
-      var list_template_source ='<article class="column project" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui large modal project" name="{{id}}"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p><div class="ui divider clear both"></div><div class="ui two column stackable grid"><div class="column"><div class="ui stackable grid"><div class="row"><div class="column four wide">專案分類</div><div class="column twelve wide category"></div></div><div class="row"><div class="column four wide">標籤</div><div class="column twelve wide tag"></div></div><div class="row"><div class="column four wide">相關專案</div><div class="column twelve wide related"></div></div></div></div><div class="column"><div class="ui stackable grid"><div class="row"><div class="column four wide">授權</div><div class="column twelve wide license"></div></div><div class="row"><div class="column four wide">使用工具</div><div class="column twelve wide tool"></div></div><div class="row"><div class="column four wide">資料來源</div><div class="column twelve wide resource"></div></div><div class="row"><div class="column four wide">工作區</div><div class="column twelve wide workspace"></div></div></div></div></div></div></div><div class="hidden text">{{content}}</div></article>';
+      var list_template_source ='<article class="column project" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui large modal project" name="{{id}}"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p><div class="ui divider clear both"></div><div class="ui two column stackable grid"><div class="column"><div class="ui grid"><div class="row"><div class="column four wide">專案分類</div><div class="column twelve wide category"></div></div><div class="row"><div class="column four wide">標籤</div><div class="column twelve wide tag"></div></div><div class="row"><div class="column four wide">相關專案</div><div class="column twelve wide related"></div></div></div></div><div class="column"><div class="ui grid"><div class="row"><div class="column four wide">授權</div><div class="column twelve wide license"></div></div><div class="row"><div class="column four wide">使用工具</div><div class="column twelve wide tool"></div></div><div class="row"><div class="column four wide">資料來源</div><div class="column twelve wide resource"></div></div><div class="row"><div class="column four wide">工作區</div><div class="column twelve wide workspace"></div></div></div></div></div></div></div><div class="hidden text">{{content}}</div></article>';
       var list_template = Handlebars.compile(list_template_source);
 
       var achievement_template_source = '<a href="{{url}}" target="_blank" class="ui label"><i class="icon {{icon}}"></i>{{type}}{{phase}}<i class="icon forward mail"></i></a>';
       var achievement_template = Handlebars.compile(achievement_template_source);
 
-      var workspace_template_source = '<a href="{{url}}" target="_blank" class="ui label"><i class="icon {{icon}}"></i>{{type}}<i class="icon forward mail"></i></a>';
+      var workspace_template_source = '<a href="{{url}}" target="_blank" class="ui large label"><i class="icon {{icon}}"></i>{{type}}<i class="icon forward mail"></i></a>';
       var workspace_template = Handlebars.compile(workspace_template_source);
 
-      var resource_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{name}} ({{type}})<i class="icon forward mail"></i></a>';
+      var resource_template_source = '<a href="{{url}}" target="_blank" class="ui large label">{{name}} ({{type}})<i class="icon forward mail"></i></a>';
       var resource_template = Handlebars.compile(resource_template_source);
 
-      var related_template_source = '<a href="#{{id}}" class="ui label">{{name}}<i class="icon exchange"></i></a>';
+      var related_template_source = '<a href="#" class="ui large label">{{name}}<i class="icon exchange"></i></a>';
       var related_template = Handlebars.compile(related_template_source);
 
       var label_template_source = '<a class="ui large label">{{name}}</a>';
@@ -451,9 +451,8 @@ block script
           add_labels("license", project.license);
 
           $.each(project.related, function(related_index, related){
-            var related_name = related.name;
-            var related_id = related.id;
-            var context = {id: related_url, name: related_name};
+            var related_name = related;
+            var context = {name: related_name};
             var $related_element = $(related_template(context));
             $list_element.find(".related").append($related_element);
           });
