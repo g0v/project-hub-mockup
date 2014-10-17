@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+  - '0.10'
+
+git:
+  depth: 1
+
+before_install:
+  - gem update --system
+  - gem install sass --version "3.4.5" --no-document
+  - gem install compass --version "1.0.1" --no-document
+  - gem install tilt  --version "1.4.1" --no-document
+
+before_script:
+  - chmod +x .travis/after_success.sh
+  - chmod +x ./deploy
+
+script:
+  - npm test
+
+branches:
+  except:
+    - gh-pages
+
+env:
+  global:
+    - REPO="git@github.com:g0v/project-hub-mockup"
+    - secure: "BA25RdS2Bu06lXHExu5JKIG3rrxNJA2EeK8v+0b4SUSQAnVEW4/PgLitfTp5IDYmfPidkpjegwC12sBLOgAr90sRFF3XB5r+cW22BvwJv1r6Y6SHPD/stF+DNNInXgd9M5wjJZSh5eW0altb0IepKg0t0/qJ5o3QHO/Dhn48JqQ="
+
+after_success: .travis/after_success.sh
