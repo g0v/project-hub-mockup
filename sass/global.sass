@@ -11,6 +11,9 @@ html, body, div, nav, section, article, header, footer, h1, h2, h3, h4
   line-height: 1em
   +box-sizing(border-box)
 
+body.ui.dimmable
+  position: static
+
 p
   line-height: 1.5em
 
@@ -29,6 +32,9 @@ a, a:link
 
 .align.center
   text-align: center
+
+.clear.both
+  clear: both
 
 #sidebar
   width: 15rem
@@ -73,20 +79,44 @@ a, a:link
   #list
     padding: 1rem
     .column
+      margin-top: 0
+      padding-top: 1rem
       .wrapper
         background-color: rgba(#fff, 0.7)
         +box-shadow(0 0 1px rgba(#000,0.2))
-      .image
-        float: right
-        width: 30%
-        max-width: 8rem
-        margin: 0 0 0 1rem
-        img
-          width: 100%
-      .text
-        padding: 1rem
-      .ui.label
-        margin: 0.2rem
+        .text
+          padding: 1rem
+        .header
+          .text
+            padding: 1rem
+            margin: -1rem
+            cursor: pointer
+.ui.modal
+  padding: 1rem
+  .header
+    padding: 0 0 1rem 0
+  .ui.stackable.grid
+    .row
+      margin: 0!important
+      .column
+        margin: 0!important
+      .four.wide.column
+        padding: 0.5rem 1rem 0.5rem 0
+        text-align: right
+      .twelve.wide.column
+        border-left: 1px #ccc solid
+.project
+  .image
+    float: right
+    width: 30%
+    max-width: 10rem
+    margin: 0 0 0 1rem
+    img
+      width: 100%
+  .ui.label
+    margin: 0.2rem
+    .icon:last-child
+      margin-left: 0.5rem
 #about, #submit, #edit
   //#about, #edit
   display: none

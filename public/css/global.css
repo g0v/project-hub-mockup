@@ -14,6 +14,10 @@ html, body, div, nav, section, article, header, footer, h1, h2, h3, h4 {
   box-sizing: border-box;
 }
 
+body.ui.dimmable {
+  position: static;
+}
+
 p {
   line-height: 1.5em;
 }
@@ -37,6 +41,10 @@ a, a:link {
 
 .align.center {
   text-align: center;
+}
+
+.clear.both {
+  clear: both;
 }
 
 #sidebar {
@@ -92,26 +100,59 @@ a, a:link {
 #projects #list {
   padding: 1rem;
 }
+#projects #list .column {
+  margin-top: 0;
+  padding-top: 1rem;
+}
 #projects #list .column .wrapper {
   background-color: rgba(255, 255, 255, 0.7);
   -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }
-#projects #list .column .image {
-  float: right;
-  width: 30%;
-  max-width: 8rem;
-  margin: 0 0 0 1rem;
-}
-#projects #list .column .image img {
-  width: 100%;
-}
-#projects #list .column .text {
+#projects #list .column .wrapper .text {
   padding: 1rem;
 }
-#projects #list .column .ui.label {
+#projects #list .column .wrapper .header .text {
+  padding: 1rem;
+  margin: -1rem;
+  cursor: pointer;
+}
+
+.ui.modal {
+  padding: 1rem;
+}
+.ui.modal .header {
+  padding: 0 0 1rem 0;
+}
+.ui.modal .ui.stackable.grid .row {
+  margin: 0 !important;
+}
+.ui.modal .ui.stackable.grid .row .column {
+  margin: 0 !important;
+}
+.ui.modal .ui.stackable.grid .row .four.wide.column {
+  padding: 0.5rem 1rem 0.5rem 0;
+  text-align: right;
+}
+.ui.modal .ui.stackable.grid .row .twelve.wide.column {
+  border-left: 1px #cccccc solid;
+}
+
+.project .image {
+  float: right;
+  width: 30%;
+  max-width: 10rem;
+  margin: 0 0 0 1rem;
+}
+.project .image img {
+  width: 100%;
+}
+.project .ui.label {
   margin: 0.2rem;
+}
+.project .ui.label .icon:last-child {
+  margin-left: 0.5rem;
 }
 
 #about, #submit, #edit {

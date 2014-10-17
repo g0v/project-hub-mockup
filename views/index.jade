@@ -8,7 +8,7 @@ block body
 
   nav#sidebar
     .ui.menu.no.margin
-      .ui.dropdown.item for Asperger's
+      .ui.dropdown.item Asperger mode
         i.icon.dropdown
         .menu
           a.item Human mode
@@ -66,6 +66,43 @@ block body
   section#projects.views
     #filter
     #count
+    //-.ui.segment
+      a.ui.image(href="").float.right
+        img(src="")
+      h3.ui.header 萌典
+      p.description 教育部國語、臺語、客語辭典民間版，提供筆順動畫、真人發音、英、法、德文對照、兩岸詞彙對照等功能。網站目前每月提供數百萬人次的服務，行動裝置 App 用戶逾十萬人。
+      p.achievements
+        a(href="").ui.label
+      .ui.divider
+      .ui.two.column.stackable.grid
+        .column
+          .ui.stackable.grid
+            .row.category
+              .column.four.wide {{}}
+              .column.twelve.wide
+                a.ui.label {{}}
+            .row.tag
+              .column.four.wide {{}}
+              .column.twelve.wide
+                a.ui.label {{}}
+            .row.related
+              .column.four.wide {{}}
+              .column.twelve.wide
+                  a(href="").ui.label {{}}
+        .column
+          .ui.stackable.grid
+            .row.license
+              .column.four.wide {{}}
+              .column.twelve.wide
+                a.ui.label {{}}
+            .row.tool
+              .column.four.wide {{}}
+              .column.twelve.wide
+                a.ui.label {{}}
+            .row.workspaces
+              .column.four.wide {{}}
+              .column.twelve.wide
+                a(href="").ui.label {{}}
     #list.ui.two.column.stackable.grid
       //-article.column.category-1
         a.ui.image(href="")
@@ -181,7 +218,7 @@ block body
                 .item(data-value="safari") Safari extension
                 .item(data-value="api") application interface (api)
                 .item(data-value="document") document
-                .item(data-value="miscmiscellaneous") miscellaneous
+                .item(data-value="miscellaneous") miscellaneous
           .field
             label 開發階段
             .ui.selection.dropdown
@@ -287,10 +324,22 @@ block script
       var filter_template_source = '<div class="ui label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
       var filter_template = Handlebars.compile(filter_template_source);
 
-      var list_template_source ='<article class="column"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="hidden text">{{content}}</div></div></article>';
+      var list_template_source ='<article class="column project" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="text"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui large modal project" name="{{id}}"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p><div class="ui divider clear both"></div><div class="ui two column stackable grid"><div class="column"><div class="ui grid"><div class="row"><div class="column four wide">專案分類</div><div class="column twelve wide category"></div></div><div class="row"><div class="column four wide">標籤</div><div class="column twelve wide tag"></div></div><div class="row"><div class="column four wide">相關專案</div><div class="column twelve wide related"></div></div></div></div><div class="column"><div class="ui grid"><div class="row"><div class="column four wide">授權</div><div class="column twelve wide license"></div></div><div class="row"><div class="column four wide">使用工具</div><div class="column twelve wide tool"></div></div><div class="row"><div class="column four wide">資料來源</div><div class="column twelve wide resource"></div></div><div class="row"><div class="column four wide">工作區</div><div class="column twelve wide workspace"></div></div></div></div></div></div></div><div class="hidden text">{{content}}</div></article>';
       var list_template = Handlebars.compile(list_template_source);
 
-      var label_template_source = '<a href="{{url}}" target="_blank" class="ui label">{{type}} - {{phase}}</a>';
+      var achievement_template_source = '<a href="{{url}}" target="_blank" class="ui label"><i class="icon {{icon}}"></i>{{type}}{{phase}}<i class="icon forward mail"></i></a>';
+      var achievement_template = Handlebars.compile(achievement_template_source);
+
+      var workspace_template_source = '<a href="{{url}}" target="_blank" class="ui large label"><i class="icon {{icon}}"></i>{{type}}<i class="icon forward mail"></i></a>';
+      var workspace_template = Handlebars.compile(workspace_template_source);
+
+      var resource_template_source = '<a href="{{url}}" target="_blank" class="ui large label">{{name}} ({{type}})<i class="icon forward mail"></i></a>';
+      var resource_template = Handlebars.compile(resource_template_source);
+
+      var related_template_source = '<a href="#" class="ui large label">{{name}}<i class="icon exchange"></i></a>';
+      var related_template = Handlebars.compile(related_template_source);
+
+      var label_template_source = '<a class="ui large label">{{name}}</a>';
       var label_template = Handlebars.compile(label_template_source);
 
       var menus = {
@@ -347,13 +396,15 @@ block script
       $.getJSON("json/project-list.json", function(projects){
 
         $.each(projects, function(project_index, project){
-          var homepage = project.homepage;
-          var logo = project.logo;
-          var name = project.name.zh;
-          var intro = project.intro.zh.short;
-          var classes = [];
-          var content = JSON.stringify(project);
+          var id = project_index;
+          var homepage = project.homepage || "";
+          var logo = project.logo || "";
+          var name = project.name.zh || "";
+          var intro = project.intro.zh.short || "";
 
+          var content = JSON.stringify(project) || "";
+
+          var classes = [];
           var add_classes = function(attribute_type){
             $.each(project[attribute_type], function(index, attribute){
               if( !_.contains(menus[attribute_type], attribute)){
@@ -384,16 +435,67 @@ block script
             logo = "http://i.jimmyhub.net/shot/" + homepage;
           };
 
-          var context = {homepage: homepage, logo: logo, name: name, intro: intro, content: content};
+          var context = {id: id, homepage: homepage, logo: logo, name: name, intro: intro, content: content};
           var $list_element = $(list_template(context));
+
+          var add_labels = function(label_type, data_array){
+            $.each(data_array, function(array_index, array_value){
+              var context = {name: array_value};
+              var $label_element = $(label_template(context));
+              $list_element.find("."+label_type).append($label_element);
+            });
+          };
+          add_labels("category", project.category);
+          add_labels("tag", project.tag);
+          add_labels("tool", project.tool);
+          add_labels("license", project.license);
+
+          $.each(project.related, function(related_index, related){
+            var related_name = related;
+            var context = {name: related_name};
+            var $related_element = $(related_template(context));
+            $list_element.find(".related").append($related_element);
+          });
+
+          $.each(project.resource, function(resource_index, resource){
+            var resource_type = resource.type;
+            var resource_name = resource.name;
+            var resource_url = resource.url;
+            var context = {type: resource_type, url: resource_url, name: resource_name};
+            var $resource_element = $(resource_template(context));
+            $list_element.find(".resource").append($resource_element);
+          });
+
+          $.each(project.workspace, function(workspace_index, workspace){
+            var workspace_type = workspace.type;
+            var workspace_url = workspace.url;
+            var workspace_icon = "";
+            $.each({"hackpad":"file", "hackfoldr":"folder", "github":"github", "google group":"mail", "google drive":"cloud", "google plus community":"google plus", "facebook group":"facebook", "irc channel":"chat", "google calendar":"calendar"}, function(type_name, type_icon){
+              if(workspace_type == type_name){
+                workspace_icon = type_icon;
+              }
+            });
+            var context = {type: workspace_type, url: workspace_url, icon: workspace_icon};
+            var $workspace_element = $(workspace_template(context));
+            $list_element.find(".workspace").append($workspace_element);
+          });
 
           $.each(project.achievement, function(achievement_index, achievement){
             var achievement_type = achievement.type;
-            var achievement_phase = achievement.phase;
             var achievement_url = achievement.url;
-            var context = {type: achievement_type, phase: achievement_phase, url: achievement_url};
-            var $label_element = $(label_template(context));
-            $list_element.find(".achievement").append($label_element);
+            var achievement_phase = "";
+            var achievement_icon = "";
+            if(achievement.phase != "Production"){
+              achievement_phase = " (" + achievement.phase + ")";
+            };
+            $.each({"Android": "android", "iOS": "apple", "WP": "windows", "Firefox OS": "mobile", "Linux": "linux", "Mac": "apple", "Windows": "windows", "Firefox": "browser", "Chrome": "browser", "Safari": "browser", "Web": "", "API": "setting", "Document": "text file", "Miscellaneous": ""}, function(type_name, type_icon){
+              if(achievement_type == type_name){
+                achievement_icon = type_icon;
+              }
+            });
+            var context = {type: achievement_type, phase: achievement_phase, url: achievement_url, icon: achievement_icon};
+            var $achievement_element = $(achievement_template(context));
+            $list_element.find(".achievement").append($achievement_element);
             add_sub_classes("type", achievement_type);
             add_sub_classes("phase", achievement_phase);
           });
@@ -406,7 +508,19 @@ block script
         });
       }).done(function(){
 
-        // step 2: render sidebar menu and filter labels
+        // step 2-1: detect modals
+
+        var current_project = _.last( document.URL.split('/') );
+        if(current_project.match(/^#/)){
+          var active_modal_name = current_project.replace("#","");
+          var active_project_position = $("#" + active_modal_name).offset().top;
+          $(".ui.modal").filter("[name='" + active_modal_name + "']").modal("show");
+          $("#projects").animate({
+             scrollTop: active_project_position
+          });
+        }
+
+        // step 2-2: render sidebar menu and filter labels
 
         $.each(menus, function(menu_id, menu_items){
           render_attributes(menu_id, menu_items);
@@ -421,7 +535,7 @@ block script
 
         // for projects filter
         var initialize_pilot = function(){
-          var all_projects_count = $("#list .column").length;
+          var all_projects_count = $("#list>.column").length;
           var active_classes = [];
           var active_classes_string = "";
           var active_classes_count = "";
@@ -525,8 +639,19 @@ block script
           update_url("");
         });
 
+        $("#list .column .header .text").on("click tap", function(){
+          var active_modal_name = $(this).parents(".column").attr("id");
+          $(".ui.modal").filter("[name='" + active_modal_name +"']").modal("show");
+          update_url("#" + active_modal_name);
+        });
+        $(".ui.modal").modal("setting", {
+          onHide: function(){
+            update_url("");
+          }
+        });
+
         // initiate submit form - add achievement / add workspace
-        var achievement_template_source = '<div class="inline fields added"><div class="field"><label>網址</label><div class="ui left labeled icon input"><input placeholder="http://" type="url" name="achievement-{{number}}-url"><i class="icon url"></i><div class="ui corner label"><i class="icon asterisk"></i></div></div></div><div class="field"><label>類型</label><div class="ui selection dropdown"><input name="achievement-{{number}}-type" type="hidden" value="web"><div class="default text">website</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="web" class="item">website</div><div data-value="android" class="item">Android app</div><div data-value="ios" class="item">iOS app</div><div data-value="wp" class="item">Windows Phone app</div><div data-value="firefoxos" class="item">Firefox OS</div><div data-value="linux" class="item">Linux software</div><div data-value="mac" class="item">Mac software</div><div data-value="windows" class="item">Windows software</div><div data-value="chrome" class="item">Chrome extension</div><div data-value="firefox" class="item">Firefox extension</div><div data-value="safari" class="item">Safari extension</div><div data-value="api" class="item">application interface (api)</div><div data-value="document" class="item">document</div><div data-value="miscmiscellaneous" class="item">miscellaneous</div></div></div></div><div class="field"><label>開發階段</label><div class="ui selection dropdown"><input name="achievement-{{number}}-phase" type="hidden" value="idea"><div class="default text">idea</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="idea" class="item">idea</div><div data-value="plan" class="item">plan</div><div data-value="wireframe" class="item">wireframe</div><div data-value="mockup" class="item">mockup</div><div data-value="prototype" class="item">prototype</div><div data-value="alpha" class="item">alpha</div><div data-value="beta" class="item">beta</div><div data-value="production" class="item">production</div><div data-value="memory" class="item">memory</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div></div>';
+        var achievement_template_source = '<div class="inline fields added"><div class="field"><label>網址</label><div class="ui left labeled icon input"><input placeholder="http://" type="url" name="achievement-{{number}}-url"><i class="icon url"></i><div class="ui corner label"><i class="icon asterisk"></i></div></div></div><div class="field"><label>類型</label><div class="ui selection dropdown"><input name="achievement-{{number}}-type" type="hidden" value="web"><div class="default text">website</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="web" class="item">website</div><div data-value="android" class="item">Android app</div><div data-value="ios" class="item">iOS app</div><div data-value="wp" class="item">Windows Phone app</div><div data-value="firefoxos" class="item">Firefox OS</div><div data-value="linux" class="item">Linux software</div><div data-value="mac" class="item">Mac software</div><div data-value="windows" class="item">Windows software</div><div data-value="chrome" class="item">Chrome extension</div><div data-value="firefox" class="item">Firefox extension</div><div data-value="safari" class="item">Safari extension</div><div data-value="api" class="item">application interface (api)</div><div data-value="document" class="item">document</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div><div class="field"><label>開發階段</label><div class="ui selection dropdown"><input name="achievement-{{number}}-phase" type="hidden" value="idea"><div class="default text">idea</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="idea" class="item">idea</div><div data-value="plan" class="item">plan</div><div data-value="wireframe" class="item">wireframe</div><div data-value="mockup" class="item">mockup</div><div data-value="prototype" class="item">prototype</div><div data-value="alpha" class="item">alpha</div><div data-value="beta" class="item">beta</div><div data-value="production" class="item">production</div><div data-value="memory" class="item">memory</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div></div>';
         var achievement_template = Handlebars.compile(achievement_template_source);
         var latest_achievement_index = 0;
         $("#add-achievement").on("click tap", function(){
@@ -562,7 +687,6 @@ block script
               $(".added").remove();
               update_view("edit");
               update_url("edit");
-              //console.log($.get("https://ethercalc.org/_/g0v-project-hub-mockup/csv"));
             }
           });
         };
@@ -647,22 +771,18 @@ block script
             submit_data.tag = $("[name='tag']").val();
             submit_data.related = $("[name='related']").val();
             $.each(submit_data, function(key, data){
-              //submit_data_string = submit_data_string + JSON.stringify(data).replace(/,/g, ";").replace(/{/g, "(").replace(/\"/g, "\"\"").replace(/\[/g, "<") + ", ";
               submit_data_string.push('"' + JSON.stringify(data).replace(/"/g, '""') + '"');
             });
-            //console.log(submit_data_string);
             post_ethercalc(submit_data_string.join(','));
           };
           return false;
           //e.preventDefault();
-          //console.log(JSON.stringify(submit_data));
         });
 
         // TODO: sort menu items
 
       }).done(function(){
         $("#iframe").attr("src","https://ethercalc.org/g0v-project-hub-mockup");
-        //console.log($.get("https://ethercalc.org/_/g0v-project-hub-mockup/csv"));
       });
 
       // TODO: login and join projects
