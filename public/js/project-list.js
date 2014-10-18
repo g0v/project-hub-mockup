@@ -102,7 +102,7 @@
           "url": "http://movement.ee.ncku.edu.tw/~smart0eddie/cur/"
         }, {
           "type": "Media",
-          "phase": "Active",
+          "phase": "Production",
           "url": "https://www.facebook.com/MOVEMENT.ITW"
         }, {
           "type": "Android",
@@ -186,9 +186,9 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "g0v-photos",
       "name": {
-        "zh": "自己的活動自己拍",
+        "zh": "g0v.photos 自己的活動自己拍",
         "en": ""
       },
       "logo": "",
@@ -256,15 +256,15 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "oldpaper",
       "name": {
-        "zh": "台灣歷史四大報",
+        "zh": "LagNews腿新聞",
         "en": ""
       },
       "logo": "",
       "intro": {
         "zh": {
-          "short": "",
+          "short": "台灣歷史四大報，從 Dimensions.tw 和 ettoday 爬每日公布的四大報頭條資訊，一天跑一次，將 30 天前的頭條張貼到 facebook，每天正午跑一次。",
           "medium": "",
           "long": ""
         },
@@ -274,32 +274,49 @@
           "long": ""
         }
       },
-      "category": ['新媒體'],
+      "category": ['開放資料'],
       "tag": ['新聞', '媒體', '報紙', '宣傳'],
       "participant": {},
-      "tool": [],
-      "license": [],
+      "tool": ['PHP'],
+      "license": ['BSD'],
       "homepage": "",
-      "achievement": [{
-        "type": "Web",
-        "phase": "Production",
-        "url": "http://oldpaper.g0v.ronny.tw/"
+      "achievement": [
+        {
+          "type": "Web",
+          "phase": "Production",
+          "url": "http://oldpaper.g0v.ronny.tw/"
+        }, {
+          "type": "API",
+          "phase": "Production",
+          "url": "http://oldpaper.g0v.ronny.tw/index/json"
+        }, {
+          "type": "Media",
+          "phase": "Production",
+          "url": "https://www.facebook.com/lagnews.tw/"
+        }
+      ],
+      "workspace": [{
+        "type": "Github",
+        "name": "程式",
+        "url": "https://github.com/ronnywang/lagnews"
       }],
-      "workspace": [],
       "resource": [],
       "follower": [],
-      "story": [],
+      "story": [{
+        "title": "Blog介紹",
+        "url": "http://ronnywang.pixnet.net/blog/post/32536633"
+      }],
       "related": []
     }, {
-      "id": "",
+      "id": "newsdiff",
       "name": {
-        "zh": "NewsDiff官方新聞稿異動情況站",
+        "zh": "NewsDiff 官方新聞稿異動情況站",
         "en": ""
       },
       "logo": "",
       "intro": {
         "zh": {
-          "short": "",
+          "short": "找出新聞修改的記錄",
           "medium": "",
           "long": ""
         },
@@ -313,7 +330,7 @@
       "tag": ['新聞', '媒體', '宣傳'],
       "participant": {},
       "tool": [],
-      "license": [],
+      "license": ['BSD'],
       "homepage": "",
       "achievement": [{
         "type": "Web",
@@ -361,7 +378,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "newstrend",
       "name": {
         "zh": "新聞趨勢統計",
         "en": ""
@@ -396,7 +413,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "newshelper",
       "name": {
         "zh": "新聞小幫手",
         "en": ""
@@ -585,7 +602,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "fact",
       "name": {
         "zh": "政誌",
         "en": ""
@@ -620,7 +637,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "wethepeople",
       "name": {
         "zh": "市長，給問嗎？",
         "en": ""
@@ -655,36 +672,32 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "laweasyread-client",
       "name": {
-        "zh": "法規易讀器",
-        "en": ""
+        "zh": "法規亦毒氣",
+        "en": "LawEasyRead client"
       },
-      "logo": "",
+      "logo": "https://raw.githubusercontent.com/g0v/laweasyread-front/master/icon.png",
       "intro": {
         "zh": {
-          "short": "",
+          "short": "將網頁中的法規、條文、大法官解釋、判決字號均加上連結。",
           "medium": "",
           "long": ""
         },
         "en": {
-          "short": "",
+          "short": "Parse the contents of webpage to view Taiwan`s law articles/websites easier.",
           "medium": "",
           "long": ""
         }
       },
       "category": ['開放資料'],
-      "tag": ['立法', '法律', '法規條文查詢', '瀏覽器擴充套件', '附加元件', '法條', '查詢'],
+      "tag": ['立法', '法律', '法規條文查詢', '瀏覽器擴充套件', '附加元件', '法條', '查詢', '法規易讀器'],
       "participant": {},
-      "tool": [],
-      "license": [],
-      "homepage": "",
+      "tool": ['JavaScript'],
+      "license": ['MIT'],
+      "homepage": "http://g0v.github.io/laweasyread-front/index.html",
       "achievement": [
         {
-          "type": "Web",
-          "phase": "Production",
-          "url": "http://g0v.github.io/laweasyread-front/index.html"
-        }, {
           "type": "Chrome",
           "phase": "Production",
           "url": "https://chrome.google.com/webstore/detail/%E6%B3%95%E8%A6%8F%E4%BA%A6%E6%AF%92%E6%B0%A3/iedodmlnmhobigohbkalkkjlbmdkjalj"
@@ -694,26 +707,44 @@
           "url": "https://addons.mozilla.org/zh-tw/firefox/addon/laweasyread/"
         }
       ],
-      "workspace": [],
-      "resource": [],
+      "workspace": [
+        {
+          "type": "Hackfoldr",
+          "name": "",
+          "url": "http://hack.g0v.tw/laweasyread"
+        }, {
+          "type": "Github",
+          "name": "程式",
+          "url": "https://github.com/g0v/laweasyread-front"
+        }, {
+          "type": "Github",
+          "name": "資料",
+          "url": "https://github.com/g0v/laweasyread-data"
+        }
+      ],
+      "resource": [{
+        "type": "Data",
+        "name": "全國法規資料庫",
+        "url": "http://law.moj.gov.tw/LawClass/LawClassList.aspx"
+      }],
       "follower": [],
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "laweasyread-api",
       "name": {
-        "zh": "法規立法狀態查詢",
-        "en": ""
+        "zh": "法規 API",
+        "en": "LawEasyRead"
       },
-      "logo": "",
+      "logo": "https://raw.github.com/g0v/laweasyread-front/master/icon.png",
       "intro": {
         "zh": {
-          "short": "",
+          "short": "台灣法規的 API 與立法狀態查詢",
           "medium": "",
           "long": ""
         },
         "en": {
-          "short": "",
+          "short": "API for Taiwan Law",
           "medium": "",
           "long": ""
         }
@@ -721,34 +752,68 @@
       "category": ['開放政府'],
       "tag": ['法律', '法規條文查詢'],
       "participant": {},
-      "tool": [],
-      "license": [],
+      "tool": ['LiveScript'],
+      "license": ['MIT'],
       "homepage": "",
-      "achievement": [{
-        "type": "Web",
-        "phase": "Production",
-        "url": "http://laweasyread.herokuapp.com/"
-      }],
-      "workspace": [],
-      "resource": [],
+      "achievement": [
+        {
+          "type": "Web",
+          "phase": "Alpha",
+          "url": "http://laweasyread.herokuapp.com/"
+        }, {
+          "type": "API",
+          "phase": "Alpha",
+          "url": "https://github.com/g0v/laweasyread" + api
+        }
+      ],
+      "workspace": [
+        {
+          "type": "Hackfoldr",
+          "name": "",
+          "url": "http://hack.g0v.tw/laweasyread"
+        }, {
+          "type": "Github",
+          "name": "程式",
+          "url": "https://github.com/g0v/laweasyread"
+        }, {
+          "type": "Github",
+          "name": "資料",
+          "url": "https://github.com/g0v/laweasyread-data"
+        }, {
+          "type": "Github",
+          "name": "資料",
+          "url": "https://github.com/g0v/twlaw"
+        }
+      ],
+      "resource": [
+        {
+          "type": "Data",
+          "name": "立法院法律系統",
+          "url": "http://lis.ly.gov.tw/lgcgi/lglaw"
+        }, {
+          "type": "Data",
+          "name": "全國法規資料庫",
+          "url": "http://law.moj.gov.tw/LawClass/LawClassList.aspx"
+        }
+      ],
       "follower": [],
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "i64885",
       "name": {
-        "zh": "律師幫幫我",
-        "en": ""
+        "zh": "i64885 公益律師呼叫平台",
+        "en": "i64885"
       },
       "logo": "",
       "intro": {
         "zh": {
-          "short": "",
+          "short": "律師幫幫我：公益律師呼叫平台",
           "medium": "",
           "long": ""
         },
         "en": {
-          "short": "",
+          "short": "A request tracking and notification system for legal aid. Helping political victims in emergency situation.",
           "medium": "",
           "long": ""
         }
@@ -756,15 +821,19 @@
       "category": [],
       "tag": ['找律師', '電話', '司改會', '法律'],
       "participant": {},
-      "tool": [],
-      "license": [],
+      "tool": ['pgrest'],
+      "license": ['MIT'],
       "homepage": "",
       "achievement": [{
         "type": "Web",
-        "phase": "Production",
+        "phase": "Alpha",
         "url": "http://i64885.tw"
       }],
-      "workspace": [],
+      "workspace": [{
+        "type": "Github",
+        "name": "程式",
+        "url": "https://github.com/g0v/i64885"
+      }],
       "resource": [],
       "follower": [],
       "story": [],
@@ -1273,7 +1342,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "jobhelper",
       "name": {
         "zh": "求職小幫手",
         "en": ""
@@ -1458,7 +1527,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "moedict",
       "name": {
         "zh": "萌典",
         "en": ""
@@ -1514,7 +1583,8 @@
         }
       ],
       "workspace": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
+        "name": "",
         "url": "http://hack.g0v.tw/3du"
       }],
       "resource": [],
@@ -1522,7 +1592,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "moedict-hub",
       "name": {
         "zh": "萌典字宙反應爐",
         "en": ""
@@ -1557,7 +1627,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "moedict-card",
       "name": {
         "zh": "萌典閃卡",
         "en": ""
@@ -1620,111 +1690,6 @@
         "type": "Web",
         "phase": "Production",
         "url": "http://axe.g0v.tw/"
-      }],
-      "workspace": [],
-      "resource": [],
-      "follower": [],
-      "story": [],
-      "related": []
-    }, {
-      "id": "",
-      "name": {
-        "zh": "政治獻金數位化(資料建立)",
-        "en": ""
-      },
-      "logo": "",
-      "intro": {
-        "zh": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        },
-        "en": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        }
-      },
-      "category": ['開放政府'],
-      "tag": ['監察', '公務人員財產申報'],
-      "participant": {},
-      "tool": [],
-      "license": [],
-      "homepage": "",
-      "achievement": [{
-        "type": "Web",
-        "phase": "Production",
-        "url": "http://campaign-finance.g0v.ctiml.tw/"
-      }],
-      "workspace": [],
-      "resource": [],
-      "follower": [],
-      "story": [],
-      "related": []
-    }, {
-      "id": "",
-      "name": {
-        "zh": "g0v開放政治獻金",
-        "en": ""
-      },
-      "logo": "",
-      "intro": {
-        "zh": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        },
-        "en": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        }
-      },
-      "category": ['開放政府'],
-      "tag": ['監察', '公務人員財產申報', '討論區'],
-      "participant": {},
-      "tool": [],
-      "license": [],
-      "homepage": "",
-      "achievement": [{
-        "type": "Web",
-        "phase": "Production",
-        "url": "http://campaign-finance.g0v.olc.tw/"
-      }],
-      "workspace": [],
-      "resource": [],
-      "follower": [],
-      "story": [],
-      "related": []
-    }, {
-      "id": "",
-      "name": {
-        "zh": "政治獻金視覺化",
-        "en": ""
-      },
-      "logo": "",
-      "intro": {
-        "zh": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        },
-        "en": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        }
-      },
-      "category": ['開放政府'],
-      "tag": ['監察', '公務人員財產申報', '圖形'],
-      "participant": {},
-      "tool": [],
-      "license": [],
-      "homepage": "",
-      "achievement": [{
-        "type": "Web",
-        "phase": "Production",
-        "url": "http://fuyei.github.io/cf-viz/viz.htm"
       }],
       "workspace": [],
       "resource": [],
@@ -1865,41 +1830,6 @@
         "type": "Web",
         "phase": "Production",
         "url": "http://env.g0v.tw/"
-      }],
-      "workspace": [],
-      "resource": [],
-      "follower": [],
-      "story": [],
-      "related": []
-    }, {
-      "id": "",
-      "name": {
-        "zh": "公有地大行動",
-        "en": ""
-      },
-      "logo": "",
-      "intro": {
-        "zh": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        },
-        "en": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        }
-      },
-      "category": ['開放資料'],
-      "tag": ['天龍國特公地', '台北', '臺北'],
-      "participant": {},
-      "tool": [],
-      "license": [],
-      "homepage": "",
-      "achievement": [{
-        "type": "Web",
-        "phase": "Production",
-        "url": "http://taipei-pop.herokuapp.com/"
       }],
       "workspace": [],
       "resource": [],
@@ -2994,7 +2924,7 @@
     }, {
       "id": "",
       "name": {
-        "zh": "財政部關貿署進出口資料",
+        "zh": "財政部關務署進出口資料",
         "en": ""
       },
       "logo": "",
@@ -3010,10 +2940,10 @@
           "long": ""
         }
       },
-      "category": [],
-      "tag": ['貿易', '關稅', '進口'],
+      "category": ['開放資料'],
+      "tag": ['貿易', '關稅', '進口', '出口'],
       "participant": {},
-      "tool": [],
+      "tool": ['PHP'],
       "license": [],
       "homepage": "",
       "achievement": [{
@@ -3021,7 +2951,11 @@
         "phase": "Production",
         "url": "http://portal.g0v.ronny.tw/"
       }],
-      "workspace": [],
+      "workspace": [{
+        "type": "Github",
+        "name": "",
+        "url": "https://github.com/ronnywang/portal.g0v.ronny.tw"
+      }],
       "resource": [],
       "follower": [],
       "story": [],
@@ -3202,15 +3136,15 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "ihelp",
       "name": {
-        "zh": "[Android] 聾通訊",
+        "zh": "iHelp 聾通訊",
         "en": ""
       },
       "logo": "",
       "intro": {
         "zh": {
-          "short": "",
+          "short": "聾啞人士報案系統，不必透過聲音就能夠報案的 App，主要對象為使用手機對話不方便者為主。",
           "medium": "",
           "long": ""
         },
@@ -3231,7 +3165,21 @@
         "phase": "Production",
         "url": "https://play.google.com/store/apps/details?id=edu.stu.ihelp.client"
       }],
-      "workspace": [],
+      "workspace": [
+        {
+          "type": "Hackpad",
+          "name": "",
+          "url": "https://g0v.hackpad.com/iHelp-android-ulv07iXiTkb"
+        }, {
+          "type": "Github",
+          "name": "",
+          "url": "https://github.com/weitsai/iHelp-android"
+        }, {
+          "type": "Facebook",
+          "name": "",
+          "url": "https://www.facebook.com/groups/308375875947826/"
+        }
+      ],
       "resource": [],
       "follower": [],
       "story": [],
@@ -3262,7 +3210,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/projectpool"
       }],
@@ -3297,7 +3245,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/g0v-summit2014/"
       }],
@@ -3332,7 +3280,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://g0v.today"
       }],
@@ -3367,7 +3315,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://nonuke.today"
       }],
@@ -3402,7 +3350,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hack.g0v.tw"
       }],
@@ -3437,7 +3385,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/cultural-heritage/"
       }],
@@ -3472,7 +3420,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hack.g0v.tw/congressnetwork"
       }],
@@ -3507,7 +3455,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hack.g0v.tw/meta"
       }],
@@ -3542,7 +3490,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/G8VTV"
       }],
@@ -3593,7 +3541,8 @@
       ],
       "workspace": [
         {
-          "type": "hackfoldr",
+          "type": "Hackfoldr",
+          "name": "",
           "url": "http://hackfoldr.org/NECTW2014/"
         }, {
           "type": "mailing list",
@@ -3630,7 +3579,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/NEWShackathon"
       }],
@@ -3659,17 +3608,21 @@
         }
       },
       "category": ['開放資料'],
-      "tag": ['hackfoldr', '天龍國'],
+      "tag": ['hackfoldr', '天龍國', '天龍國特公地', '台北', '臺北'],
       "participant": {},
       "tool": [],
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
-        "phase": "",
+        "type": "Web",
+        "phase": "Production",
+        "url": "http://taipei-pop.herokuapp.com/"
+      }],
+      "workspace": [{
+        "type": "Hackfoldr",
+        "name": "",
         "url": "http://hackfoldr.org/POPonFire/"
       }],
-      "workspace": [],
       "resource": [],
       "follower": [],
       "story": [],
@@ -3700,7 +3653,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/Taipei-Urban-Agri/"
       }],
@@ -3735,7 +3688,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/abroadplay"
       }],
@@ -3770,7 +3723,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/agriculture"
       }],
@@ -3805,7 +3758,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/coscup2014"
       }],
@@ -3880,7 +3833,8 @@
         "url": "http://hack.etblue.tw/don-democracy"
       }],
       "workspace": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
+        "name": "",
         "url": "http://hack.etblue.tw/don-democracy"
       }],
       "resource": [],
@@ -3919,13 +3873,16 @@
       }],
       "workspace": [
         {
-          "type": "hackfoldr",
+          "type": "Hackfoldr",
+          "name": "",
           "url": "http://hack.etblue.tw/don-democracy"
         }, {
           "type": "Github",
+          "name": "",
           "url": "https://github.com/g0v/don-republic-mockup"
         }, {
           "type": "Github",
+          "name": "",
           "url": "https://github.com/g0v/don-republic"
         }
       ],
@@ -3965,10 +3922,12 @@
       }],
       "workspace": [
         {
-          "type": "hackfoldr",
+          "type": "Hackfoldr",
+          "name": "",
           "url": "http://hack.etblue.tw/don-democracy"
         }, {
           "type": "Github",
+          "name": "",
           "url": "https://github.com/g0v/donvote"
         }
       ],
@@ -3977,20 +3936,20 @@
       "story": [],
       "related": ['bindola', 'listrgb', 'prfb', 'lqfb', 'loomio']
     }, {
-      "id": "",
+      "id": "listrgb",
       "name": {
-        "zh": "ListRGB",
+        "zh": "ListRGB 多人即時協作清單",
         "en": ""
       },
       "logo": "",
       "intro": {
         "zh": {
-          "short": "",
+          "short": "購物清單、團隊進度協調、個人待辦事項、投票、議題討論。ListRGB 有著許多的可能等你來發掘。",
           "medium": "",
           "long": ""
         },
         "en": {
-          "short": "",
+          "short": "Collaboration with Color",
           "medium": "",
           "long": ""
         }
@@ -3998,57 +3957,29 @@
       "category": ['社會參與'],
       "tag": ['動民主'],
       "participant": {},
-      "tool": [],
-      "license": [],
+      "tool": ['Node.JS', 'Redis', 'Bower'],
+      "license": ['MIT'],
       "homepage": "",
       "achievement": [{
         "type": "Web",
         "phase": "Beta",
         "url": "http://listrgb.org/"
       }],
-      "workspace": [{
-        "type": "hackfoldr",
-        "url": "http://hack.etblue.tw/don-democracy"
-      }],
+      "workspace": [
+        {
+          "type": "Hackpad",
+          "name": "",
+          "url": "https://hackpad.com/ListRGB-Feedback-CgvrsWJRymX"
+        }, {
+          "type": "Github",
+          "name": "",
+          "url": "https://github.com/poga/ListRGB"
+        }
+      ],
       "resource": [],
       "follower": [],
       "story": [],
       "related": ['bindola', 'listrgb', 'prfb', 'lqfb', 'loomio']
-    }, {
-      "id": "",
-      "name": {
-        "zh": "開放政治獻金",
-        "en": ""
-      },
-      "logo": "",
-      "intro": {
-        "zh": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        },
-        "en": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        }
-      },
-      "category": ['開放政府', '社會參與'],
-      "tag": ['hackfoldr', '監察', '公務人員財產申報'],
-      "participant": {},
-      "tool": [],
-      "license": [],
-      "homepage": "",
-      "achievement": [{
-        "type": "hackfoldr",
-        "phase": "",
-        "url": "http://hackfoldr.org/g0v-cy/"
-      }],
-      "workspace": [],
-      "resource": [],
-      "follower": [],
-      "story": [],
-      "related": []
     }, {
       "id": "",
       "name": {
@@ -4075,7 +4006,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/g0vMOC"
       }],
@@ -4110,7 +4041,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/g0vMOE"
       }],
@@ -4164,7 +4095,8 @@
         }
       ],
       "workspace": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
+        "name": "",
         "url": "http://hackfoldr.org/inLiveTW"
       }],
       "resource": [],
@@ -4197,7 +4129,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/fepz2"
       }],
@@ -4232,7 +4164,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/Kaohsiung-explode-20140801"
       }],
@@ -4267,7 +4199,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/penghu-crash"
       }],
@@ -4302,7 +4234,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/app4am"
       }],
@@ -4343,6 +4275,7 @@
       }],
       "workspace": [{
         "type": "Hackfoldr",
+        "name": "",
         "url": "http://hack.etblue.tw/unlimited"
       }],
       "resource": [],
@@ -4375,7 +4308,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/2014ccsp"
       }],
@@ -4410,7 +4343,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/CSSTACO"
       }],
@@ -4445,7 +4378,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/DonDonFlower/"
       }],
@@ -4480,7 +4413,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/doraemon"
       }],
@@ -4515,7 +4448,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/glassy"
       }],
@@ -4555,7 +4488,8 @@
         "url": "https://g0v.hackpad.com/-x--3pKTjb5MCj4"
       }],
       "workspace": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
+        "name": "",
         "url": "http://hack.etblue.tw/lazy-artist"
       }],
       "resource": [],
@@ -4588,7 +4522,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/shuanhhe-hackfoldr"
       }],
@@ -4623,7 +4557,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/sunflowerDocumentary"
       }],
@@ -4658,7 +4592,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/code4hk"
       }],
@@ -4693,7 +4627,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/legcolive"
       }],
@@ -4728,7 +4662,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/lovenent"
       }],
@@ -4763,7 +4697,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "hackfoldr",
+        "type": "Hackfoldr",
         "phase": "",
         "url": "http://hackfoldr.org/resistancelive"
       }],
@@ -4843,7 +4777,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "moedict-dodo",
       "name": {
         "zh": "萌典啄木鳥計畫",
         "en": ""
@@ -4869,7 +4803,7 @@
       "homepage": "",
       "achievement": [{
         "type": "Web",
-        "phase": "Beta",
+        "phase": "Memory",
         "url": "http://moedict.tw/dodo"
       }],
       "workspace": [],
@@ -5119,6 +5053,7 @@
       }],
       "workspace": [{
         "type": "Github",
+        "name": "",
         "url": "https://github.com/g0v/don-press"
       }],
       "resource": [],
@@ -5192,7 +5127,259 @@
       }],
       "workspace": [{
         "type": "Github",
+        "name": "",
         "url": "https://github.com/g0v/project-hub-mockup"
+      }],
+      "resource": [],
+      "follower": [],
+      "story": [],
+      "related": []
+    }, {
+      "id": "ecolife-epa-gov-tw",
+      "name": {
+        "zh": "台灣村里家戶用電量",
+        "en": ""
+      },
+      "logo": "",
+      "intro": {
+        "zh": {
+          "short": "ecolife.epa.gov.tw 是行政院環保署的綠色生活網，網站目標是要呈現台灣對於節電節水 等政策的成效，裡面有一些數據對於分析台灣的用電情況會滿有幫助的，這個 repository 是在收集一些裡面的數據成機器友善格式。",
+          "medium": "",
+          "long": ""
+        },
+        "en": {
+          "short": "",
+          "medium": "",
+          "long": ""
+        }
+      },
+      "category": ['開放資料'],
+      "tag": [],
+      "participant": {},
+      "tool": ['PHP'],
+      "license": ['BSD', 'CC0'],
+      "homepage": "",
+      "achievement": [{
+        "type": "Data",
+        "phase": "Production",
+        "url": "https://github.com/ronnywang/ecolife.epa.gov.tw"
+      }],
+      "workspace": [{
+        "type": "Github",
+        "name": "",
+        "url": "https://github.com/ronnywang/ecolife.epa.gov.tw"
+      }],
+      "resource": [],
+      "follower": [],
+      "story": [],
+      "related": []
+    }, {
+      "id": "campaign-finance-tofu",
+      "name": {
+        "zh": "台灣政治獻金資料處理",
+        "en": ""
+      },
+      "logo": "",
+      "intro": {
+        "zh": {
+          "short": "",
+          "medium": "",
+          "long": ""
+        },
+        "en": {
+          "short": "",
+          "medium": "",
+          "long": ""
+        }
+      },
+      "category": ['開放資料'],
+      "tag": [],
+      "participant": {},
+      "tool": ['PHP'],
+      "license": ['MIT'],
+      "homepage": "",
+      "achievement": [
+        {
+          "type": "Web",
+          "phase": "Production",
+          "url": "http://campaign-finance.g0v.ronny.tw/"
+        }, {
+          "type": "Web",
+          "phase": "Demo",
+          "url": "http://ronnywang.github.io/tw-campaign-finance/demo.html"
+        }, {
+          "type": "Web",
+          "phase": "Demo",
+          "url": "http://ronnywang.github.io/tw-campaign-finance/demo2.html"
+        }
+      ],
+      "workspace": [
+        {
+          "type": "Github",
+          "name": "Web",
+          "url": "https://github.com/ronnywang/campaign-finance.g0v.ronny.tw"
+        }, {
+          "type": "Github",
+          "name": "Data",
+          "url": "https://github.com/ronnywang/tw-campaign-finance"
+        }
+      ],
+      "resource": [],
+      "follower": [],
+      "story": [{
+        "name": "介紹",
+        "url": "http://ronnywang.pixnet.net/blog/post/40488349"
+      }],
+      "related": []
+    }, {
+      "id": "",
+      "name": {
+        "zh": "政治獻金數位化(資料建立)",
+        "en": ""
+      },
+      "logo": "",
+      "intro": {
+        "zh": {
+          "short": "政治獻金數位化．人工 OCR",
+          "medium": "",
+          "long": ""
+        },
+        "en": {
+          "short": "",
+          "medium": "",
+          "long": ""
+        }
+      },
+      "category": ['開放政府'],
+      "tag": ['監察', '公務人員財產申報'],
+      "participant": {},
+      "tool": ['PHP'],
+      "license": [],
+      "homepage": "",
+      "achievement": [
+        {
+          "type": "Web",
+          "phase": "Production",
+          "url": "http://campaign-finance.g0v.ctiml.tw/"
+        }, {
+          "type": "Document",
+          "phase": "Production",
+          "url": "https://docs.google.com/document/d/1yV9YQRR-qPH_OKFqvkUpG1I7ND1EQ-dR-eVsWYeWrzg/pub"
+        }
+      ],
+      "workspace": [{
+        "type": "Github",
+        "name": "",
+        "url": "https://github.com/ctiml/campaign-finance.g0v.ctiml.tw"
+      }],
+      "resource": [],
+      "follower": [],
+      "story": [],
+      "related": []
+    }, {
+      "id": "",
+      "name": {
+        "zh": "g0v開放政治獻金",
+        "en": ""
+      },
+      "logo": "",
+      "intro": {
+        "zh": {
+          "short": "",
+          "medium": "",
+          "long": ""
+        },
+        "en": {
+          "short": "",
+          "medium": "",
+          "long": ""
+        }
+      },
+      "category": ['開放政府'],
+      "tag": ['監察', '公務人員財產申報', '討論區'],
+      "participant": {},
+      "tool": [],
+      "license": [],
+      "homepage": "",
+      "achievement": [{
+        "type": "Web",
+        "phase": "Production",
+        "url": "http://campaign-finance.g0v.olc.tw/"
+      }],
+      "workspace": [],
+      "resource": [],
+      "follower": [],
+      "story": [],
+      "related": []
+    }, {
+      "id": "",
+      "name": {
+        "zh": "政治獻金視覺化",
+        "en": ""
+      },
+      "logo": "",
+      "intro": {
+        "zh": {
+          "short": "",
+          "medium": "",
+          "long": ""
+        },
+        "en": {
+          "short": "",
+          "medium": "",
+          "long": ""
+        }
+      },
+      "category": ['開放政府'],
+      "tag": ['監察', '公務人員財產申報', '圖形'],
+      "participant": {},
+      "tool": [],
+      "license": [],
+      "homepage": "",
+      "achievement": [{
+        "type": "Web",
+        "phase": "Production",
+        "url": "http://fuyei.github.io/cf-viz/viz.htm"
+      }],
+      "workspace": [],
+      "resource": [],
+      "follower": [],
+      "story": [],
+      "related": []
+    }, {
+      "id": "",
+      "name": {
+        "zh": "開放政治獻金",
+        "en": ""
+      },
+      "logo": "",
+      "intro": {
+        "zh": {
+          "short": "",
+          "medium": "",
+          "long": ""
+        },
+        "en": {
+          "short": "",
+          "medium": "",
+          "long": ""
+        }
+      },
+      "category": ['開放政府', '社會參與'],
+      "tag": ['hackfoldr', '監察', '公務人員財產申報'],
+      "participant": {},
+      "tool": [],
+      "license": [],
+      "homepage": "",
+      "achievement": [{
+        "type": "Media",
+        "phase": "Production",
+        "url": "https://www.facebook.com/cy.sunshine"
+      }],
+      "workspace": [{
+        "type": "Hackfoldr",
+        "name": "",
+        "url": "http://hackfoldr.org/g0v-cy/"
       }],
       "resource": [],
       "follower": [],
