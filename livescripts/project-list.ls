@@ -24,11 +24,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://k.olc.tw/elections/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -55,15 +55,15 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://summit.g0v.tw"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
-    "zh": "社會運動資訊平台"
+    "zh": "MOVEMENT 社會運動資訊平台"
     "en": ""
   "logo": ""
   "intro":
@@ -76,7 +76,7 @@
       "medium": ""
       "long": ""
   "category": <[]>
-  "tag": <[ 活動 宣傳 社運 學運 社會運動 學生運動 ]>
+  "tag": <[ 活動 宣傳 社運 學運 社會運動 學生運動 智慧型手機 app 平板 ]>
   "participant": {}
   "tool": <[]>
   "license": <[]>
@@ -86,11 +86,21 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://movement.ee.ncku.edu.tw/~smart0eddie/cur/"
-      "openwith": "_blank"
+    }
+    {
+      "type": "Media"
+      "phase": "Active"
+      "url": "https://www.facebook.com/MOVEMENT.ITW"
+    }
+    {
+      "type": "Android"
+      "phase": "Production"
+      "url": "https://play.google.com/store/apps/details?id=swd.movement_app"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -117,11 +127,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://billy3321.github.io/live_tutorial"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -148,11 +158,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://beemap.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -179,11 +189,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.photos/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -210,11 +220,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://a0000778.github.io/g8v/index.html"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -241,11 +251,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://oldpaper.g0v.ronny.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -272,11 +282,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://newsdiff.g0v.ronny.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -303,11 +313,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://news-ckip.source.today/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -334,11 +344,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://newstrend.g0v.ronny.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -365,29 +375,26 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://newshelper.g0v.tw/"
-      "openwith": "_blank"
     }
     {
       "type": "Chrome"
       "phase": "Production"
       "url": "https://chrome.google.com/webstore/detail/%E6%96%B0%E8%81%9E%E5%B0%8F%E5%B9%AB%E6%89%8B/hkenpfplphndcndhhhldecaammpmopoc"
-      "openwith": "_blank"
     }
     {
       "type": "Firefox"
       "phase": "Production"
       "url": "https://addons.mozilla.org/zh-TW/firefox/addon/newshelper-firefox/"
-      "openwith": "_blank"
     }
     {
       "type": "Safari"
       "phase": "Production"
       "url": "https://github.com/yllan/newshelper-safari"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -414,11 +421,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://zhusee2.github.io/boycott-helper/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -445,11 +452,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://fakenews.tw"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -476,11 +483,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/reporter/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -507,11 +514,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://fepztw.github.io/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -538,11 +545,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://fact.g0v.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -569,11 +576,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://wethepeople.tw"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -600,23 +607,21 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/laweasyread-front/index.html"
-      "openwith": "hackframe"
     }
     {
       "type": "Chrome"
       "phase": "Production"
       "url": "https://chrome.google.com/webstore/detail/%E6%B3%95%E8%A6%8F%E4%BA%A6%E6%AF%92%E6%B0%A3/iedodmlnmhobigohbkalkkjlbmdkjalj"
-      "openwith": "_blank"
     }
     {
       "type": "Firefox"
       "phase": "Production"
       "url": "https://addons.mozilla.org/zh-tw/firefox/addon/laweasyread/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -643,11 +648,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://laweasyread.herokuapp.com/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -674,11 +679,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://i64885.tw"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -705,11 +710,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://billy3321.github.io/lytel/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -736,11 +741,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/addressbook.parser"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -767,11 +772,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://soidid.github.io/blacklist/pages/index.html"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -798,11 +803,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://report.nat.g0v.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -819,21 +824,35 @@
       "medium": ""
       "long": ""
   "category": <[ 開放政府 ]>
-  "tag": <[ 立法院 國會 立委 議事 表決 ]>
+  "tag": <[ 立法院 國會 立委 議事 表決 法院 法案 闖關 法案闖天關 流程圖 ]>
   "participant": {}
   "tool": <[]>
-  "license": <[]>
+  "license": <[ MIT ]>
   "homepage": ""
   "achievement":
     [{
       "type": "Web"
       "phase": "Production"
       "url": "http://ly.g0v.tw"
-      "openwith": "hackframe"
+    }
+    {
+      "type": "Web"
+      "phase": "Mockup"
+      "url": "https://g0v.github.io/semantic-ui-experiment/bill-progress.html"
     }]
-  "workspace": []
-  "resource": []
+  "workspace": 
+    [{
+      "type": "Github"
+      "url": "https://github.com/g0v/ly.g0v.tw"
+    }]
+  "resource":
+    [{
+      "type": "Data"
+      "name": "api.ly"
+      "url": "https://github.com/g0v/api.ly"
+    }]
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -860,11 +879,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://tisa.g0v.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -891,11 +910,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/sunflower/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -922,11 +941,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://123.g0v.today"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -953,11 +972,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://congress-vote-analytics.herokuapp.com/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -984,11 +1003,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://ivod.ly.g0v.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1015,11 +1034,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://vote.ly.g0v.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1046,11 +1065,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://councils.g0v.tw"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1077,11 +1096,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://k.olc.tw/tncc/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1108,42 +1127,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://frank00125.github.io/wp2014s_final_project/introduce_page.html"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
-  "related": <[]>
-* "id": ""
-  "name":
-    "zh": "[教學] 法案闖天關流程圖"
-    "en": ""
-  "logo": ""
-  "intro":
-    "zh":
-      "short": ""
-      "medium": ""
-      "long": ""
-    "en":
-      "short": ""
-      "medium": ""
-      "long": ""
-  "category": <[]>
-  "tag": <[ 立法 國會 法院 法案 闖關 ]>
-  "participant": {}
-  "tool": <[]>
-  "license": <[]>
-  "homepage": ""
-  "achievement":
-    [{
-      "type": "Web"
-      "phase": "Production"
-      "url": "https://etblue.github.io/semantic-ui-experiment/bill-progress.html"
-      "openwith": "hackframe"
-    }]
-  "workspace": []
-  "resource": []
-  "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1170,23 +1158,21 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://jobhelper.g0v.ronny.tw/"
-      "openwith": "_blank"
     }
     {
       "type": "Chrome"
       "phase": "Production"
       "url": "https://chrome.google.com/webstore/detail/%E6%B1%82%E8%81%B7%E5%B0%8F%E5%B9%AB%E6%89%8B/bjolfofcjiolhmlaoebndilgbhonclcn"
-      "openwith": "_blank"
     }
     {
       "type": "Firefox"
       "phase": "Production"
       "url": "https://addons.mozilla.org/zh-TW/firefox/addon/job-helper/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1213,11 +1199,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://gcis.nat.g0v.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1244,11 +1230,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://company-graph.g0v.ronny.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1275,11 +1261,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://kiang.github.io/salary/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1306,11 +1292,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/i69/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1337,43 +1323,36 @@
       "type": "Web"
       "phase": "Production"
       "url": "https://www.moedict.tw/"
-      "openwith": "hackframe"
     }
     {
       "type": "Mac"
       "phase": "Production"
       "url": "http://racklin.github.io/moedict-desktop/"
-      "openwith": "hackframe"
     }
     {
       "type": "Chrome"
       "phase": "Production"
       "url": "https://chrome.google.com/webstore/detail/%E8%90%8C%E5%85%B8-moedict/aihifbidnaepclhnfppjnpbmeonhhloa/reviews"
-      "openwith": "_blank"
     }
     {
       "type": "Android"
       "phase": "Production"
       "url": "https://play.google.com/store/apps/details?id=org.audreyt.dict.moe"
-      "openwith": "_blank"
     }
     {
       "type": "iOS"
       "phase": "Production"
       "url": "https://itunes.apple.com/tw/app/meng-dian-jiao-yu-bu-guo-yu/id599429224?mt=8"
-      "openwith": "_blank"
     }
     {
       "type": "Firefox OS"
       "phase": "Production"
       "url": "https://marketplace.firefox.com/app/moedict/"
-      "openwith": "_blank"
     }
     {
       "type": "WP"
       "phase": "Production"
       "url": "http://apps.microsoft.com/windows/zh-tw/app/81eb2795-0f64-45ab-b420-3c0d3b1ab13a"
-      "openwith": "_blank"
     }]
   "workspace":
     [{
@@ -1382,6 +1361,7 @@
     }]
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1408,11 +1388,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://direct.moedict.tw/lab/moe/hub.html"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1439,11 +1419,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "https://www.moedict.tw/dodo/moecard.html"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1470,11 +1450,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://axe.g0v.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1501,11 +1481,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://campaign-finance.g0v.ctiml.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1532,11 +1512,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://campaign-finance.g0v.olc.tw/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1563,11 +1543,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://fuyei.github.io/cf-viz/viz.htm"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1594,11 +1574,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://sunshine.cy.g0v.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1625,11 +1605,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://twcy.herokuapp.com/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1656,11 +1636,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://env.g0v.tw/3drain/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1687,11 +1667,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://env.g0v.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1718,11 +1698,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://taipei-pop.herokuapp.com/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1749,11 +1729,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://zbryikt.github.io/visualize/kh-pipe/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1780,11 +1760,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://timemap.kuansim.com/hychen/kaohsiung-industrial-disasters"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1811,11 +1791,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://timemap.kuansim.com/hychen/tainan-historic-maps"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1842,11 +1822,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://baddriver.mobileweb.com.tw/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1873,11 +1853,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://ris.g0v.tw"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1904,11 +1884,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://li494-193.members.linode.com"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1935,11 +1915,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://tpebuilding.g0v.ronny.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1966,11 +1946,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://u273.stark.tw"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -1997,11 +1977,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://zbryikt.github.io/visualize/highway/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2028,11 +2008,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://local.data.g0v.tw/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2059,11 +2039,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://data.g0v.ronny.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2090,11 +2070,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://request.data.g0v.tw/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2121,11 +2101,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://data.g0v.tw/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2152,11 +2132,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://er.mohw.g0v.tw"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2183,11 +2163,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://ddio.github.io/MuscidaeFlash"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2214,11 +2194,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://listening.g0v.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2245,11 +2225,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/agriculture/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2276,11 +2256,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/farmer/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2307,11 +2287,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.tw"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2338,11 +2318,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://jessy1092.github.io/coVerbatim/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2369,11 +2349,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://zbryikt.github.io/quick-timer/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2400,11 +2380,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://hack.etblue.tw/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2431,11 +2411,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/projectV"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2462,11 +2442,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/g0vTxT/views/communique.html"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2493,11 +2473,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.asia/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2524,11 +2504,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/g0vTxT"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2555,11 +2535,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.olc.tw"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2586,11 +2566,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/moc-license-center/index.html"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2617,11 +2597,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/g0village-8bit/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2648,11 +2628,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/projectPool"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2679,11 +2659,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://g0v.github.io/twstat/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2710,11 +2690,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://portal.g0v.ronny.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2741,11 +2721,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://kiang.github.io/dgbas.gov.tw/city_budget.html"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2772,11 +2752,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://zbryikt.github.io/visualize/mrt/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2803,11 +2783,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://petneed.me/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2834,11 +2814,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://budget.g0v.tw/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2865,11 +2845,11 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://zbryikt.github.io/ppllink/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2896,42 +2876,11 @@
       "type": "Android"
       "phase": "Production"
       "url": "https://play.google.com/store/apps/details?id=edu.stu.ihelp.client"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
-  "related": <[]>
-* "id": ""
-  "name":
-    "zh": "[Android] 社會運動資訊平台"
-    "en": ""
-  "logo": ""
-  "intro":
-    "zh":
-      "short": ""
-      "medium": ""
-      "long": ""
-    "en":
-      "short": ""
-      "medium": ""
-      "long": ""
-  "category": <[]>
-  "tag": <[ 活動 宣傳 社運 學運 學生運動 智慧型手機 app 平板 ]>
-  "participant": {}
-  "tool": <[]>
-  "license": <[]>
-  "homepage": ""
-  "achievement":
-    [{
-      "type": "Android"
-      "phase": "Production"
-      "url": "https://play.google.com/store/apps/details?id=swd.movement_app"
-      "openwith": "_blank"
-    }]
-  "workspace": []
-  "resource": []
-  "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2958,11 +2907,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/projectpool"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -2989,11 +2938,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/g0v-summit2014/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3020,11 +2969,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://g0v.today"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3051,11 +3000,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://nonuke.today"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3082,11 +3031,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hack.g0v.tw"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3113,11 +3062,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/cultural-heritage/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3144,11 +3093,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hack.g0v.tw/congressnetwork"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3175,11 +3124,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hack.g0v.tw/meta"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3206,11 +3155,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/G8VTV"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3237,13 +3186,11 @@
       "type": "Document"
       "phase": "Memory"
       "url": "https://www.loomio.org/g/1uSV3IFq"
-      "openwith": "_blank"
     }
     {
       "type": "Document"
       "phase": "Memory"
       "url": "https://www.loomio.org/g/txfpAWOC"
-      "openwith": "_blank"
     }
     {
       "type": "Document"
@@ -3261,6 +3208,7 @@
     }]
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[ 動民主 ]>
 * "id": ""
   "name":
@@ -3287,11 +3235,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/NEWShackathon"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3318,11 +3266,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/POPonFire/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3349,11 +3297,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/Taipei-Urban-Agri/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3380,11 +3328,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/abroadplay"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3411,11 +3359,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/agriculture"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3442,11 +3390,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/coscup2014"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3473,11 +3421,11 @@
       "type": "Web"
       "phase": "Beta"
       "url": "http://lqfb-test.g0v.tw/pf/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3512,6 +3460,7 @@
     }]
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3554,6 +3503,7 @@
     }]
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[ bindola listrgb prfb lqfb loomio ]>
 * "id": ""
   "name":
@@ -3592,6 +3542,7 @@
     }]
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[ bindola listrgb prfb lqfb loomio ]>
 * "id": ""
   "name":
@@ -3626,6 +3577,7 @@
     }]
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[ bindola listrgb prfb lqfb loomio ]>
 * "id": ""
   "name":
@@ -3652,11 +3604,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/g0v-cy/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3683,11 +3635,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/g0vMOC"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3714,11 +3666,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/g0vMOE"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3745,25 +3697,21 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://inlivetw.github.io/enter"
-      "openwith": "hackframe"
     }
     {
       "type": "Chrome"
       "phase": "Production"
       "url": "https://chrome.google.com/webstore/detail/inlivetw/fhcffinobmpdchcoapdeoinhdmlihiok"
-      "openwith": "_blank"
     }
     {
       "type": "Android"
       "phase": "Production"
       "url": "https://play.google.com/store/apps/details?id=com.g0v.live"
-      "openwith": "_blank"
     }
     {
       "type": "iOS"
       "phase": "Production"
       "url": "https://itunes.apple.com/us/app/livetw/id868304297?ls=1"
-      "openwith": "_blank"
     }]
   "workspace":
     [{
@@ -3772,6 +3720,7 @@
     }]
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3798,11 +3747,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/fepz2"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3829,11 +3778,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/Kaohsiung-explode-20140801"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3860,11 +3809,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/penghu-crash"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3891,11 +3840,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/app4am"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3922,7 +3871,6 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://hack.etblue.tw/kp-farm/"
-      "openwith": "_blank"
     }]
   "workspace":
     [{
@@ -3931,6 +3879,7 @@
     }]
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3957,11 +3906,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/2014ccsp"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -3988,11 +3937,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/CSSTACO"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4019,11 +3968,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/DonDonFlower/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4050,11 +3999,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/doraemon"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4081,11 +4030,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/glassy"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4112,7 +4061,6 @@
       "type": "插畫"
       "phase": "完稿"
       "url": "https://g0v.hackpad.com/-x--3pKTjb5MCj4"
-      "openwith": "_blank"
     }]
   "workspace":
     [{
@@ -4121,6 +4069,7 @@
     }]
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4147,11 +4096,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/shuanhhe-hackfoldr"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4178,11 +4127,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/sunflowerDocumentary"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4209,11 +4158,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/code4hk"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4240,11 +4189,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/legcolive"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4271,11 +4220,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/lovenent"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4302,11 +4251,11 @@
       "type": "hackfoldr"
       "phase": ""
       "url": "http://hackfoldr.org/resistancelive"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4333,11 +4282,11 @@
       "type": "Web"
       "phase": "Beta"
       "url": "http://timemap.kuansim.com/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4364,11 +4313,11 @@
       "type": "Web"
       "phase": "Beta"
       "url": "http://lanfon72.github.io/linkCollector/"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4395,11 +4344,11 @@
       "type": "Web"
       "phase": "Beta"
       "url": "http://moedict.tw/dodo"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4426,11 +4375,11 @@
       "type": "Web"
       "phase": "Beta"
       "url": "http://community.g0v.tw/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4457,11 +4406,11 @@
       "type": "Web"
       "phase": "Beta"
       "url": "http://g0v.github.io/twgeojson/rain.html"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4488,11 +4437,11 @@
       "type": "Web"
       "phase": "Beta"
       "url": "http://g0v.github.io/twgeojson/interpolation.html"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4519,11 +4468,11 @@
       "type": "Web"
       "phase": "Beta"
       "url": "http://g0v.github.io/g0v-tour-guide/public/hack.html"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4550,11 +4499,11 @@
       "type": "Web"
       "phase": "Beta"
       "url": "http://g0v.github.io/farmers/public/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4581,11 +4530,11 @@
       "type": "Web"
       "phase": "Beta"
       "url": "http://dev.g0v.tw/Home.html"
-      "openwith": "hackframe"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4620,6 +4569,7 @@
     }]
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4646,11 +4596,11 @@
       "type": "Web"
       "phase": "Beta"
       "url": "http://g0v.github.io/conference-map-main/"
-      "openwith": "_blank"
     }]
   "workspace": []
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 * "id": ""
   "name":
@@ -4689,5 +4639,6 @@
     }]
   "resource": []
   "follower": <[]>
+  "story": []
   "related": <[]>
 ]
