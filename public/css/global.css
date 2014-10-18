@@ -110,7 +110,7 @@ a, a:link {
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }
-#projects #list .column .wrapper .text {
+#projects #list .column .wrapper .content {
   padding: 1rem;
 }
 #projects #list .column .wrapper .header .text {
