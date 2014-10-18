@@ -283,10 +283,10 @@ block script
       var achievement_template_source = '<a href="{{url}}" target="_blank" class="ui large label"><i class="icon {{icon}}"></i>{{type}}{{phase}}<i class="icon forward mail"></i></a>';
       var achievement_template = Handlebars.compile(achievement_template_source);
 
-      var workspace_template_source = '<a href="{{url}}" target="_blank" class="ui large label"><i class="icon {{icon}}"></i>{{type}}<i class="icon forward mail"></i></a>';
+      var workspace_template_source = '<a href="{{url}}" target="_blank" class="ui large label"><i class="icon {{icon}}"></i>{{type}}{{name}}<i class="icon forward mail"></i></a>';
       var workspace_template = Handlebars.compile(workspace_template_source);
 
-      var resource_template_source = '<a href="{{url}}" target="_blank" class="ui large label">{{name}} ({{type}})<i class="icon forward mail"></i></a>';
+      var resource_template_source = '<a href="{{url}}" target="_blank" class="ui large label">{{name}}{{type}}<i class="icon forward mail"></i></a>';
       var resource_template = Handlebars.compile(resource_template_source);
 
       var story_template_source = '<a href="{{url}}" target="_blank" class="ui large label">{{title}}<i class="icon forward mail"></i></a>';
@@ -419,7 +419,11 @@ block script
             $list_element.find(".related").append($related_element);
           });
           $.each(project.resource, function(resource_index, resource){
-            var resource_type = resource.type;
+            if(resource.type){
+              var resource_type = " (" + resource.type + ")";
+            }else{
+              var resource_type = "";
+            }
             var resource_name = resource.name;
             var resource_url = resource.url;
             var context = {type: resource_type, url: resource_url, name: resource_name};
@@ -427,15 +431,25 @@ block script
             $list_element.find(".resource").append($resource_element);
           });
           $.each(project.workspace, function(workspace_index, workspace){
-            var workspace_type = workspace.type;
+            if(workspace.name){
+              var workspace_name = " - " + workspace.name;
+            }else{
+              var workspace_name = "";
+            }
             var workspace_url = workspace.url;
+            var workspace_type = workspace.type;
+            $.each({"^.*.hackpad.com\/":"Hackpad", "^.*.hackfoldr.org\/":"Hackfoldr", "^.*.hack.g0v.tw\/":"Hackfoldr", "^.*.github.com\/":"Github", "^.*.facebook.com\/":"Facebook", "^.*.plus.google.com\/":"Google plus", "^.*.drive.google.com\/":"Google drive", "^.*.groups.google.com\/":"Google groups"}, function(workspace_url_string, workspace_value){
+              if(workspace_url.match(RegExp(workspace_url_string))){
+                workspace_type = workspace_value;
+              }
+            });
             var workspace_icon = "";
-            $.each({"hackpad":"file", "hackfoldr":"folder", "github":"github", "google group":"mail", "google drive":"cloud", "google plus community":"google plus", "facebook group":"facebook", "irc channel":"chat", "google calendar":"calendar"}, function(type_name, type_icon){
+            $.each({"Hackpad":"file", "Hackfoldr":"folder", "Github":"github", "Google groups":"mail", "Google drive":"cloud", "Google plus":"google plus", "Facebook":"facebook", "IRC":"chat", "Google calendar":"calendar"}, function(type_name, type_icon){
               if(workspace_type == type_name){
                 workspace_icon = type_icon;
               }
             });
-            var context = {type: workspace_type, url: workspace_url, icon: workspace_icon};
+            var context = {type: workspace_type, url: workspace_url, icon: workspace_icon, name: workspace_name};
             var $workspace_element = $(workspace_template(context));
             $list_element.find(".workspace").append($workspace_element);
           });

@@ -264,7 +264,7 @@
     }]
   "workspace":
     [{
-      "type": "Github"
+      "type": ""
       "name": "程式"
       "url": "https://github.com/ronnywang/lagnews"
     }]
@@ -654,17 +654,17 @@
     }]
   "workspace":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "name": ""
       "url": "http://hack.g0v.tw/laweasyread"
     }
     {
-      "type": "Github"
+      "type": ""
       "name": "程式"
       "url": "https://github.com/g0v/laweasyread-front"
     }
     {
-      "type": "Github"
+      "type": ""
       "name": "資料"
       "url": "https://github.com/g0v/laweasyread-data"
     }]
@@ -710,22 +710,22 @@
     }]
   "workspace":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "name": ""
       "url": "http://hack.g0v.tw/laweasyread"
     }
     {
-      "type": "Github"
+      "type": ""
       "name": "程式"
       "url": "https://github.com/g0v/laweasyread"
     }
     {
-      "type": "Github"
+      "type": ""
       "name": "資料"
       "url": "https://github.com/g0v/laweasyread-data"
     }
     {
-      "type": "Github"
+      "type": ""
       "name": "資料"
       "url": "https://github.com/g0v/twlaw"
     }]
@@ -771,8 +771,8 @@
     }]
   "workspace":
     [{
-      "type": "Github"
-      "name": "程式"
+      "type": ""
+      "name": ""
       "url": "https://github.com/g0v/i64885"
     }]
   "resource": []
@@ -936,7 +936,7 @@
     }]
   "workspace": 
     [{
-      "type": "Github"
+      "type": ""
       "url": "https://github.com/g0v/ly.g0v.tw"
     }]
   "resource":
@@ -1480,7 +1480,7 @@
     }]
   "workspace":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "name": ""
       "url": "http://hack.g0v.tw/3du"
     }]
@@ -2712,7 +2712,7 @@
   "follower": <[]>
   "story": []
   "related": <[]>
-* "id": ""
+* "id": "portal"
   "name":
     "zh": "財政部關務署進出口資料"
     "en": ""
@@ -2737,14 +2737,29 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://portal.g0v.ronny.tw/"
+    }
+    {
+      "type": "Data"
+      "phase": "Production"
+      "url": "http://portal-api.g0v.ronny.tw/api/goodid/0"
     }]
   "workspace":
     [{
-      "type": "Github"
-      "name": ""
+      "type": ""
+      "name": "Web"
       "url": "https://github.com/ronnywang/portal.g0v.ronny.tw"
+    }
+    {
+      "type": ""
+      "name": "Data"
+      "url": "https://github.com/ronnywang/portal.sw.nat.gov.tw/"
     }]
-  "resource": []
+  "resource":
+    [{
+      "type": "Data"
+      "name": "財政部關務署統計資料庫查詢系統"
+      "url": "https://portal.sw.nat.gov.tw/APGA/GA01;APGAJSESSIONID=nJd4JCWXrtpvfSdX1hq8WLTjXWhqSR08nW20FMnbDXpMMZqNJTXF!1303275952"
+    }]
   "follower": <[]>
   "story": []
   "related": <[]>
@@ -2931,17 +2946,17 @@
     }]
   "workspace":
     [{
-      "type": "Hackpad"
+      "type": ""
       "name": ""
       "url": "https://g0v.hackpad.com/iHelp-android-ulv07iXiTkb"
     }
     {
-      "type": "Github"
+      "type": ""
       "name": ""
       "url": "https://github.com/weitsai/iHelp-android"
     }
     {
-      "type": "Facebook"
+      "type": ""
       "name": ""
       "url": "https://www.facebook.com/groups/308375875947826/"
     }]
@@ -2971,7 +2986,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/projectpool"
     }]
@@ -3002,7 +3017,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/g0v-summit2014/"
     }]
@@ -3095,7 +3110,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hack.g0v.tw"
     }]
@@ -3126,7 +3141,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/cultural-heritage/"
     }]
@@ -3157,7 +3172,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hack.g0v.tw/congressnetwork"
     }]
@@ -3188,7 +3203,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hack.g0v.tw/meta"
     }]
@@ -3219,7 +3234,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/G8VTV"
     }]
@@ -3266,7 +3281,7 @@
     }]
   "workspace":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "name": ""
       "url": "http://hackfoldr.org/NECTW2014/"
     }
@@ -3300,7 +3315,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/NEWShackathon"
     }]
@@ -3337,7 +3352,7 @@
     }]
   "workspace":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "name": ""
       "url": "http://hackfoldr.org/POPonFire/"
     }]
@@ -3367,7 +3382,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/Taipei-Urban-Agri/"
     }]
@@ -3398,7 +3413,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/abroadplay"
     }]
@@ -3429,7 +3444,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/agriculture"
     }]
@@ -3460,7 +3475,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/coscup2014"
     }]
@@ -3569,12 +3584,12 @@
       "url": "http://hack.etblue.tw/don-democracy"
     }
     {
-      "type": "Github"
+      "type": ""
       "name": ""
       "url": "https://github.com/g0v/don-republic-mockup"
     }
     {
-      "type": "Github"
+      "type": ""
       "name": ""
       "url": "https://github.com/g0v/don-republic"
     }]
@@ -3615,7 +3630,7 @@
       "url": "http://hack.etblue.tw/don-democracy"
     }
     {
-      "type": "Github"
+      "type": ""
       "name": ""
       "url": "https://github.com/g0v/donvote"
     }]
@@ -3656,7 +3671,7 @@
       "url": "https://hackpad.com/ListRGB-Feedback-CgvrsWJRymX"
     }
     {
-      "type": "Github"
+      "type": ""
       "name": ""
       "url": "https://github.com/poga/ListRGB"
     }]
@@ -3686,7 +3701,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/g0vMOC"
     }]
@@ -3717,7 +3732,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/g0vMOE"
     }]
@@ -3769,7 +3784,7 @@
     }]
   "workspace":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "name": ""
       "url": "http://hackfoldr.org/inLiveTW"
     }]
@@ -3799,7 +3814,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/fepz2"
     }]
@@ -3830,7 +3845,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/Kaohsiung-explode-20140801"
     }]
@@ -3861,7 +3876,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/penghu-crash"
     }]
@@ -3892,7 +3907,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/app4am"
     }]
@@ -3959,7 +3974,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/2014ccsp"
     }]
@@ -3990,7 +4005,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/CSSTACO"
     }]
@@ -4021,7 +4036,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/DonDonFlower/"
     }]
@@ -4052,7 +4067,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/doraemon"
     }]
@@ -4083,7 +4098,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/glassy"
     }]
@@ -4150,7 +4165,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/shuanhhe-hackfoldr"
     }]
@@ -4181,7 +4196,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/sunflowerDocumentary"
     }]
@@ -4212,7 +4227,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/code4hk"
     }]
@@ -4243,7 +4258,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/legcolive"
     }]
@@ -4274,7 +4289,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/lovenent"
     }]
@@ -4305,7 +4320,7 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "phase": ""
       "url": "http://hackfoldr.org/resistancelive"
     }]
@@ -4621,7 +4636,7 @@
     }]
   "workspace":
     [{
-      "type": "Github"
+      "type": ""
       "name": ""
       "url": "https://github.com/g0v/don-press"
     }]
@@ -4692,7 +4707,7 @@
     }]
   "workspace":
     [{
-      "type": "Github"
+      "type": ""
       "name": ""
       "url": "https://github.com/g0v/project-hub-mockup"
     }]
@@ -4728,7 +4743,7 @@
     }]
   "workspace":
     [{
-      "type": "Github"
+      "type": ""
       "name": ""
       "url": "https://github.com/ronnywang/ecolife.epa.gov.tw"
     }]
@@ -4774,12 +4789,12 @@
     }]
   "workspace":
     [{
-      "type": "Github"
+      "type": ""
       "name": "Web"
       "url": "https://github.com/ronnywang/campaign-finance.g0v.ronny.tw"
     }
     {
-      "type": "Github"
+      "type": ""
       "name": "Data"
       "url": "https://github.com/ronnywang/tw-campaign-finance"
     }]
@@ -4824,7 +4839,7 @@
     }]
   "workspace":
     [{
-      "type": "Github"
+      "type": ""
       "name": ""
       "url": "https://github.com/ctiml/campaign-finance.g0v.ctiml.tw"
     }]
@@ -4922,7 +4937,7 @@
     }]
   "workspace":
     [{
-      "type": "Hackfoldr"
+      "type": ""
       "name": ""
       "url": "http://hackfoldr.org/g0v-cy/"
     }]

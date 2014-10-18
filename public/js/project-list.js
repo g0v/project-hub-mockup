@@ -296,7 +296,7 @@
         }
       ],
       "workspace": [{
-        "type": "Github",
+        "type": "",
         "name": "程式",
         "url": "https://github.com/ronnywang/lagnews"
       }],
@@ -337,7 +337,11 @@
         "phase": "Production",
         "url": "http://newsdiff.g0v.ronny.tw/"
       }],
-      "workspace": [],
+      "workspace": [{
+        "type": "",
+        "name": "",
+        "url": "https://github.com/ronnywang/newsdiff"
+      }],
       "resource": [],
       "follower": [],
       "story": [],
@@ -416,17 +420,17 @@
       "id": "newshelper",
       "name": {
         "zh": "新聞小幫手",
-        "en": ""
+        "en": "newshelper-extension"
       },
       "logo": "http://g0v.github.io/moc-license-center/img/newshelper128x128flat.png",
       "intro": {
         "zh": {
-          "short": "協助判別含有誤導資訊的新聞！安裝後，在臉書上看到錯誤、不實、謠言新聞，會直接跳出警告頁面。",
+          "short": "newshelper-extension: 告訴你你正受到有害新聞所害。協助判別含有誤導資訊的新聞！安裝後，在臉書上看到錯誤、不實、謠言新聞，會直接跳出警告頁面。",
           "medium": "",
           "long": ""
         },
         "en": {
-          "short": "",
+          "short": "newshelper-extension: a chrome extension helps you to identify incorrect news",
           "medium": "",
           "long": ""
         }
@@ -434,15 +438,11 @@
       "category": ['新媒體'],
       "tag": ['假新聞節目', '問題媒體', '報紙', '小幫手', '瀏覽器擴充套件', '附加元件', '媒體'],
       "participant": {},
-      "tool": [],
-      "license": [],
-      "homepage": "",
+      "tool": ['PHP', 'JavaScript', 'jQuery', 'Bootstrap'],
+      "license": ['MIT'],
+      "homepage": "http://newshelper.g0v.tw/",
       "achievement": [
         {
-          "type": "Web",
-          "phase": "Production",
-          "url": "http://newshelper.g0v.tw/"
-        }, {
           "type": "Chrome",
           "phase": "Production",
           "url": "https://chrome.google.com/webstore/detail/%E6%96%B0%E8%81%9E%E5%B0%8F%E5%B9%AB%E6%89%8B/hkenpfplphndcndhhhldecaammpmopoc"
@@ -453,10 +453,28 @@
         }, {
           "type": "Safari",
           "phase": "Production",
-          "url": "https://github.com/yllan/newshelper-safari"
+          "url": "http://yllan.github.io/newshelper-safari/newshelper-safari.safariextz"
         }
       ],
-      "workspace": [],
+      "workspace": [
+        {
+          "type": "",
+          "name": "Safari",
+          "url": "https://github.com/yllan/newshelper-safari"
+        }, {
+          "type": "",
+          "name": "Firefox & Chrome",
+          "url": "https://github.com/g0v/newshelper-extension"
+        }, {
+          "type": "",
+          "name": "API & Server",
+          "url": "https://github.com/g0v/newshelper-backend"
+        }, {
+          "type": "",
+          "name": "Document",
+          "url": "https://docs.google.com/spreadsheet/ccc?key=0AvCxAZD9rYXMdGFrSjBHb2IxTW5mSE5vQVhGaThiX3c"
+        }
+      ],
       "resource": [],
       "follower": [],
       "story": [],
@@ -709,15 +727,15 @@
       ],
       "workspace": [
         {
-          "type": "Hackfoldr",
+          "type": "",
           "name": "",
           "url": "http://hack.g0v.tw/laweasyread"
         }, {
-          "type": "Github",
+          "type": "",
           "name": "程式",
           "url": "https://github.com/g0v/laweasyread-front"
         }, {
-          "type": "Github",
+          "type": "",
           "name": "資料",
           "url": "https://github.com/g0v/laweasyread-data"
         }
@@ -768,19 +786,19 @@
       ],
       "workspace": [
         {
-          "type": "Hackfoldr",
+          "type": "",
           "name": "",
           "url": "http://hack.g0v.tw/laweasyread"
         }, {
-          "type": "Github",
+          "type": "",
           "name": "程式",
           "url": "https://github.com/g0v/laweasyread"
         }, {
-          "type": "Github",
+          "type": "",
           "name": "資料",
           "url": "https://github.com/g0v/laweasyread-data"
         }, {
-          "type": "Github",
+          "type": "",
           "name": "資料",
           "url": "https://github.com/g0v/twlaw"
         }
@@ -830,8 +848,8 @@
         "url": "http://i64885.tw"
       }],
       "workspace": [{
-        "type": "Github",
-        "name": "程式",
+        "type": "",
+        "name": "",
         "url": "https://github.com/g0v/i64885"
       }],
       "resource": [],
@@ -1015,7 +1033,7 @@
         }
       ],
       "workspace": [{
-        "type": "Github",
+        "type": "",
         "url": "https://github.com/g0v/ly.g0v.tw"
       }],
       "resource": [{
@@ -1387,7 +1405,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "twcompany",
       "name": {
         "zh": "台灣公司登記資料",
         "en": ""
@@ -1395,7 +1413,7 @@
       "logo": "",
       "intro": {
         "zh": {
-          "short": "",
+          "short": "台灣統一編號資料",
           "medium": "",
           "long": ""
         },
@@ -1408,21 +1426,39 @@
       "category": ['開放資料'],
       "tag": ['工作', '老闆', '公司', '企業'],
       "participant": {},
-      "tool": [],
+      "tool": ['PHP'],
       "license": [],
       "homepage": "",
-      "achievement": [{
-        "type": "Web",
-        "phase": "Production",
-        "url": "http://gcis.nat.g0v.tw/"
+      "achievement": [
+        {
+          "type": "Web",
+          "phase": "Production",
+          "url": "http://gcis.nat.g0v.tw/"
+        }, {
+          "type": "Web",
+          "phase": "Production",
+          "url": "http://company.g0v.ronny.tw/"
+        }, {
+          "type": "Data",
+          "phase": "Production",
+          "url": "https://www.dropbox.com/sh/42oyn4ustp4ilhy/FRQA56UbG0"
+        }
+      ],
+      "workspace": [{
+        "type": "",
+        "name": "",
+        "url": "https://github.com/ronnywang/twcompany"
       }],
-      "workspace": [],
-      "resource": [],
+      "resource": [{
+        "type": "Data",
+        "name": "經濟部商業司公司登記資料相關清冊下載",
+        "url": "http://gcis.nat.gov.tw/pub/cmpy/report.jsp"
+      }],
       "follower": [],
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "company-graph",
       "name": {
         "zh": "台灣公司關係圖",
         "en": ""
@@ -1443,16 +1479,24 @@
       "category": ['開放資料'],
       "tag": ['工作', '老闆', '公司', '企業'],
       "participant": {},
-      "tool": [],
-      "license": [],
+      "tool": ['PHP'],
+      "license": ['BSD'],
       "homepage": "",
       "achievement": [{
         "type": "Web",
         "phase": "Production",
         "url": "http://company-graph.g0v.ronny.tw/"
       }],
-      "workspace": [],
-      "resource": [],
+      "workspace": [{
+        "type": "",
+        "name": "",
+        "url": "https://github.com/ronnywang/company-graph"
+      }],
+      "resource": [{
+        "type": "Data",
+        "name": "台灣公司登記資料",
+        "url": "http://company.g0v.ronny.tw/"
+      }],
       "follower": [],
       "story": [],
       "related": []
@@ -1583,7 +1627,7 @@
         }
       ],
       "workspace": [{
-        "type": "Hackfoldr",
+        "type": "",
         "name": "",
         "url": "http://hack.g0v.tw/3du"
       }],
@@ -2047,9 +2091,9 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "tpebuilding",
       "name": {
-        "zh": "台北市建照記錄",
+        "zh": "台北市建管處建照記錄",
         "en": ""
       },
       "logo": "",
@@ -2077,7 +2121,54 @@
         "url": "http://tpebuilding.g0v.ronny.tw/"
       }],
       "workspace": [],
-      "resource": [],
+      "resource": [{
+        "type": "Data",
+        "name": "台北市網際網路執照存根影像查詢系統",
+        "url": "http://163.29.37.131/main.jsp"
+      }],
+      "follower": [],
+      "story": [],
+      "related": []
+    }, {
+      "id": "tpebuilding-reward",
+      "name": {
+        "zh": "台北市建照記錄中有「獎勵」的紀錄",
+        "en": ""
+      },
+      "logo": "",
+      "intro": {
+        "zh": {
+          "short": "",
+          "medium": "",
+          "long": ""
+        },
+        "en": {
+          "short": "",
+          "medium": "",
+          "long": ""
+        }
+      },
+      "category": [],
+      "tag": [],
+      "participant": {},
+      "tool": ['Sikuli'],
+      "license": [],
+      "homepage": "",
+      "achievement": [{
+        "type": "Code",
+        "phase": "",
+        "url": "https://github.com/cades/taipei-building-has-reward"
+      }],
+      "workspace": [{
+        "type": "",
+        "name": "",
+        "url": "https://github.com/cades/taipei-building-has-reward"
+      }],
+      "resource": [{
+        "type": "Data",
+        "name": "台北建管處建照記錄",
+        "url": "http://tpebuilding.g0v.ronny.tw/"
+      }],
       "follower": [],
       "story": [],
       "related": []
@@ -2922,7 +3013,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "portal",
       "name": {
         "zh": "財政部關務署進出口資料",
         "en": ""
@@ -2946,17 +3037,33 @@
       "tool": ['PHP'],
       "license": [],
       "homepage": "",
-      "achievement": [{
-        "type": "Web",
-        "phase": "Production",
-        "url": "http://portal.g0v.ronny.tw/"
+      "achievement": [
+        {
+          "type": "Web",
+          "phase": "Production",
+          "url": "http://portal.g0v.ronny.tw/"
+        }, {
+          "type": "Data",
+          "phase": "Production",
+          "url": "http://portal-api.g0v.ronny.tw/api/goodid/0"
+        }
+      ],
+      "workspace": [
+        {
+          "type": "",
+          "name": "Web",
+          "url": "https://github.com/ronnywang/portal.g0v.ronny.tw"
+        }, {
+          "type": "",
+          "name": "Data",
+          "url": "https://github.com/ronnywang/portal.sw.nat.gov.tw/"
+        }
+      ],
+      "resource": [{
+        "type": "Data",
+        "name": "財政部關務署統計資料庫查詢系統",
+        "url": "https://portal.sw.nat.gov.tw/APGA/GA01;APGAJSESSIONID=nJd4JCWXrtpvfSdX1hq8WLTjXWhqSR08nW20FMnbDXpMMZqNJTXF!1303275952"
       }],
-      "workspace": [{
-        "type": "Github",
-        "name": "",
-        "url": "https://github.com/ronnywang/portal.g0v.ronny.tw"
-      }],
-      "resource": [],
       "follower": [],
       "story": [],
       "related": []
@@ -3167,15 +3274,15 @@
       }],
       "workspace": [
         {
-          "type": "Hackpad",
+          "type": "",
           "name": "",
           "url": "https://g0v.hackpad.com/iHelp-android-ulv07iXiTkb"
         }, {
-          "type": "Github",
+          "type": "",
           "name": "",
           "url": "https://github.com/weitsai/iHelp-android"
         }, {
-          "type": "Facebook",
+          "type": "",
           "name": "",
           "url": "https://www.facebook.com/groups/308375875947826/"
         }
@@ -3210,7 +3317,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/projectpool"
       }],
@@ -3245,7 +3352,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/g0v-summit2014/"
       }],
@@ -3350,7 +3457,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hack.g0v.tw"
       }],
@@ -3385,7 +3492,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/cultural-heritage/"
       }],
@@ -3420,7 +3527,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hack.g0v.tw/congressnetwork"
       }],
@@ -3455,7 +3562,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hack.g0v.tw/meta"
       }],
@@ -3490,7 +3597,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/G8VTV"
       }],
@@ -3541,7 +3648,7 @@
       ],
       "workspace": [
         {
-          "type": "Hackfoldr",
+          "type": "",
           "name": "",
           "url": "http://hackfoldr.org/NECTW2014/"
         }, {
@@ -3579,7 +3686,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/NEWShackathon"
       }],
@@ -3619,7 +3726,7 @@
         "url": "http://taipei-pop.herokuapp.com/"
       }],
       "workspace": [{
-        "type": "Hackfoldr",
+        "type": "",
         "name": "",
         "url": "http://hackfoldr.org/POPonFire/"
       }],
@@ -3653,7 +3760,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/Taipei-Urban-Agri/"
       }],
@@ -3688,7 +3795,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/abroadplay"
       }],
@@ -3723,7 +3830,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/agriculture"
       }],
@@ -3758,7 +3865,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/coscup2014"
       }],
@@ -3877,11 +3984,11 @@
           "name": "",
           "url": "http://hack.etblue.tw/don-democracy"
         }, {
-          "type": "Github",
+          "type": "",
           "name": "",
           "url": "https://github.com/g0v/don-republic-mockup"
         }, {
-          "type": "Github",
+          "type": "",
           "name": "",
           "url": "https://github.com/g0v/don-republic"
         }
@@ -3926,7 +4033,7 @@
           "name": "",
           "url": "http://hack.etblue.tw/don-democracy"
         }, {
-          "type": "Github",
+          "type": "",
           "name": "",
           "url": "https://github.com/g0v/donvote"
         }
@@ -3971,7 +4078,7 @@
           "name": "",
           "url": "https://hackpad.com/ListRGB-Feedback-CgvrsWJRymX"
         }, {
-          "type": "Github",
+          "type": "",
           "name": "",
           "url": "https://github.com/poga/ListRGB"
         }
@@ -4006,7 +4113,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/g0vMOC"
       }],
@@ -4041,7 +4148,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/g0vMOE"
       }],
@@ -4095,7 +4202,7 @@
         }
       ],
       "workspace": [{
-        "type": "Hackfoldr",
+        "type": "",
         "name": "",
         "url": "http://hackfoldr.org/inLiveTW"
       }],
@@ -4129,7 +4236,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/fepz2"
       }],
@@ -4164,7 +4271,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/Kaohsiung-explode-20140801"
       }],
@@ -4199,7 +4306,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/penghu-crash"
       }],
@@ -4234,7 +4341,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/app4am"
       }],
@@ -4308,7 +4415,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/2014ccsp"
       }],
@@ -4343,7 +4450,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/CSSTACO"
       }],
@@ -4378,7 +4485,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/DonDonFlower/"
       }],
@@ -4413,7 +4520,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/doraemon"
       }],
@@ -4448,7 +4555,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/glassy"
       }],
@@ -4522,7 +4629,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/shuanhhe-hackfoldr"
       }],
@@ -4557,7 +4664,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/sunflowerDocumentary"
       }],
@@ -4592,7 +4699,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/code4hk"
       }],
@@ -4627,7 +4734,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/legcolive"
       }],
@@ -4662,7 +4769,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/lovenent"
       }],
@@ -4697,7 +4804,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "Hackfoldr",
+        "type": "",
         "phase": "",
         "url": "http://hackfoldr.org/resistancelive"
       }],
@@ -5052,7 +5159,7 @@
         "url": "http://g0v.github.io/don-press/public/"
       }],
       "workspace": [{
-        "type": "Github",
+        "type": "",
         "name": "",
         "url": "https://github.com/g0v/don-press"
       }],
@@ -5126,7 +5233,7 @@
         "url": "http://g0v.github.io/project-hub-mockup/"
       }],
       "workspace": [{
-        "type": "Github",
+        "type": "",
         "name": "",
         "url": "https://github.com/g0v/project-hub-mockup"
       }],
@@ -5165,7 +5272,7 @@
         "url": "https://github.com/ronnywang/ecolife.epa.gov.tw"
       }],
       "workspace": [{
-        "type": "Github",
+        "type": "",
         "name": "",
         "url": "https://github.com/ronnywang/ecolife.epa.gov.tw"
       }],
@@ -5215,11 +5322,11 @@
       ],
       "workspace": [
         {
-          "type": "Github",
+          "type": "",
           "name": "Web",
           "url": "https://github.com/ronnywang/campaign-finance.g0v.ronny.tw"
         }, {
-          "type": "Github",
+          "type": "",
           "name": "Data",
           "url": "https://github.com/ronnywang/tw-campaign-finance"
         }
@@ -5268,7 +5375,7 @@
         }
       ],
       "workspace": [{
-        "type": "Github",
+        "type": "",
         "name": "",
         "url": "https://github.com/ctiml/campaign-finance.g0v.ctiml.tw"
       }],
@@ -5377,7 +5484,7 @@
         "url": "https://www.facebook.com/cy.sunshine"
       }],
       "workspace": [{
-        "type": "Hackfoldr",
+        "type": "",
         "name": "",
         "url": "http://hackfoldr.org/g0v-cy/"
       }],
