@@ -83,7 +83,7 @@
   $.getJSON("json/project-list.json", function(projects){
   
     $.each(projects, function(project_index, project){
-      var id = project_index;
+      var id = project.id || project_index;
       var homepage = project.homepage || "";
       var logo = project.logo || "";
       var name = project.name.zh || "";
@@ -178,7 +178,7 @@
         if(achievement.phase != "Production"){
           achievement_phase = " (" + achievement.phase + ")";
         };
-        $.each({"Android": "android", "iOS": "apple", "WP": "windows", "Firefox OS": "mobile", "Linux": "linux", "Mac": "apple", "Windows": "windows", "Firefox": "browser", "Chrome": "browser", "Safari": "browser", "Web": "", "API": "setting", "Document": "text file", "Miscellaneous": ""}, function(type_name, type_icon){
+        $.each({"Android": "android", "iOS": "apple", "WP": "windows", "Firefox OS": "mobile", "Linux": "linux", "Mac": "apple", "Windows": "windows", "Firefox": "browser", "Chrome": "browser", "Safari": "browser", "Web": "", "API": "setting", "Document": "text file", "Media": "bullhorn", "Miscellaneous": ""}, function(type_name, type_icon){
           if(achievement_type == type_name){
             achievement_icon = type_icon;
           }
