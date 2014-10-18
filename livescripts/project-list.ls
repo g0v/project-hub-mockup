@@ -302,7 +302,12 @@
       "phase": "Production"
       "url": "http://newsdiff.g0v.ronny.tw/"
     }]
-  "workspace": []
+  "workspace":
+    [{
+      "type": ""
+      "name": ""
+      "url": "https://github.com/ronnywang/newsdiff"
+    }]
   "resource": []
   "follower": <[]>
   "story": []
@@ -372,30 +377,25 @@
 * "id": "newshelper"
   "name":
     "zh": "新聞小幫手"
-    "en": ""
+    "en": "newshelper-extension"
   "logo": "http://g0v.github.io/moc-license-center/img/newshelper128x128flat.png"
   "intro":
     "zh":
-      "short": "協助判別含有誤導資訊的新聞！安裝後，在臉書上看到錯誤、不實、謠言新聞，會直接跳出警告頁面。"
+      "short": "newshelper-extension: 告訴你你正受到有害新聞所害。協助判別含有誤導資訊的新聞！安裝後，在臉書上看到錯誤、不實、謠言新聞，會直接跳出警告頁面。"
       "medium": ""
       "long": ""
     "en":
-      "short": ""
+      "short": "newshelper-extension: a chrome extension helps you to identify incorrect news"
       "medium": ""
       "long": ""
   "category": <[ 新媒體 ]>
   "tag": <[ 假新聞節目 問題媒體 報紙 小幫手 瀏覽器擴充套件 附加元件 媒體 ]>
   "participant": {}
-  "tool": <[]>
-  "license": <[]>
-  "homepage": ""
+  "tool": <[ PHP JavaScript jQuery Bootstrap ]>
+  "license": <[ MIT ]>
+  "homepage": "http://newshelper.g0v.tw/"
   "achievement":
     [{
-      "type": "Web"
-      "phase": "Production"
-      "url": "http://newshelper.g0v.tw/"
-    }
-    {
       "type": "Chrome"
       "phase": "Production"
       "url": "https://chrome.google.com/webstore/detail/%E6%96%B0%E8%81%9E%E5%B0%8F%E5%B9%AB%E6%89%8B/hkenpfplphndcndhhhldecaammpmopoc"
@@ -408,9 +408,29 @@
     {
       "type": "Safari"
       "phase": "Production"
-      "url": "https://github.com/yllan/newshelper-safari"
+      "url": "http://yllan.github.io/newshelper-safari/newshelper-safari.safariextz"
     }]
-  "workspace": []
+  "workspace":
+    [{
+      "type": ""
+      "name": "Safari"
+      "url": "https://github.com/yllan/newshelper-safari"
+    }
+    {
+      "type": ""
+      "name": "Firefox & Chrome"
+      "url": "https://github.com/g0v/newshelper-extension"
+    }
+    {
+      "type": ""
+      "name": "API & Server"
+      "url": "https://github.com/g0v/newshelper-backend"
+    }
+    {
+      "type": ""
+      "name": "Document"
+      "url": "https://docs.google.com/spreadsheet/ccc?key=0AvCxAZD9rYXMdGFrSjBHb2IxTW5mSE5vQVhGaThiX3c"
+    }]
   "resource": []
   "follower": <[]>
   "story": []
@@ -1248,14 +1268,14 @@
   "follower": <[]>
   "story": []
   "related": <[]>
-* "id": ""
+* "id": "twcompany"
   "name":
     "zh": "台灣公司登記資料"
     "en": ""
   "logo": ""
   "intro":
     "zh":
-      "short": ""
+      "short": "台灣統一編號資料"
       "medium": ""
       "long": ""
     "en":
@@ -1265,7 +1285,7 @@
   "category": <[ 開放資料 ]>
   "tag": <[ 工作 老闆 公司 企業 ]>
   "participant": {}
-  "tool": <[]>
+  "tool": <[ PHP ]>
   "license": <[]>
   "homepage": ""
   "achievement":
@@ -1273,13 +1293,33 @@
       "type": "Web"
       "phase": "Production"
       "url": "http://gcis.nat.g0v.tw/"
+    }
+    {
+      "type": "Web"
+      "phase": "Production"
+      "url": "http://company.g0v.ronny.tw/"
+    }
+    {
+      "type": "Data"
+      "phase": "Production"
+      "url": "https://www.dropbox.com/sh/42oyn4ustp4ilhy/FRQA56UbG0"
     }]
-  "workspace": []
-  "resource": []
+  "workspace":
+    [{
+      "type": ""
+      "name": ""
+      "url": "https://github.com/ronnywang/twcompany"
+    }]
+  "resource":
+    [{
+      "type": "Data"
+      "name": "經濟部商業司公司登記資料相關清冊下載"
+      "url": "http://gcis.nat.gov.tw/pub/cmpy/report.jsp"
+    }]
   "follower": <[]>
   "story": []
   "related": <[]>
-* "id": ""
+* "id": "company-graph"
   "name":
     "zh": "台灣公司關係圖"
     "en": ""
@@ -1296,8 +1336,8 @@
   "category": <[ 開放資料 ]>
   "tag": <[ 工作 老闆 公司 企業 ]>
   "participant": {}
-  "tool": <[]>
-  "license": <[]>
+  "tool": <[ PHP ]>
+  "license": <[ BSD ]>
   "homepage": ""
   "achievement":
     [{
@@ -1305,8 +1345,18 @@
       "phase": "Production"
       "url": "http://company-graph.g0v.ronny.tw/"
     }]
-  "workspace": []
-  "resource": []
+  "workspace":
+    [{
+      "type": ""
+      "name": ""
+      "url": "https://github.com/ronnywang/company-graph"
+    }]
+  "resource":
+    [{
+      "type": "Data"
+      "name": "台灣公司登記資料"
+      "url": "http://company.g0v.ronny.tw/"
+    }]
   "follower": <[]>
   "story": []
   "related": <[]>
@@ -1841,9 +1891,9 @@
   "follower": <[]>
   "story": []
   "related": <[]>
-* "id": ""
+* "id": "tpebuilding"
   "name":
-    "zh": "台北市建照記錄"
+    "zh": "台北市建管處建照記錄"
     "en": ""
   "logo": ""
   "intro":
@@ -1868,7 +1918,53 @@
       "url": "http://tpebuilding.g0v.ronny.tw/"
     }]
   "workspace": []
-  "resource": []
+  "resource":
+    [{
+      "type": "Data"
+      "name": "台北市網際網路執照存根影像查詢系統"
+      "url": "http://163.29.37.131/main.jsp"
+    }]
+  "follower": <[]>
+  "story": []
+  "related": <[]>
+* "id": "tpebuilding-reward"
+  "name":
+    "zh": "台北市建照記錄中有「獎勵」的紀錄"
+    "en": ""
+  "logo": ""
+  "intro":
+    "zh":
+      "short": ""
+      "medium": ""
+      "long": ""
+    "en":
+      "short": ""
+      "medium": ""
+      "long": ""
+  "category": <[]>
+  "tag": <[]>
+  "participant": {}
+  "tool": <[ Sikuli ]>
+  "license": <[]>
+  "homepage": ""
+  "achievement":
+    [{
+      "type": "Code"
+      "phase": ""
+      "url": "https://github.com/cades/taipei-building-has-reward"
+    }]
+  "workspace":
+    [{
+      "type": ""
+      "name": ""
+      "url": "https://github.com/cades/taipei-building-has-reward"
+    }]
+  "resource":
+    [{
+      "type": "Data"
+      "name": "台北建管處建照記錄"
+      "url": "http://tpebuilding.g0v.ronny.tw/"
+    }]
   "follower": <[]>
   "story": []
   "related": <[]>
