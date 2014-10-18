@@ -85,7 +85,6 @@
       var logo = project.logo || "";
       var name = project.name.zh || "";
       var intro = project.intro.zh.short || "";
-      
       var content = JSON.stringify(project) || "";
       
       var classes = [];
@@ -140,7 +139,6 @@
         var $related_element = $(related_template(context));
         $list_element.find(".related").append($related_element);
       });
-      
       $.each(project.resource, function(resource_index, resource){
         var resource_type = resource.type;
         var resource_name = resource.name;
@@ -149,7 +147,6 @@
         var $resource_element = $(resource_template(context));
         $list_element.find(".resource").append($resource_element);
       });
-      
       $.each(project.workspace, function(workspace_index, workspace){
         var workspace_type = workspace.type;
         var workspace_url = workspace.url;
@@ -163,7 +160,6 @@
         var $workspace_element = $(workspace_template(context));
         $list_element.find(".workspace").append($workspace_element);
       });
-      
       $.each(project.achievement, function(achievement_index, achievement){
         var achievement_type = achievement.type;
         var achievement_url = achievement.url;
@@ -189,9 +185,16 @@
       });
       
       $("#list").append($list_element);
+      
     });
   }).done(function(){
   
+    // step 2-0 sort projects
+    
+    $("#list>.project").sort(function(a, b){
+      return $(a).find(".header>.text").text().localeCompare($(b).find(".header>.text").text());
+    }).appendTo("#list");
+    
     // step 2-1: detect modals
     
     var current_project = _.last( document.URL.split('/') );
@@ -212,6 +215,14 @@
     
   }).done(function(){
   
+    // step 2-3: sort sidebar menu items
+    
+    $.each(menus, function(menu_id, menu_items){
+      $("#index #"+menu_id+" .content .menu .item").sort(function(a, b){
+        return parseInt($(a).find(".label").text(), 10) < parseInt($(b).find(".label").text(), 10);
+      }).appendTo("#index #"+menu_id+" .content .menu");
+    });
+    
     // step 3: start filtering rendered projects
     
     // for ux
