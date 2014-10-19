@@ -57,7 +57,7 @@ block body
           i.icon.dropdown
         .content.ui.small.menu
           .menu
-      #tag.ui.accordion
+      //-#tag.ui.accordion
         .title.header.item tag
           i.icon.dropdown
         .content.ui.small.menu
@@ -304,7 +304,7 @@ block script
         phase : [],
         license : [],
         tool : [],
-        tag : [],
+        //tag : [],
       };
       //var menus = {
       //  category : ["open government", "open data", "civil participation", "media 2.0", "g0v infrastructure", "policy wiki", "miscellaneous"],
@@ -315,15 +315,15 @@ block script
       //  tag : [],
       //};
 
-      //var current_view = location.pathname.split('/')[1] || "";
-      var current_view = location.pathname.split('/')[2] || "";
+      var current_view = location.pathname.split('/')[1] || "";
+      //var current_view = location.pathname.split('/')[2] || "";
       var update_view = function(current_url){
         $(".views").fadeOut();
         $("#"+current_url).fadeIn();
       };
       var update_url = function(current_view){
-        //history.pushState( {}, current_view + '| g0v project hub mockup', '/' + current_view );
-        history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/' + current_view );
+        history.pushState( {}, current_view + '| g0v project hub mockup', '/' + current_view );
+        //history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/' + current_view );
       };
       $.each( ["submit", "edit", "about"], function(view_index, view_value){
         if(current_view == view_value){
@@ -379,7 +379,7 @@ block script
             };
           };
           add_classes("category");
-          add_classes("tag");
+          //add_classes("tag");
           add_classes("tool");
           add_classes("license");
 
@@ -454,14 +454,16 @@ block script
             $list_element.find(".workspace").append($workspace_element);
           });
           $.each(project.achievement, function(achievement_index, achievement){
-            var achievement_type = achievement.type;
-            var achievement_url = achievement.url;
+            var achievement_type = achievement.type || "unknown";
             var achievement_phase = achievement.phase;
             var achievement_phase_display = "";
+            var achievement_url = achievement.url;
             var achievement_icon = "";
-            if(achievement_phase != "Production" && achievement_phase){
+            if(!achievement_phase){
+              achievement_phase = "unknown";
+            }else if(achievement_phase != "Production"){
               achievement_phase_display = " (" + achievement_phase + ")";
-            };
+              };
             $.each({"Android": "android", "iOS": "apple", "WP": "windows", "Firefox OS": "mobile", "Linux": "linux", "Mac": "apple", "Windows": "windows", "Firefox": "browser", "Chrome": "browser", "Safari": "browser", "Web": "", "API": "setting", "Document": "text file", "Media": "bullhorn", "Miscellaneous": ""}, function(type_name, type_icon){
               if(achievement_type == type_name){
                 achievement_icon = type_icon;
@@ -475,7 +477,7 @@ block script
           });
 
           $.each(classes, function(class_index, class_name){
-            $list_element.addClass(class_name);
+            $list_element.addClass(class_name);menus
           });
 
           $("#list").append($list_element);
@@ -495,7 +497,7 @@ block script
         if(current_project.match(/^#/)){
           var active_modal_name = current_project.replace("#","");
           var active_project_position = $("#" + active_modal_name).offset().top;
-          $(".ui.modal").filter("[name='" + active_modal_name + "']").modal("show");
+          $(".ui.modal").filter("[name='" + active_modal_name + "']").modal("setting", {duration: 0}).modal("show");
           $("#projects").animate({
              scrollTop: active_project_position
           });
@@ -509,7 +511,7 @@ block script
 
       }).done(function(){
 
-        // step 2-3: sort sidebar menu items
+        // step 3-1: sort sidebar menu items
 
         $.each(menus, function(menu_id, menu_items){
           $("#index #"+menu_id+" .content .menu .item").sort(function(a, b){
@@ -517,7 +519,7 @@ block script
           }).appendTo("#index #"+menu_id+" .content .menu");
         });
 
-        // step 3: start filtering rendered projects
+        // step 3-2: start filtering rendered projects
 
         // for ux
         $("#filter .ui.label").hide();
@@ -630,7 +632,7 @@ block script
 
         $("#list .column .header .text").on("click tap", function(){
           var active_modal_name = $(this).parents(".column").attr("id");
-          $(".ui.modal").filter("[name='" + active_modal_name +"']").modal("show");
+          $(".ui.modal").filter("[name='" + active_modal_name +"']").modal("setting", {duration: 200}).modal("show");
           update_url("#" + active_modal_name);
         });
         $(".ui.modal").modal("setting", {
