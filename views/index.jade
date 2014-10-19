@@ -22,6 +22,9 @@ block body
               i.icon.add
               | Submit a project
             .item
+              i.icon.unhide
+              | View projects
+            .item
               i.icon.pencil
               | Edit pending data
             .item
@@ -633,6 +636,14 @@ block script
         $("#sidebar .menu .pencil").parent(".item").on("click tap", function(){
           update_view("wiki");
           update_url("wiki");
+        });
+        $("#sidebar .menu .unhide").parent(".item").on("click tap", function(){
+          $("#projects").show();
+          $("#about, #wiki").fadeOut();
+        });
+        $("#search input").change(function(){
+          $("#projects").show();
+          $("#about, #wiki").fadeOut();
         });
         $("#index").on("click tap", function(){
           $("#projects").show();
