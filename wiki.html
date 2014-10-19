@@ -362,17 +362,19 @@
     $("#sidebar .menu .unhide").parent(".item").on("click tap", function(){
       $("#projects").show();
       $("#about, #wiki").fadeOut();
+      update_url("");
     });
     $("#search input").change(function(){
       $("#projects").show();
       $("#about, #wiki").fadeOut();
+      update_url("");
     });
     $("#index").on("click tap", function(){
       $("#projects").show();
       $("#about, #wiki").fadeOut();
+      update_url("");
       //$("#about, #submit, #edit, #wiki").fadeOut();
       //update_view("projects");
-      update_url("");
     });
     
     $("#list .column .header .text").on("click tap", function(){
