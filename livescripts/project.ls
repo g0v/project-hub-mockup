@@ -1,45 +1,49 @@
-* "id": ""
-  "name":
-    "zh": ""
-    "en": ""
-  "logo": ""
-  "intro":
-    "zh":
-      "short": ""
-      "medium": ""
-      "long": ""
-    "en":
-      "short": ""
-      "medium": ""
-      "long": ""
-  "category": <[]>
-  "tag": <[]>
-  "participant": {}
-  "tool": <[]>
-  "license": <[]>
-  "homepage": ""
-  "achievement":
+* id: ""
+  name:
+    zh: ""
+    en: ""
+  logo: ""
+  intro:
+    zh:
+      short: ""
+      medium: ""
+      long: ""
+    en:
+      short: ""
+      medium: ""
+      long: ""
+  category: <[]>
+  tag: <[]>
+  participant: {}
+  tool:
+    * ""
+      ""
+  license:
+    * ""
+      ""
+  homepage: ""
+  achievement:
     [{
-      "type": ""
-      "phase": ""
-      "url": ""
+      type: ""
+      phase: ""
+      url: ""
     }]
-  "workspace":
+  workspace:
     [{
-      "type": ""
-      "name": ""
-      "url": ""
+      type: ""
+      name: ""
+      url: ""
     }]
-  "resource":
+  resource:
     [{
-      "type": ""
-      "name": ""
-      "url": ""
+      type: ""
+      name: ""
+      url: ""
     }]
-  "follower": <[]>
-  "story":
+  follower: <[]>
+  story:
     [{
-      "title": ""
-      "url": ""
+      title: ""
+      url: ""
     }]
-  "related": <[]>
+  related: <[]>
