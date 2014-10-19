@@ -3,9 +3,9 @@ g0v project hub mockup
 
 mockups for the new g0v project hub
 
-how to join: http://g0v.github.io/project-hub-mockup/public/about
+how to join: http://g0v.github.io/project-hub-mockup/about
 
-doc and discussion: https://g0v.hackpad.com/hQ9RdcSw7Gd
+doc and discussion: http://g0v.github.io/project-hub-mockup/wiki
 
 license: CC0
 
