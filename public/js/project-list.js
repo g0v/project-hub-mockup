@@ -55,7 +55,7 @@
         }
       },
       "category": [],
-      "tag": ['g0v', '活動', '黑客松'],
+      "tag": ['g0v', '活動', '黑客松', '寫程式', '炸雞', '披薩'],
       "participant": {},
       "tool": [],
       "license": [],
@@ -65,7 +65,11 @@
         "phase": "Production",
         "url": "http://summit.g0v.tw"
       }],
-      "workspace": [],
+      "workspace": [{
+        "type": "",
+        "phase": "",
+        "url": "http://hack.g0v.tw/g0v-summit2014/"
+      }],
       "resource": [],
       "follower": [],
       "story": [],
@@ -741,7 +745,7 @@
         }
       ],
       "resource": [{
-        "type": "Data",
+        "type": "",
         "name": "全國法規資料庫",
         "url": "http://law.moj.gov.tw/LawClass/LawClassList.aspx"
       }],
@@ -805,11 +809,11 @@
       ],
       "resource": [
         {
-          "type": "Data",
+          "type": "",
           "name": "立法院法律系統",
           "url": "http://lis.ly.gov.tw/lgcgi/lglaw"
         }, {
-          "type": "Data",
+          "type": "",
           "name": "全國法規資料庫",
           "url": "http://law.moj.gov.tw/LawClass/LawClassList.aspx"
         }
@@ -962,20 +966,20 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "abroadplay",
       "name": {
-        "zh": "公務人員出國考察網",
+        "zh": "公務人員出國考察追蹤網",
         "en": ""
       },
       "logo": "",
       "intro": {
         "zh": {
-          "short": "",
+          "short": "追蹤公務員出國考察的、行程、人數",
           "medium": "",
           "long": ""
         },
         "en": {
-          "short": "",
+          "short": "tracking abroad - stroke, the number",
           "medium": "",
           "long": ""
         }
@@ -983,16 +987,38 @@
       "category": ['開放政府'],
       "tag": ['立委', '公務人員', '出國', '考察', '夭壽讚'],
       "participant": {},
-      "tool": [],
-      "license": [],
+      "tool": ['PHP', 'CodeIgniter', 'MySQL'],
+      "license": ['CC-By'],
       "homepage": "",
       "achievement": [{
         "type": "Web",
         "phase": "Production",
         "url": "http://report.nat.g0v.tw/"
       }],
-      "workspace": [],
-      "resource": [],
+      "workspace": [
+        {
+          "type": "",
+          "name": "",
+          "url": "http://hack.g0v.tw/abroadplay"
+        }, {
+          "type": "",
+          "name": "",
+          "url": "https://github.com/BertWang/abroadplay"
+        }, {
+          "type": "",
+          "name": "",
+          "url": "https://drive.google.com/folderview?id=0B3d_0uihjVyoZDBReERLRERBWEE&usp=sharing"
+        }, {
+          "type": "",
+          "name": "",
+          "url": "https://www.facebook.com/groups/abroadplay/"
+        }
+      ],
+      "resource": [{
+        "type": "",
+        "name": "公務出國報告資訊網",
+        "url": "http://report.nat.gov.tw/ReportFront/index.jspx"
+      }],
       "follower": [],
       "story": [],
       "related": []
@@ -1037,7 +1063,7 @@
         "url": "https://github.com/g0v/ly.g0v.tw"
       }],
       "resource": [{
-        "type": "Data",
+        "type": "",
         "name": "api.ly",
         "url": "https://github.com/g0v/api.ly"
       }],
@@ -1450,7 +1476,7 @@
         "url": "https://github.com/ronnywang/twcompany"
       }],
       "resource": [{
-        "type": "Data",
+        "type": "",
         "name": "經濟部商業司公司登記資料相關清冊下載",
         "url": "http://gcis.nat.gov.tw/pub/cmpy/report.jsp"
       }],
@@ -1493,7 +1519,7 @@
         "url": "https://github.com/ronnywang/company-graph"
       }],
       "resource": [{
-        "type": "Data",
+        "type": "",
         "name": "台灣公司登記資料",
         "url": "http://company.g0v.ronny.tw/"
       }],
@@ -2122,7 +2148,7 @@
       }],
       "workspace": [],
       "resource": [{
-        "type": "Data",
+        "type": "",
         "name": "台北市網際網路執照存根影像查詢系統",
         "url": "http://163.29.37.131/main.jsp"
       }],
@@ -2165,7 +2191,7 @@
         "url": "https://github.com/cades/taipei-building-has-reward"
       }],
       "resource": [{
-        "type": "Data",
+        "type": "",
         "name": "台北建管處建照記錄",
         "url": "http://tpebuilding.g0v.ronny.tw/"
       }],
@@ -2525,7 +2551,7 @@
     }, {
       "id": "",
       "name": {
-        "zh": "農業學地圖",
+        "zh": "農學地圖",
         "en": ""
       },
       "logo": "",
@@ -2556,7 +2582,7 @@
       "resource": [],
       "follower": [],
       "story": [],
-      "related": []
+      "related": ['超農域', '小農故事']
     }, {
       "id": "",
       "name": {
@@ -3060,7 +3086,7 @@
         }
       ],
       "resource": [{
-        "type": "Data",
+        "type": "",
         "name": "財政部關務署統計資料庫查詢系統",
         "url": "https://portal.sw.nat.gov.tw/APGA/GA01;APGAJSESSIONID=nJd4JCWXrtpvfSdX1hq8WLTjXWhqSR08nW20FMnbDXpMMZqNJTXF!1303275952"
       }],
@@ -3317,44 +3343,9 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "",
+        "type": "Document",
         "phase": "",
-        "url": "http://hackfoldr.org/projectpool"
-      }],
-      "workspace": [],
-      "resource": [],
-      "follower": [],
-      "story": [],
-      "related": []
-    }, {
-      "id": "",
-      "name": {
-        "zh": "summit 2014 工作區",
-        "en": ""
-      },
-      "logo": "",
-      "intro": {
-        "zh": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        },
-        "en": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        }
-      },
-      "category": [],
-      "tag": ['hackfoldr', '黑客松', '寫程式', '炸機', '披薩'],
-      "participant": {},
-      "tool": [],
-      "license": [],
-      "homepage": "",
-      "achievement": [{
-        "type": "",
-        "phase": "",
-        "url": "http://hackfoldr.org/g0v-summit2014/"
+        "url": "http://hack.g0v.tw/projectpool"
       }],
       "workspace": [],
       "resource": [],
@@ -3432,7 +3423,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "hackfoldr-g0v",
       "name": {
         "zh": "hack.g0v 黑客松專區",
         "en": ""
@@ -3457,7 +3448,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "",
+        "type": "Web",
         "phase": "",
         "url": "http://hack.g0v.tw"
       }],
@@ -3494,7 +3485,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/cultural-heritage/"
+        "url": "http://hack.g0v.tw/cultural-heritage/"
       }],
       "workspace": [],
       "resource": [],
@@ -3599,7 +3590,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/G8VTV"
+        "url": "http://hack.g0v.tw/G8VTV"
       }],
       "workspace": [],
       "resource": [],
@@ -3650,7 +3641,7 @@
         {
           "type": "",
           "name": "",
-          "url": "http://hackfoldr.org/NECTW2014/"
+          "url": "http://hack.g0v.tw/NECTW2014/"
         }, {
           "type": "mailing list",
           "url": "http://www.iis.sinica.edu.tw/pipermail/online4nacet/"
@@ -3688,7 +3679,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/NEWShackathon"
+        "url": "http://hack.g0v.tw/NEWShackathon"
       }],
       "workspace": [],
       "resource": [],
@@ -3728,7 +3719,7 @@
       "workspace": [{
         "type": "",
         "name": "",
-        "url": "http://hackfoldr.org/POPonFire/"
+        "url": "http://hack.g0v.tw/POPonFire/"
       }],
       "resource": [],
       "follower": [],
@@ -3737,13 +3728,13 @@
     }, {
       "id": "",
       "name": {
-        "zh": "台北都市農業與園圃",
+        "zh": "台北都市農業協作平台",
         "en": ""
       },
       "logo": "",
       "intro": {
         "zh": {
-          "short": "",
+          "short": "我們是都市農耕參與者、非營利組織工作者、市民，共同開始推廣城市中的都市農耕，聚集了越來越多理念相同的人，形成一個關心「都市園圃」、「家庭菜園」、「食物安全」的公民社群。歡迎你的加入。這裡是一個自發交流的環境，你可以提出你想要做的事情與小計畫，也可以分享你的都市農耕經驗。",
           "medium": "",
           "long": ""
         },
@@ -3754,66 +3745,51 @@
         }
       },
       "category": ['開放資料'],
-      "tag": ['超農域', '植栽'],
+      "tag": ['都市園圃網路地圖', '都市小農‧孵'],
       "participant": {},
       "tool": [],
       "license": [],
       "homepage": "",
-      "achievement": [{
-        "type": "",
-        "phase": "",
-        "url": "http://hackfoldr.org/Taipei-Urban-Agri/"
-      }],
-      "workspace": [],
-      "resource": [],
-      "follower": [],
-      "story": [],
-      "related": []
-    }, {
-      "id": "",
-      "name": {
-        "zh": "公務人員出國考察追蹤網",
-        "en": ""
-      },
-      "logo": "",
-      "intro": {
-        "zh": {
-          "short": "",
-          "medium": "",
-          "long": ""
-        },
-        "en": {
-          "short": "",
-          "medium": "",
-          "long": ""
+      "achievement": [
+        {
+          "type": "Document",
+          "phase": "",
+          "url": "https://mapsengine.google.com/map/u/0/edit?mid=zQstqvxahOng.kt7Q-VW6EXPI"
+        }, {
+          "type": "Media",
+          "phase": "",
+          "url": "http://cityfarmer-fun.blogspot.tw/"
+        }, {
+          "type": "Media",
+          "phase": "",
+          "url": "https://www.flyingv.cc/project/4223"
         }
-      },
-      "category": ['開放政府'],
-      "tag": ['hackfoldr'],
-      "participant": {},
-      "tool": [],
-      "license": [],
-      "homepage": "",
-      "achievement": [{
-        "type": "",
-        "phase": "",
-        "url": "http://hackfoldr.org/abroadplay"
-      }],
-      "workspace": [],
+      ],
+      "workspace": [
+        {
+          "type": "",
+          "naem": "",
+          "url": "http://hackfoldr.org/Taipei-Urban-Agri/"
+        }, {
+          "type": "",
+          "name": "",
+          "url": "https://www.facebook.com/groups/851321448229543/"
+        }
+      ],
       "resource": [],
       "follower": [],
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "agriculture",
       "name": {
-        "zh": "農業系統",
+        "zh": "超農域",
         "en": ""
       },
       "logo": "",
       "intro": {
         "zh": {
-          "short": "",
+          "short": "讓濃郁的農鬱轉成濃郁的農域，使濃稠的農愁成為濃稠的農酬",
           "medium": "",
           "long": ""
         },
@@ -3830,15 +3806,67 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "",
-        "phase": "",
-        "url": "http://hackfoldr.org/agriculture"
+        "type": "Web",
+        "phase": "Prototype",
+        "url": "http://g0v.github.io/agriculture/"
       }],
-      "workspace": [],
-      "resource": [],
+      "workspace": [
+        {
+          "type": "",
+          "phase": "",
+          "url": "http://hack.g0v.tw/agriculture"
+        }, {
+          "type": "",
+          "phase": "",
+          "url": "https://github.com/g0v/agriculture"
+        }
+      ],
+      "resource": [
+        {
+          "type": "",
+          "name": "政府資料開放平台 - 農委會資料集",
+          "url": "http://data.g0v.ronny.tw/index/list?orgFullname=%E8%A1%8C%E6%94%BF%E9%99%A2%E8%BE%B2%E6%A5%AD%E5%A7%94%E5%93%A1%E6%9C%83"
+        }, {
+          "type": "",
+          "name": "農藥資訊服務網",
+          "url": "http://pesticide.baphiq.gov.tw/web/Insecticides_MenuItem1.aspx"
+        }, {
+          "type": "",
+          "name": "植物保護手冊",
+          "url": "http://www.tactri.gov.tw/wSite/ct?xItem=3691&ctNode=333&mp=11"
+        }, {
+          "type": "",
+          "name": "植物保護資訊系統",
+          "url": "http://otserv.tactri.gov.tw/ppm/"
+        }, {
+          "type": "",
+          "name": "農藥殘留容許量(衛服部)",
+          "url": "https://consumer.fda.gov.tw/Law/PesticideList.aspx?nodeID=520"
+        }, {
+          "type": "",
+          "name": "植物疫情",
+          "url": "http://data.g0v.ronny.tw/index/data/7273"
+        }, {
+          "type": "",
+          "name": "農藥名稱手冊",
+          "url": "http://data.g0v.ronny.tw/index/data/7281"
+        }, {
+          "type": "",
+          "name": "農民學院",
+          "url": "http://data.g0v.ronny.tw/index/data/7283"
+        }, {
+          "type": "",
+          "name": "蔬果重要病蟲害疫情旬報",
+          "url": "http://data.g0v.ronny.tw/index/data/7295"
+        }, {
+          "type": "",
+          "name": "稻熱病疫情現況",
+          "url": "http://phis.baphiq.gov.tw/Plant/GoogleMap.nsf"
+        }
+      ],
       "follower": [],
       "story": [],
-      "related": []
+      "related": ['農學地圖', '小農故事']
     }, {
       "id": "",
       "name": {
@@ -3867,7 +3895,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/coscup2014"
+        "url": "http://hack.g0v.tw/coscup2014"
       }],
       "workspace": [],
       "resource": [],
@@ -4113,9 +4141,9 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "",
+        "type": "Document",
         "phase": "",
-        "url": "http://hackfoldr.org/g0vMOC"
+        "url": "http://hack.g0v.tw/g0vMOC"
       }],
       "workspace": [],
       "resource": [],
@@ -4148,9 +4176,9 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "",
+        "type": "Document",
         "phase": "",
-        "url": "http://hackfoldr.org/g0vMOE"
+        "url": "http://hack.g0v.tw/g0vMOE"
       }],
       "workspace": [],
       "resource": [],
@@ -4204,7 +4232,7 @@
       "workspace": [{
         "type": "",
         "name": "",
-        "url": "http://hackfoldr.org/inLiveTW"
+        "url": "http://hack.g0v.tw/inLiveTW"
       }],
       "resource": [],
       "follower": [],
@@ -4238,7 +4266,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/fepz2"
+        "url": "http://hack.g0v.tw/fepz2"
       }],
       "workspace": [],
       "resource": [],
@@ -4273,7 +4301,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/Kaohsiung-explode-20140801"
+        "url": "http://hack.g0v.tw/Kaohsiung-explode-20140801"
       }],
       "workspace": [],
       "resource": [],
@@ -4308,7 +4336,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/penghu-crash"
+        "url": "http://hack.g0v.tw/penghu-crash"
       }],
       "workspace": [],
       "resource": [],
@@ -4343,9 +4371,13 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/app4am"
+        "url": "http://hack.g0v.tw/app4am"
       }],
-      "workspace": [],
+      "workspace": [{
+        "type": "Hackfoldr",
+        "name": "",
+        "url": "http://hack.g0v.tw/app4am"
+      }],
       "resource": [],
       "follower": [],
       "story": [],
@@ -4417,7 +4449,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/2014ccsp"
+        "url": "http://hack.g0v.tw/2014ccsp"
       }],
       "workspace": [],
       "resource": [],
@@ -4452,7 +4484,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/CSSTACO"
+        "url": "http://hack.g0v.tw/CSSTACO"
       }],
       "workspace": [],
       "resource": [],
@@ -4487,7 +4519,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/DonDonFlower/"
+        "url": "http://hack.g0v.tw/DonDonFlower/"
       }],
       "workspace": [],
       "resource": [],
@@ -4522,7 +4554,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/doraemon"
+        "url": "http://hack.g0v.tw/doraemon"
       }],
       "workspace": [],
       "resource": [],
@@ -4557,7 +4589,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/glassy"
+        "url": "http://hack.g0v.tw/glassy"
       }],
       "workspace": [],
       "resource": [],
@@ -4631,7 +4663,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/shuanhhe-hackfoldr"
+        "url": "http://hack.g0v.tw/shuanhhe-hackfoldr"
       }],
       "workspace": [],
       "resource": [],
@@ -4666,7 +4698,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/sunflowerDocumentary"
+        "url": "http://hack.g0v.tw/sunflowerDocumentary"
       }],
       "workspace": [],
       "resource": [],
@@ -4701,7 +4733,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/code4hk"
+        "url": "http://hack.g0v.tw/code4hk"
       }],
       "workspace": [],
       "resource": [],
@@ -4736,7 +4768,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/legcolive"
+        "url": "http://hack.g0v.tw/legcolive"
       }],
       "workspace": [],
       "resource": [],
@@ -4771,7 +4803,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/lovenent"
+        "url": "http://hack.g0v.tw/lovenent"
       }],
       "workspace": [],
       "resource": [],
@@ -4806,7 +4838,7 @@
       "achievement": [{
         "type": "",
         "phase": "",
-        "url": "http://hackfoldr.org/resistancelive"
+        "url": "http://hack.g0v.tw/resistancelive"
       }],
       "workspace": [],
       "resource": [],
@@ -5085,14 +5117,28 @@
       "homepage": "",
       "achievement": [{
         "type": "Web",
-        "phase": "Beta",
+        "phase": "Mockup",
         "url": "http://g0v.github.io/farmers/public/"
       }],
-      "workspace": [],
-      "resource": [],
+      "workspace": [
+        {
+          "type": "",
+          "name": "",
+          "url": "https://g0v.hackpad.com/-app-8c3ZyeuaKfF"
+        }, {
+          "type": "",
+          "name": "",
+          "url": "https://github.com/g0v/farmers"
+        }
+      ],
+      "resource": [{
+        "type": "",
+        "name": "",
+        "url": ""
+      }],
       "follower": [],
       "story": [],
-      "related": []
+      "related": ['超農域']
     }, {
       "id": "",
       "name": {
@@ -5486,7 +5532,7 @@
       "workspace": [{
         "type": "",
         "name": "",
-        "url": "http://hackfoldr.org/g0v-cy/"
+        "url": "http://hack.g0v.tw/g0v-cy/"
       }],
       "resource": [],
       "follower": [],

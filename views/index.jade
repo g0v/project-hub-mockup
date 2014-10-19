@@ -456,17 +456,18 @@ block script
           $.each(project.achievement, function(achievement_index, achievement){
             var achievement_type = achievement.type;
             var achievement_url = achievement.url;
-            var achievement_phase = "";
+            var achievement_phase = achievement.phase;
+            var achievement_phase_display = "";
             var achievement_icon = "";
-            if(achievement.phase != "Production"){
-              achievement_phase = " (" + achievement.phase + ")";
+            if(achievement_phase != "Production" && achievement_phase){
+              achievement_phase_display = " (" + achievement_phase + ")";
             };
             $.each({"Android": "android", "iOS": "apple", "WP": "windows", "Firefox OS": "mobile", "Linux": "linux", "Mac": "apple", "Windows": "windows", "Firefox": "browser", "Chrome": "browser", "Safari": "browser", "Web": "", "API": "setting", "Document": "text file", "Media": "bullhorn", "Miscellaneous": ""}, function(type_name, type_icon){
               if(achievement_type == type_name){
                 achievement_icon = type_icon;
               }
             });
-            var context = {type: achievement_type, phase: achievement_phase, url: achievement_url, icon: achievement_icon};
+            var context = {type: achievement_type, phase: achievement_phase_display, url: achievement_url, icon: achievement_icon};
             var $achievement_element = $(achievement_template(context));
             $list_element.find(".achievement").append($achievement_element);
             add_sub_classes("type", achievement_type);
