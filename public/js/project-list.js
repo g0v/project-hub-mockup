@@ -4369,7 +4369,7 @@
       "license": [],
       "homepage": "",
       "achievement": [{
-        "type": "",
+        "type": "Document",
         "phase": "",
         "url": "http://hack.g0v.tw/app4am"
       }],
