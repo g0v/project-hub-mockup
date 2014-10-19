@@ -4182,8 +4182,8 @@
   "homepage": ""
   "achievement":
     [{
-      "type": "插畫"
-      "phase": "完稿"
+      "type": "Artwork"
+      "phase": "Published"
       "url": "https://g0v.hackpad.com/-x--3pKTjb5MCj4"
     }]
   "workspace":
