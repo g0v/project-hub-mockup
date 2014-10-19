@@ -18,7 +18,7 @@ block body
         .ui.dropdown.icon.item
           i.icon.ellipsis.vertical
           .menu
-            .item
+            //-.item
               i.icon.add
               | Submit a project
             .item
@@ -77,7 +77,10 @@ block body
       a(href="https://github.com/g0v/project-hub-mockup/blob/master/livescripts/project-list.ls", target="_blank") To complete the data, please edit this .ls file,
         i.icon.forward.mail
     p.align.center
-      a(href="https://github.com/g0v/project-hub-mockup/blob/gh-pages/json/project-list.json", target="_blank") and I will convert it to this .json file.
+      a(href="https://g0v.hackpad.com/g0v-project-hub--l1W5Cw53OyI", target="_blank") or add data to this hackpad.
+        i.icon.forward.mail
+    p.align.center
+      a(href="https://github.com/g0v/project-hub-mockup/blob/gh-pages/json/project-list.json", target="_blank") and I will convert / merge new data to this .json file.
         i.icon.forward.mail
     p.align.center
       a(href="http://g0v.github.io/project-hub-mockup/", target="_blank") And this webpage will be updated after deploying.
@@ -91,7 +94,7 @@ block body
     p.align.center We can discuss this project on irc.freenode.net#g0v.tw
       br
       | (mention ipa, jimyhuang, Lee1092, a0000778, ETBlue)
-  section#submit.views
+  //-section#submit.views
     .ui.header.align.center Submit a g0v Project
     .ui.divider
     form.ui.warning.form
@@ -261,7 +264,10 @@ block body
       #submit-project.ui.submit.right.icon.labeled.button.green submit project
         i.icon.add
 
-  section#edit.views
+  //-section#edit.views
+    iframe#iframe(src="")
+
+  section#wiki.views
     iframe#iframe(src="")
 
 block script
@@ -325,7 +331,8 @@ block script
         //history.pushState( {}, current_view + '| g0v project hub mockup', '/' + current_view );
         history.pushState( {}, current_view + '| g0v project hub mockup', '/project-hub-mockup/' + current_view );
       };
-      $.each( ["submit", "edit", "about"], function(view_index, view_value){
+      //$.each( ["submit", "edit", "about"], function(view_index, view_value){
+      $.each( ["wiki", "about"], function(view_index, view_value){
         if(current_view == view_value){
           update_view(view_value);
           update_url(view_value);
@@ -615,17 +622,22 @@ block script
           update_view("about");
           update_url("about");
         });
-        $("#sidebar .menu .add").parent(".item").on("click tap", function(){
-          update_view("submit");
-          update_url("submit");
-        });
+        //$("#sidebar .menu .add").parent(".item").on("click tap", function(){
+        //  update_view("submit");
+        //  update_url("submit");
+        //});
+        //$("#sidebar .menu .pencil").parent(".item").on("click tap", function(){
+        //  update_view("edit");
+        //  update_url("edit");
+        //});
         $("#sidebar .menu .pencil").parent(".item").on("click tap", function(){
-          update_view("edit");
-          update_url("edit");
+          update_view("wiki");
+          update_url("wiki");
         });
         $("#index").on("click tap", function(){
           $("#projects").show();
-          $("#about, #submit, #edit").fadeOut();
+          $("#about, #wiki").fadeOut();
+          //$("#about, #submit, #edit, #wiki").fadeOut();
           //update_view("projects");
           update_url("");
         });
@@ -642,138 +654,138 @@ block script
         });
 
         // initiate submit form - add achievement / add workspace
-        var achievement_template_source = '<div class="inline fields added"><div class="field"><label>網址</label><div class="ui left labeled icon input"><input placeholder="http://" type="url" name="achievement-{{number}}-url"><i class="icon url"></i><div class="ui corner label"><i class="icon asterisk"></i></div></div></div><div class="field"><label>類型</label><div class="ui selection dropdown"><input name="achievement-{{number}}-type" type="hidden" value="web"><div class="default text">website</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="web" class="item">website</div><div data-value="android" class="item">Android app</div><div data-value="ios" class="item">iOS app</div><div data-value="wp" class="item">Windows Phone app</div><div data-value="firefoxos" class="item">Firefox OS</div><div data-value="linux" class="item">Linux software</div><div data-value="mac" class="item">Mac software</div><div data-value="windows" class="item">Windows software</div><div data-value="chrome" class="item">Chrome extension</div><div data-value="firefox" class="item">Firefox extension</div><div data-value="safari" class="item">Safari extension</div><div data-value="api" class="item">application interface (api)</div><div data-value="document" class="item">document</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div><div class="field"><label>開發階段</label><div class="ui selection dropdown"><input name="achievement-{{number}}-phase" type="hidden" value="idea"><div class="default text">idea</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="idea" class="item">idea</div><div data-value="plan" class="item">plan</div><div data-value="wireframe" class="item">wireframe</div><div data-value="mockup" class="item">mockup</div><div data-value="prototype" class="item">prototype</div><div data-value="alpha" class="item">alpha</div><div data-value="beta" class="item">beta</div><div data-value="production" class="item">production</div><div data-value="memory" class="item">memory</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div></div>';
-        var achievement_template = Handlebars.compile(achievement_template_source);
-        var latest_achievement_index = 0;
-        $("#add-achievement").on("click tap", function(){
-          latest_achievement_index += 1;
-          var context = {number: latest_achievement_index.toString()};
-          var $achievement_element = $(achievement_template(context));
-          $("#achievements").append($achievement_element);
-          $(".ui.dropdown").dropdown();
-        });
-
-        var workspace_template_source = '<div class="inline fields added"><div class="field"><label>網址</label><div class="ui left labeled icon input"><input placeholder="http://" type="url" name="workspace-{{number}}-url"><i class="icon url"></i><div class="ui corner label"><i class="icon asterisk"></i></div></div></div><div class="field"><label>類型</label><div class="ui selection dropdown"><input name="workspace-{{number}}-type" type="hidden" value="github"><div class="text">github</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="hackpad" class="item">hackpad</div><div data-value="hackfoldr" class="item">hackfoldr</div><div data-value="github" class="item active">github</div><div data-value="drive" class="item">google drive</div><div data-value="groups" class="item">google groups</div><div data-value="plus" class="item">google plus community</div><div data-value="calendar" class="item">google calendar</div><div data-value="facebook" class="item">facebook group</div><div data-value="irc" class="item">irc channel</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div></div>';
-        var workspace_template = Handlebars.compile(workspace_template_source);
-        var latest_workspace_index = 0;
-        $("#add-workspace").on("click tap", function(){
-          latest_workspace_index += 1;
-          var context = {number: latest_workspace_index.toString()};
-          var $workspace_element = $(workspace_template(context));
-          $("#workspaces").append($workspace_element);
-          $(".ui.dropdown").dropdown();
-        });
+        //var achievement_template_source = '<div class="inline fields added"><div class="field"><label>網址</label><div class="ui left labeled icon input"><input placeholder="http://" type="url" name="achievement-{{number}}-url"><i class="icon url"></i><div class="ui corner label"><i class="icon asterisk"></i></div></div></div><div class="field"><label>類型</label><div class="ui selection dropdown"><input name="achievement-{{number}}-type" type="hidden" value="web"><div class="default text">website</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="web" class="item">website</div><div data-value="android" class="item">Android app</div><div data-value="ios" class="item">iOS app</div><div data-value="wp" class="item">Windows Phone app</div><div data-value="firefoxos" class="item">Firefox OS</div><div data-value="linux" class="item">Linux software</div><div data-value="mac" class="item">Mac software</div><div data-value="windows" class="item">Windows software</div><div data-value="chrome" class="item">Chrome extension</div><div data-value="firefox" class="item">Firefox extension</div><div data-value="safari" class="item">Safari extension</div><div data-value="api" class="item">application interface (api)</div><div data-value="document" class="item">document</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div><div class="field"><label>開發階段</label><div class="ui selection dropdown"><input name="achievement-{{number}}-phase" type="hidden" value="idea"><div class="default text">idea</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="idea" class="item">idea</div><div data-value="plan" class="item">plan</div><div data-value="wireframe" class="item">wireframe</div><div data-value="mockup" class="item">mockup</div><div data-value="prototype" class="item">prototype</div><div data-value="alpha" class="item">alpha</div><div data-value="beta" class="item">beta</div><div data-value="production" class="item">production</div><div data-value="memory" class="item">memory</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div></div>';
+        //var achievement_template = Handlebars.compile(achievement_template_source);
+        //var latest_achievement_index = 0;
+        //$("#add-achievement").on("click tap", function(){
+        //  latest_achievement_index += 1;
+        //  var context = {number: latest_achievement_index.toString()};
+        //  var $achievement_element = $(achievement_template(context));
+        //  $("#achievements").append($achievement_element);
+        //  $(".ui.dropdown").dropdown();
+        //});
+        //var workspace_template_source = '<div class="inline fields added"><div class="field"><label>網址</label><div class="ui left labeled icon input"><input placeholder="http://" type="url" name="workspace-{{number}}-url"><i class="icon url"></i><div class="ui corner label"><i class="icon asterisk"></i></div></div></div><div class="field"><label>類型</label><div class="ui selection dropdown"><input name="workspace-{{number}}-type" type="hidden" value="github"><div class="text">github</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="hackpad" class="item">hackpad</div><div data-value="hackfoldr" class="item">hackfoldr</div><div data-value="github" class="item active">github</div><div data-value="drive" class="item">google drive</div><div data-value="groups" class="item">google groups</div><div data-value="plus" class="item">google plus community</div><div data-value="calendar" class="item">google calendar</div><div data-value="facebook" class="item">facebook group</div><div data-value="irc" class="item">irc channel</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div></div>';
+        //var workspace_template = Handlebars.compile(workspace_template_source);
+        //var latest_workspace_index = 0;
+        //$("#add-workspace").on("click tap", function(){
+        //  latest_workspace_index += 1;
+        //  var context = {number: latest_workspace_index.toString()};
+        //  var $workspace_element = $(workspace_template(context));
+        //  $("#workspaces").append($workspace_element);
+        //  $(".ui.dropdown").dropdown();
+        //});
 
         // initiate submit form - validation and post
-        var form_status = false;
-        var post_ethercalc = function(new_project_row){
-          $.ajax({
-            url: "https://ethercalc.org/_/g0v-project-hub-mockup",
-            type: 'POST',
-            contentType: 'text/csv',
-            processData: false,
-            data: new_project_row,
-            success: function(){
-              $("input, textarea").val("");
-              $(".added").remove();
-              update_view("edit");
-              update_url("edit");
-            }
-          });
-        };
-        $('.ui.form').form(
-          {
-            name: {
-              identifier: 'name-zh',
-              rules: [
-                {
-                  type: 'empty'
-                }
-              ]
-            },
-            intro: {
-              identifier: 'intro-zh-short',
-              rules: [
-                {
-                  type: 'empty'
-                }
-              ]
-            },
-            license: {
-              identifier: 'license',
-              rules: [
-                {
-                  type: 'empty'
-                }
-              ]
-            },
-            achievement: {
-              identifier: 'achievement-0-url',
-              rules: [
-                {
-                  type: 'url'
-                }
-              ]
-            },
-            workspace: {
-              identifier: 'workspace-0-url',
-              rules: [
-                {
-                  type: 'url'
-                }
-              ]
-            },
-          },
-          {
-            onSuccess: function(){form_status = true;},
-            onFailure: function(){form_status = false;}
-          }
-        );
-        $('.ui.form').submit(function(e){
-          if(form_status){
-            var submit_data = {};
-            var submit_data_string = ['id'];
-            submit_data.name = {};
-            submit_data.name.zh = $("[name='name-zh']").val();
-            submit_data.name.en = $("[name='name-en']").val();
-            submit_data.intro = {};
-            submit_data.intro.zh = {};
-            submit_data.intro.en = {};
-            submit_data.intro.zh.short = $("[name='intro-zh-short']").val();
-            submit_data.intro.en.short = $("[name='intro-en-short']").val();
-            submit_data.license = $("[name='license']").val();
-            submit_data.category = $("[name='category']").val();
-            submit_data.achievement = [];
-            for(var i = 0; i < latest_achievement_index+1; i++){
-              submit_data.achievement[i] = {};
-              submit_data.achievement[i].url = $("[name='achievement-"+i+"-url']").val();
-              submit_data.achievement[i].type = $("[name='achievement-"+i+"-type']").val();
-              submit_data.achievement[i].phase = $("[name='achievement-"+i+"-phase']").val();
-            };
-            submit_data.workspace = [];
-            for(var i = 0; i < latest_workspace_index+1; i++){
-              submit_data.workspace[i] = {};
-              submit_data.workspace[i].url = $("[name='workspace-"+i+"-url']").val();
-              submit_data.workspace[i].type = $("[name='workspace-"+i+"-type']").val();
-            };
-            submit_data.tool = $("[name='tool']").val();
-            submit_data.logo = $("[name='logo']").val();
-            submit_data.homepage = $("[name='homepage']").val();
-            submit_data.tag = $("[name='tag']").val();
-            submit_data.related = $("[name='related']").val();
-            $.each(submit_data, function(key, data){
-              submit_data_string.push('"' + JSON.stringify(data).replace(/"/g, '""') + '"');
-            });
-            post_ethercalc(submit_data_string.join(','));
-          };
-          return false;
-          //e.preventDefault();
-        });
+        //var form_status = false;
+        //var post_ethercalc = function(new_project_row){
+        //  $.ajax({
+        //    url: "https://ethercalc.org/_/g0v-project-hub-mockup",
+        //    type: 'POST',
+        //    contentType: 'text/csv',
+        //    processData: false,
+        //    data: new_project_row,
+        //    success: function(){
+        //      $("input, textarea").val("");
+        //      $(".added").remove();
+        //      update_view("edit");
+        //      update_url("edit");
+        //    }
+        //  });
+        //};
+        //$('.ui.form').form(
+        //  {
+        //    name: {
+        //      identifier: 'name-zh',
+        //      rules: [
+        //        {
+        //          type: 'empty'
+        //        }
+        //      ]
+        //    },
+        //    intro: {
+        //      identifier: 'intro-zh-short',
+        //      rules: [
+        //        {
+        //          type: 'empty'
+        //        }
+        //      ]
+        //    },
+        //    license: {
+        //      identifier: 'license',
+        //      rules: [
+        //        {
+        //          type: 'empty'
+        //        }
+        //      ]
+        //    },
+        //    achievement: {
+        //      identifier: 'achievement-0-url',
+        //      rules: [
+        //        {
+        //          type: 'url'
+        //        }
+        //      ]
+        //    },
+        //    workspace: {
+        //      identifier: 'workspace-0-url',
+        //      rules: [
+        //        {
+        //          type: 'url'
+        //        }
+        //      ]
+        //    },
+        //  },
+        //  {
+        //    onSuccess: function(){form_status = true;},
+        //    onFailure: function(){form_status = false;}
+        //  }
+        //);
+        //$('.ui.form').submit(function(e){
+        //  if(form_status){
+        //    var submit_data = {};
+        //    var submit_data_string = ['id'];
+        //    submit_data.name = {};
+        //    submit_data.name.zh = $("[name='name-zh']").val();
+        //    submit_data.name.en = $("[name='name-en']").val();
+        //    submit_data.intro = {};
+        //    submit_data.intro.zh = {};
+        //    submit_data.intro.en = {};
+        //    submit_data.intro.zh.short = $("[name='intro-zh-short']").val();
+        //    submit_data.intro.en.short = $("[name='intro-en-short']").val();
+        //    submit_data.license = $("[name='license']").val();
+        //    submit_data.category = $("[name='category']").val();
+        //    submit_data.achievement = [];
+        //    for(var i = 0; i < latest_achievement_index+1; i++){
+        //      submit_data.achievement[i] = {};
+        //      submit_data.achievement[i].url = $("[name='achievement-"+i+"-url']").val();
+        //      submit_data.achievement[i].type = $("[name='achievement-"+i+"-type']").val();
+        //      submit_data.achievement[i].phase = $("[name='achievement-"+i+"-phase']").val();
+        //    };
+        //    submit_data.workspace = [];
+        //    for(var i = 0; i < latest_workspace_index+1; i++){
+        //      submit_data.workspace[i] = {};
+        //      submit_data.workspace[i].url = $("[name='workspace-"+i+"-url']").val();
+        //      submit_data.workspace[i].type = $("[name='workspace-"+i+"-type']").val();
+        //    };
+        //    submit_data.tool = $("[name='tool']").val();
+        //    submit_data.logo = $("[name='logo']").val();
+        //    submit_data.homepage = $("[name='homepage']").val();
+        //    submit_data.tag = $("[name='tag']").val();
+        //    submit_data.related = $("[name='related']").val();
+        //    $.each(submit_data, function(key, data){
+        //      submit_data_string.push('"' + JSON.stringify(data).replace(/"/g, '""') + '"');
+        //    });
+        //    post_ethercalc(submit_data_string.join(','));
+        //  };
+        //  return false;
+        //  //e.preventDefault();
+        //});
 
         // TODO: sort menu items
 
       }).done(function(){
-        $("#iframe").attr("src","https://ethercalc.org/g0v-project-hub-mockup");
+        $("#iframe").attr("src","https://g0v.hackpad.com/g0v-project-hub--l1W5Cw53OyI");
+        //$("#iframe").attr("src","https://ethercalc.org/g0v-project-hub-mockup");
       });
 
       // TODO: login and join projects
