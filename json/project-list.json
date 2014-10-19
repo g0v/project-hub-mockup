@@ -1617,9 +1617,9 @@
     "category": ["開放資料"],
     "tag": ["字典", "辭典", "成語", "智慧型手機", "app", "平板", "瀏覽器擴充套件", "附加元件", "hackfoldr"],
     "participant": {},
-    "tool": [],
-    "license": [],
-    "homepage": "",
+    "tool": ["jQuery", "jQuery UI", "Cordova"],
+    "license": ["CC0"],
+    "homepage": "https://www.moedict.tw/about.html",
     "achievement": [
       {
         "type": "Web",
@@ -1649,14 +1649,90 @@
         "type": "WP",
         "phase": "Production",
         "url": "http://apps.microsoft.com/windows/zh-tw/app/81eb2795-0f64-45ab-b420-3c0d3b1ab13a"
+      }, {
+        "type": "Media",
+        "phase": "",
+        "url": "https://twitter.com/moedict"
       }
     ],
-    "workspace": [{
-      "type": "",
-      "name": "",
-      "url": "http://hack.g0v.tw/3du"
-    }],
-    "resource": [],
+    "workspace": [
+      {
+        "type": "",
+        "name": "",
+        "url": "http://hack.g0v.tw/3du"
+      }, {
+        "type": "",
+        "name": "3du.tw",
+        "url": "https://g0v.hackpad.com/3du.tw-ZNwaun62BP4"
+      }
+    ],
+    "resource": [
+      {
+        "type": "辭典",
+        "name": "教育部重編國語辭典（修訂本）",
+        "url": "http://dict.revised.moe.edu.tw/"
+      }, {
+        "type": "辭典",
+        "name": "教育部臺灣閩南語常用詞辭典",
+        "url": "http://twblg.dict.edu.tw/"
+      }, {
+        "type": "辭典",
+        "name": "教育部臺灣客家語常用詞辭典",
+        "url": "http://hakka.dict.edu.tw/"
+      }, {
+        "type": "筆順",
+        "name": "教育部常用國字標準字體筆順學習網",
+        "url": "http://stroke-order.learningweb.moe.edu.tw/"
+      }, {
+        "type": "發音",
+        "name": "教育部國語辭典簡編本多媒體網路版",
+        "url": "http://dict.concised.moe.edu.tw/"
+      }, {
+        "type": "對照",
+        "name": "CC-CEDict",
+        "url": "http://cc-cedict.org/"
+      }, {
+        "type": "對照",
+        "name": "CFDict",
+        "url": "http://www.chine-informations.com/chinois/open"
+      }, {
+        "type": "對照",
+        "name": "HanDeDict",
+        "url": "http://www.handedict.de/chinesisch_deutsch.php"
+      }, {
+        "type": "對照",
+        "name": "中華文化總會兩岸詞典",
+        "url": "http://www.gacc.org.tw/"
+      }, {
+        "type": "字體",
+        "name": "中華文化總會歷代書體",
+        "url": "http://www.gacc.org.tw/"
+      }, {
+        "type": "mobile app 字型",
+        "name": "Fira Sans",
+        "url": ""
+      }, {
+        "type": "字圖分享字型",
+        "name": "中文全字庫",
+        "url": "http://www.cns11643.gov.tw/AIDB/download.do?name=%E5%AD%97%E5%9E%8B%E4%B8%8B%E8%BC%89"
+      }, {
+        "type": "字圖分享字型",
+        "name": "逢甲大學中文系",
+        "url": "http://www.cl.fcu.edu.tw/"
+      }, {
+        "type": "字圖分享字型",
+        "name": "cwTeX Q",
+        "url": "https://code.google.com/p/cwtex-q-fonts/"
+      }, {
+        "type": "字圖分享字型",
+        "name": "思源黑體",
+        "url": "https://www.moedict.tw/fonts/truetype/SourceHanSansTW-1.001R/"
+      }, {
+        "type": "字圖分享字型",
+        "name": "王漢宗自由字型",
+        "url": "https://code.google.com/p/cwtex-q-fonts/"
+      }
+    ],
     "follower": [],
     "story": [],
     "related": []
