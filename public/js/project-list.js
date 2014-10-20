@@ -1071,7 +1071,7 @@
       "story": [],
       "related": []
     }, {
-      "id": "",
+      "id": "tisa",
       "name": {
         "zh": "你被服貿了嗎?",
         "en": ""
@@ -1079,7 +1079,7 @@
       "logo": "",
       "intro": {
         "zh": {
-          "short": "",
+          "short": "服貿協議極重要但不易讀、不易懂，政府簽訂前各產業幾無人知，因分類用詞不同，簽訂後究竟包含哪些行業還是不易判斷。原因在於服貿協議開放承諾行業別是依照聯合國暫行分類，但在我國需轉換成主計處行業別，同樣地，在中國大陸開放之行業別亦須轉換。進一步討論服貿協議前，需要先了解哪些行業被包含。",
           "medium": "",
           "long": ""
         },
@@ -1093,17 +1093,93 @@
       "tag": ['立法', '黑箱作業', '服貿', '太陽花學運'],
       "participant": {},
       "tool": [],
-      "license": [],
+      "license": ['CC-By', 'MIT'],
       "homepage": "",
       "achievement": [{
         "type": "Web",
-        "phase": "Production",
+        "phase": "Beta",
         "url": "http://tisa.g0v.tw/"
       }],
-      "workspace": [],
-      "resource": [],
+      "workspace": [
+        {
+          "type": "",
+          "name": "",
+          "url": "https://github.com/g0v/tisa-map"
+        }, {
+          "type": "",
+          "name": "服貿協議相關 g0v 專案",
+          "url": "https://g0v.hackpad.com/-g0v--SUkMbG4IV6v"
+        }, {
+          "type": "",
+          "name": "Mockup artwork",
+          "url": "https://drive.google.com/folderview?id=0B_rJsqEBPugVM0dMX2UwRk4wcWc&usp=sharing"
+        }, {
+          "type": "Hackfoldr",
+          "name": "",
+          "url": "http://hack.g0v.tw/tisa"
+        }
+      ],
+      "resource": [
+        {
+          "type": "",
+          "name": "行業分類說明 (政府提供)",
+          "url": "http://www.stat.gov.tw/ct.asp?xItem=28907&ctNode=1309"
+        }, {
+          "type": "Google drive",
+          "name": "行業對照表 (政府提供)",
+          "url": "https://drive.google.com/?authuser=0" + folders + "/0Bz3HE-dOCGJVenZTck13Qmd5NGM"
+        }, {
+          "type": "",
+          "name": "行業標準分類 (主計處提供)",
+          "url": "http://www.dgbas.gov.tw/ct.asp?xItem=28854&ctNode=5479&mp=1"
+        }, {
+          "type": "Google spreadsheet",
+          "name": "兩岸開放承諾比較表",
+          "url": "https://docs.google.com/file/d/0B6SwtGgTE4bCT0pnMTQxN1Z2ejQ/edit"
+        }, {
+          "type": "Google drive",
+          "name": "g0v 服貿協議資料庫",
+          "url": "https://drive.google.com/?authuser=0" + folders + "/0B0NsS2a-Qx8ZYlhWQWNlVGxuZDg"
+        }, {
+          "type": "",
+          "name": "正體／兩岸服務貿易協議> 文本及附件",
+          "url": "http://www.ecfa.org.tw/SerciveTradeAgreement1.aspx?pid=7&cid=24"
+        }, {
+          "type": "",
+          "name": "簡體／海峡两岸服务贸易协议（全文）",
+          "url": "http://www.gwytb.gov.cn/lhjl/laxy/201306/t20130621_4352344.htm"
+        }, {
+          "type": "",
+          "name": "CPC 與 W120對照表",
+          "url": "http://db.wtocenter.org.tw/w120.asp"
+        }, {
+          "type": "PDF",
+          "name": "兩岸服貿協議對我國的衝擊分析",
+          "url": "http://homepage.ntu.edu.tw/~ntuperc/conference-1-files/20130725_3_1.pdf"
+        }, {
+          "type": "Youtube",
+          "name": "兩岸服貿協議對我國的衝擊分析 -1",
+          "url": "http://www.youtube.com/watch?v=ByWKj4S5Jts"
+        }, {
+          "type": "Youtube",
+          "name": "兩岸服貿協議對我國的衝擊分析 -2",
+          "url": "http://www.youtube.com/watch?v=vKm9DBxbFnQ"
+        }, {
+          "type": "Youtube",
+          "name": "兩岸服貿協議對我國的衝擊分析 -3",
+          "url": "http://www.youtube.com/watch?v=amcYBpY533g"
+        }
+      ],
       "follower": [],
-      "story": [],
+      "story": [
+        {
+          "title": "g0v.tw hackath6n 短講：服貿與 g0v",
+          "url": "https://www.youtube.com/watch?v=WNMQ8Sstbvo"
+        }, {
+          "title": "g0v.tw hackath7n 提案：服貿行業對照表",
+          "url": "https://www.youtube.com/watch?v=K1ooVjoWLaU"
+        }
+      ],
       "related": []
     }, {
       "id": "",

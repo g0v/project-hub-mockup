@@ -1,5 +1,5 @@
 * id: ""
-  name:
+  "name":
     zh: ""
     en: ""
   logo: ""
@@ -24,26 +24,26 @@
   homepage: ""
   achievement:
     [{
-      type: ""
-      phase: ""
-      url: ""
+      "type": ""
+      "phase": ""
+      "url": ""
     }]
   workspace:
     [{
-      type: ""
-      name: ""
-      url: ""
+      "type": ""
+      "name": ""
+      "url": ""
     }]
   resource:
     [{
-      type: ""
-      name: ""
-      url: ""
+      "type": ""
+      "name": ""
+      "url": ""
     }]
   follower: <[]>
   story:
     [{
       title: ""
-      url: ""
+      "url": ""
     }]
   related: <[]>

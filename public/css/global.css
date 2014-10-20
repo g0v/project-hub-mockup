@@ -18,6 +18,10 @@ body.ui.dimmable {
   position: static;
 }
 
+html, body {
+  overflow: hidden;
+}
+
 p {
   line-height: 1.5em;
 }
@@ -117,6 +121,10 @@ a, a:link {
   padding: 1rem;
   margin: -1rem;
   cursor: pointer;
+}
+
+.ui.dimmer {
+  overflow-x: auto;
 }
 
 .ui.modal {
