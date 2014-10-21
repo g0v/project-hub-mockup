@@ -711,7 +711,7 @@
     {
       "type": "API"
       "phase": "Alpha"
-      "url": "https://github.com/g0v/laweasyread#api"
+      "url": 'https://github.com/g0v/laweasyread#api'
     }]
   "workspace":
     [{
@@ -964,7 +964,7 @@
       "phase": "Mockup"
       "url": "https://g0v.github.io/semantic-ui-experiment/bill-progress.html"
     }]
-  "workspace": 
+  "workspace":
     [{
       "type": ""
       "url": "https://github.com/g0v/ly.g0v.tw"
@@ -1034,7 +1034,7 @@
     {
       "type": "Google drive"
       "name": "行業對照表 (政府提供)"
-      "url": "https://drive.google.com/?authuser=0#folders/0Bz3HE-dOCGJVenZTck13Qmd5NGM"
+      "url": 'https://drive.google.com/?authuser=0#folders/0Bz3HE-dOCGJVenZTck13Qmd5NGM'
     }
     {
       "type": ""
@@ -1049,7 +1049,7 @@
     {
       "type": "Google drive"
       "name": "g0v 服貿協議資料庫"
-      "url": "https://drive.google.com/?authuser=0#folders/0B0NsS2a-Qx8ZYlhWQWNlVGxuZDg"
+      "url": 'https://drive.google.com/?authuser=0#folders/0B0NsS2a-Qx8ZYlhWQWNlVGxuZDg'
     }
     {
       "type": ""

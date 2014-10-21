@@ -6,9 +6,9 @@ app = express!
 build_path = '_public'
 
 gulp.task 'sass', ->
-  gulp.src 'sass/*.sass'
-    .pipe gulp-compass {sass: 'sass', css: "#{build_path}/css", sourcemap: 'true'}
-    .pipe gulp.dest "#{build_path}/css"
+  gulp.src './sass/*.sass'
+    .pipe gulp-compass {sass: 'sass', css: "#{build_path}/css"}
+    .pipe gulp.dest "#{build_path}"
 
 gulp.task 'jade', ->
   gulp.src 'views/*.jade'
