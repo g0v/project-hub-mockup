@@ -982,7 +982,7 @@
   "name":
     "zh": "你被服貿了嗎?"
     "en": ""
-  "logo": ""
+  "logo": "https://raw.githubusercontent.com/g0v/tisa-map/master/public/img/com/triangle.png"
   "intro":
     "zh":
       "short": "服貿協議極重要但不易讀、不易懂，政府簽訂前各產業幾無人知，因分類用詞不同，簽訂後究竟包含哪些行業還是不易判斷。原因在於服貿協議開放承諾行業別是依照聯合國暫行分類，但在我國需轉換成主計處行業別，同樣地，在中國大陸開放之行業別亦須轉換。進一步討論服貿協議前，需要先了解哪些行業被包含。"
