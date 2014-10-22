@@ -25,6 +25,7 @@
     "gulp-jade": "^0.9.0",
     "gulp-livereload": "^2.0.0",
     "gulp-livescript": "^2.0.0",
+    "gulp-plumber": "^0.6.6",
     "gulp-util": "^3.0.1"
   },
   "repository": [
