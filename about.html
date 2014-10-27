@@ -1,34 +1,34 @@
 <html><head><meta charset="utf-8"/><!-- Favicon (TODO)--><link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"/><link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"/><!-- For iOS (TODO)--><meta name="apple-mobile-web-app-capable" content="yes"/><link rel="apple-touch-icon-precomposed" href="assets/img/app-icon/icon-60.png"/><link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/img/app-icon/icon-76.png"/><link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/img/app-icon/icon-60@2x.png"/><link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/img/app-icon/icon-76@2x.png"/><!-- jquery--><script type="text/javascript" src="assets/jquery-2.1.1.min.js"></script><!-- semantic ui--><link rel="stylesheet" type="text/css" href="assets/semantic-ui/0.19.3/css/semantic.min.css"/><script type="text/javascript" src="assets/semantic-ui/0.19.3/javascript/semantic.min.js"></script><!-- handlebars--><script type="text/javascript" src="assets/handlebars-v1.3.0.js"></script><!-- underscore--><script type="text/javascript" src="assets/underscore-min.js"></script><!-- csv parser--><script type="text/javascript" src="assets/csv.js"></script><!-- custom--><link rel="stylesheet" href="css/global.css"/><!-- for mobile, responsive--><meta name="viewport" content="width=device-width, initial-scale=1"/><title>g0v project hub mockup</title></head><body><nav id="sidebar"><div class="ui menu no margin"><div class="ui dropdown item">Project Hub<i class="icon dropdown"></i><div class="menu"><a class="item">Resource Hub</a><a class="item">Project Hub</a><a class="item">Charts</a></div></div><div class="right menu"><div class="ui dropdown icon item"><i class="icon ellipsis vertical"></i><div class="menu"><div class="item"><i class="icon pencil"></i>Edit pending data</div><div class="item"><i class="icon unhide"></i>View projects</div><div class="item"><i class="icon help"></i>About</div></div></div></div></div><div id="search" class="field"><div class="ui icon input"><input placeholder="search..." type="text"/><i class="icon search"></i></div></div><div id="index" class="ui vertical fluid menu no margin"><div id="category" class="ui accordion"><div class="title header item active">category<i class="icon dropdown"></i></div><div class="content ui small menu active"><div class="menu"></div></div></div><div id="type" class="ui accordion"><div class="title header item">type<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div><div id="phase" class="ui accordion"><div class="title header item">phase<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div><div id="license" class="ui accordion"><div class="title header item">license<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div><div id="tool" class="ui accordion"><div class="title header item">tool<i class="icon dropdown"></i></div><div class="content ui small menu"><div class="menu"></div></div></div></div></nav><section id="projects" class="views"><div id="filter"></div><div id="count"></div><div id="list" class="ui two column stackable grid"></div></section><section id="about" class="views"><div class="ui header align center">g0v.tw Project Pilot</div><div class="ui divider"></div><p class="align center"><a href="https://github.com/g0v/project-hub-mockup" target="_blank">The source code is on github here.<i class="icon forward mail"></i></a></p><p class="align center"><a href="https://github.com/g0v/project-hub-mockup/blob/master/livescripts/project-list.ls" target="_blank">To complete the data, please edit this .ls file,<i class="icon forward mail"></i></a></p><p class="align center"><a href="https://g0v.hackpad.com/g0v-project-hub--l1W5Cw53OyI" target="_blank">or add data to this hackpad.<i class="icon forward mail"></i></a></p><p class="align center"><a href="https://github.com/g0v/project-hub-mockup/blob/gh-pages/json/project-list.json" target="_blank">and I will convert / merge new data to this .json file.<i class="icon forward mail"></i></a></p><p class="align center"><a href="http://g0v.github.io/project-hub-mockup/" target="_blank">And this webpage will be updated after deploying.<i class="icon forward mail"></i></a></p><p class="align center"><a href="https://github.com/g0v/project-hub-mockup/issues" target="_blank">If you are familiar with javascript, please help me with these issues.<i class="icon forward mail"></i></a></p><p class="align center"><a href="https://g0v.hackpad.com/hQ9RdcSw7Gd" target="_blank">For more info, please check out this hackpad<i class="icon forward mail"></i></a></p><p class="align center">We can discuss this project on irc.freenode.net#g0v.tw<br/>(mention ipa, jimyhuang, Lee1092, a0000778, ETBlue)</p></section><section id="wiki" class="views"><iframe id="iframe" src=""></iframe></section><script>$(document).ready(function(){
 
   // step 0: setup
-  
+
   var attribute_template_source ='<a class="item" name="{{attribute_id}}"><div class="ui label">{{count}}</div>{{attribute_text}}</a>';
   var attribute_template = Handlebars.compile(attribute_template_source);
-  
+
   var filter_template_source = '<div class="ui large label" name="{{attribute_id}}">{{attribute_text}}<i class="icon delete"></i></div>';
   var filter_template = Handlebars.compile(filter_template_source);
-  
+
   var list_template_source ='<article class="column project" id="{{id}}"><div class="wrapper"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><div class="content"><h3 class="ui header"><span class="text">{{name}}</span></h3><p class="description">{{intro}}</p><p class="achievement"></p></div><div class="ui large modal project" name="{{id}}"><a href="{{homepage}}" target="_blank" class="ui image"><img src="{{logo}}"></a><h3 class="ui header">{{name}}</h3><p class="description">{{intro}}</p><p class="achievement"></p><div class="ui divider clear both"></div><div class="ui two column stackable grid"><div class="column"><div class="ui grid"><div class="row"><div class="column four wide">專案分類</div><div class="column twelve wide category"></div></div><div class="row"><div class="column four wide">標籤</div><div class="column twelve wide tag"></div></div><div class="row"><div class="column four wide">介紹</div><div class="column twelve wide story"></div></div><div class="row"><div class="column four wide">相關專案</div><div class="column twelve wide related"></div></div></div></div><div class="column"><div class="ui grid"><div class="row"><div class="column four wide">授權</div><div class="column twelve wide license"></div></div><div class="row"><div class="column four wide">使用工具</div><div class="column twelve wide tool"></div></div><div class="row"><div class="column four wide">資料來源</div><div class="column twelve wide resource"></div></div><div class="row"><div class="column four wide">工作區</div><div class="column twelve wide workspace"></div></div></div></div></div></div></div><div class="hidden text">{{content}}</div></article>';
   var list_template = Handlebars.compile(list_template_source);
-  
+
   var achievement_template_source = '<a href="{{url}}" target="_blank" class="ui large label"><i class="icon {{icon}}"></i>{{type}}{{phase}}<i class="icon forward mail"></i></a>';
   var achievement_template = Handlebars.compile(achievement_template_source);
-  
+
   var workspace_template_source = '<a href="{{url}}" target="_blank" class="ui large label"><i class="icon {{icon}}"></i>{{type}}{{name}}<i class="icon forward mail"></i></a>';
   var workspace_template = Handlebars.compile(workspace_template_source);
-  
+
   var resource_template_source = '<a href="{{url}}" target="_blank" class="ui large label">{{name}}{{type}}<i class="icon forward mail"></i></a>';
   var resource_template = Handlebars.compile(resource_template_source);
-  
+
   var story_template_source = '<a href="{{url}}" target="_blank" class="ui large label">{{title}}<i class="icon forward mail"></i></a>';
   var story_template = Handlebars.compile(story_template_source);
-  
+
   var related_template_source = '<a href="#" class="ui large label">{{name}}<i class="icon exchange"></i></a>';
   var related_template = Handlebars.compile(related_template_source);
-  
+
   var label_template_source = '<a class="ui large label">{{name}}</a>';
   var label_template = Handlebars.compile(label_template_source);
-  
+
   var menus = {
     category : [],
     type : [],
@@ -45,7 +45,7 @@
   //  tool : [],
   //  tag : [],
   //};
-  
+
   //var current_view = location.pathname.split('/')[1] || "";
   var current_view = location.pathname.split('/')[2] || "";
   var update_view = function(current_url){
@@ -70,7 +70,7 @@
   //if(current_view == "wiki"){
   //  window.open("https://g0v.hackpad.com/g0v-project-hub--l1W5Cw53OyI", "_self");
   //}
-  
+
   var render_attributes = function(target_menu_name, attributes){
     $.each(attributes, function(attribute_index, attribute){
       var attribute_id = target_menu_name + "-" + attribute_index;
@@ -85,11 +85,11 @@
     var menu_items_count = $("#" + target_menu_name + " .content .menu .item").length;
     $("#" + target_menu_name + " .title").append(" (" + menu_items_count + ")");
   }
-  
+
   // step 1: get data and render projects
-  
+
   $.getJSON("json/project-list.json", function(projects){
-  
+
     $.each(projects, function(project_index, project){
       var id = project.id || project_index;
       var homepage = project.homepage || "";
@@ -97,7 +97,7 @@
       var name = project.name.zh || "";
       var intro = project.intro.zh.short || "";
       var content = JSON.stringify(project) || "";
-      
+
       var classes = [];
       var add_classes = function(attribute_type){
         $.each(project[attribute_type], function(index, attribute){
@@ -121,17 +121,17 @@
       //add_classes("tag");
       add_classes("tool");
       add_classes("license");
-      
+
       if(homepage.length == 0){
         homepage = project.achievement[0].url;
       };
       if(logo.length == 0){
         logo = "http://i.jimmyhub.net/shot/" + homepage;
       };
-      
+
       var context = {id: id, homepage: homepage, logo: logo, name: name, intro: intro, content: content};
       var $list_element = $(list_template(context));
-      
+
       var add_labels = function(label_type, data_array){
         $.each(data_array, function(array_index, array_value){
           var context = {name: array_value};
@@ -143,7 +143,7 @@
       add_labels("tag", project.tag);
       add_labels("tool", project.tool);
       add_labels("license", project.license);
-      
+
       $.each(project.story, function(story_index, story){
         var story_title = story.title;
         var story_url = story.url;
@@ -214,24 +214,24 @@
         add_sub_classes("type", achievement_type);
         add_sub_classes("phase", achievement_phase);
       });
-      
+
       $.each(classes, function(class_index, class_name){
         $list_element.addClass(class_name);menus
       });
-      
+
       $("#list").append($list_element);
-      
+
     });
   }).done(function(){
-  
+
     // step 2-0 sort projects
-    
+
     $("#list>.project").sort(function(a, b){
       return $(a).find(".header>.text").text().localeCompare($(b).find(".header>.text").text());
     }).appendTo("#list");
-    
+
     // step 2-1: detect modals
-    
+
     var current_project = _.last( document.URL.split('/') );
     if(current_project.match(/^#/)){
       var active_modal_name = current_project.replace("#","");
@@ -241,28 +241,28 @@
          scrollTop: active_project_position
       });
     }
-    
+
     // step 2-2: render sidebar menu and filter labels
-    
+
     $.each(menus, function(menu_id, menu_items){
       render_attributes(menu_id, menu_items);
     });
-    
+
   }).done(function(){
-  
+
     // step 3-1: sort sidebar menu items
-    
+
     $.each(menus, function(menu_id, menu_items){
       $("#index #"+menu_id+" .content .menu .item").sort(function(a, b){
         return parseInt($(a).find(".label").text(), 10) < parseInt($(b).find(".label").text(), 10);
       }).appendTo("#index #"+menu_id+" .content .menu");
     });
-    
+
     // step 3-2: start filtering rendered projects
-    
+
     // for ux
     $("#filter .ui.label").hide();
-    
+
     // for projects filter
     var initialize_pilot = function(){
       var all_projects_count = $("#list>.column").length;
@@ -314,7 +314,7 @@
         toggle_filtered_projects();
         count_filtered_projects();
       });
-      
+
       var active_content_string = "";
       var active_content_count = 0;
       var count_searched_projects = function(){
@@ -340,15 +340,15 @@
       });
     };
     initialize_pilot();
-    
+
   }).done(function(){
-  
+
     // step 4: start other interactions
-    
+
     // for semantic ui
     $(".ui.dropdown").dropdown();
     $(".ui.accordion").accordion();
-    
+
     // change views
     $("#sidebar .menu .help").parent(".item").on("click tap", function(){
       update_view("about");
@@ -383,7 +383,7 @@
       //$("#about, #submit, #edit, #wiki").fadeOut();
       //update_view("projects");
     });
-    
+
     $("#list .column .header .text").on("click tap", function(){
       var active_modal_name = $(this).parents(".column").attr("id");
       $(".ui.modal").filter("[name='" + active_modal_name +"']").modal("setting", {duration: 200}).modal("show");
@@ -394,7 +394,7 @@
         update_url("");
       }
     });
-    
+
     // initiate submit form - add achievement / add workspace
     //var achievement_template_source = '<div class="inline fields added"><div class="field"><label>網址</label><div class="ui left labeled icon input"><input placeholder="http://" type="url" name="achievement-{{number}}-url"><i class="icon url"></i><div class="ui corner label"><i class="icon asterisk"></i></div></div></div><div class="field"><label>類型</label><div class="ui selection dropdown"><input name="achievement-{{number}}-type" type="hidden" value="web"><div class="default text">website</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="web" class="item">website</div><div data-value="android" class="item">Android app</div><div data-value="ios" class="item">iOS app</div><div data-value="wp" class="item">Windows Phone app</div><div data-value="firefoxos" class="item">Firefox OS</div><div data-value="linux" class="item">Linux software</div><div data-value="mac" class="item">Mac software</div><div data-value="windows" class="item">Windows software</div><div data-value="chrome" class="item">Chrome extension</div><div data-value="firefox" class="item">Firefox extension</div><div data-value="safari" class="item">Safari extension</div><div data-value="api" class="item">application interface (api)</div><div data-value="document" class="item">document</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div><div class="field"><label>開發階段</label><div class="ui selection dropdown"><input name="achievement-{{number}}-phase" type="hidden" value="idea"><div class="default text">idea</div><i class="icon dropdown"></i><div class="menu ui transition hidden"><div data-value="idea" class="item">idea</div><div data-value="plan" class="item">plan</div><div data-value="wireframe" class="item">wireframe</div><div data-value="mockup" class="item">mockup</div><div data-value="prototype" class="item">prototype</div><div data-value="alpha" class="item">alpha</div><div data-value="beta" class="item">beta</div><div data-value="production" class="item">production</div><div data-value="memory" class="item">memory</div><div data-value="miscellaneous" class="item">miscellaneous</div></div></div></div></div>';
     //var achievement_template = Handlebars.compile(achievement_template_source);
@@ -416,7 +416,7 @@
     //  $("#workspaces").append($workspace_element);
     //  $(".ui.dropdown").dropdown();
     //});
-    
+
     // initiate submit form - validation and post
     //var form_status = false;
     //var post_ethercalc = function(new_project_row){
@@ -522,16 +522,16 @@
     //  return false;
     //  //e.preventDefault();
     //});
-    
+
     // TODO: sort menu items
-    
+
   }).done(function(){
     $("#iframe").attr("src","https://g0v.hackpad.com/ep/pad/static/l1W5Cw53OyI");
     //$("#iframe").attr("src","https://g0v.hackpad.com/g0v-project-hub--l1W5Cw53OyI");
     //$("#iframe").attr("src","https://ethercalc.org/g0v-project-hub-mockup");
   });
-  
+
   // TODO: login and join projects
   var roles = ["research", "planning", "ui", "visual", "art", "web frontend", "web backend", "ios", "android", "mac", "linux", "windows", "txt", "consult", "miscellaneous"];
-  
+
 });</script></body></html>
