@@ -1,7 +1,7 @@
 (function(){
   [
     {
-      "id": "",
+      "id": " ",
       "name": {
         "zh": "2014九合一選舉黃頁",
         "en": "2014 Taiwan Elections"
