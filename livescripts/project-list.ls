@@ -21,7 +21,9 @@
       "CakePHP"
       "MySQL"
   "license":
+    [
     * "CC0 1.0 Universal"
+    ]
   "homepage": ""
   "achievement":
     [{
@@ -4022,7 +4024,9 @@
   "participant": {}
   "tool": <[ Node.js Firebase ]>
   "license":
+    [
     * "CC0 1.0 Universal"
+    ]
   "homepage": ""
   "achievement":
     [{

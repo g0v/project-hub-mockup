@@ -1,7 +1,7 @@
 (function(){
   [
     {
-      "id": " ",
+      "id": "",
       "name": {
         "zh": "2014九合一選舉黃頁",
         "en": "2014 Taiwan Elections"
@@ -23,7 +23,7 @@
       "tag": ['投票', '立委', '議員', '鄉長', '縣長', '市長', '區長', '候選人'],
       "participant": {},
       "tool": ["Google Maps", "CakePHP", "MySQL"],
-      "license": "CC0 1.0 Universal",
+      "license": ["CC0 1.0 Universal"],
       "homepage": "",
       "achievement": [{
         "type": "Web",
@@ -4384,7 +4384,7 @@
       "tag": ['hackfoldr', '直播', '活動', '宣傳', '瀏覽器擴充套件', '附加元件', '智慧型手機', 'app', '平板'],
       "participant": {},
       "tool": ['Node.js', 'Firebase'],
-      "license": "CC0 1.0 Universal",
+      "license": ["CC0 1.0 Universal"],
       "homepage": "",
       "achievement": [
         {
