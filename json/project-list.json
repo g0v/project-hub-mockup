@@ -23,9 +23,13 @@
     "tag": ["投票", "立委", "議員", "鄉長", "縣長", "市長", "區長", "候選人"],
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     "category": [
       "開放政府"
     ],
+=======
+    "category": [],
+>>>>>>> parent of 9f6e534... conflict
 =======
     "category": [],
 >>>>>>> parent of 9f6e534... conflict
@@ -85,9 +89,13 @@
     "tag": ["g0v", "活動", "黑客松", "寫程式", "炸雞", "披薩"],
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     "category": [
       "其他"
     ],
+=======
+    "category": [],
+>>>>>>> parent of 9f6e534... conflict
 =======
     "category": [],
 >>>>>>> parent of 9f6e534... conflict
@@ -181,9 +189,13 @@
     "tag": ["活動", "宣傳", "社運", "學運", "社會運動", "學生運動", "智慧型手機", "app", "平板"],
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     "category": [
       "新媒體"
     ],
+=======
+    "category": [],
+>>>>>>> parent of 9f6e534... conflict
 =======
     "category": [],
 >>>>>>> parent of 9f6e534... conflict
@@ -293,9 +305,13 @@
     "tag": ["活動", "小蜜蜂", "宣傳", "割闌尾", "罷免"],
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     "category": [
       "社會參與"
     ],
+=======
+    "category": [],
+>>>>>>> parent of 9f6e534... conflict
 =======
     "category": [],
 >>>>>>> parent of 9f6e534... conflict
@@ -337,6 +353,7 @@
       }
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "workspace": [
       {
         "type": "",
@@ -344,6 +361,9 @@
         "url": "https://github.com/g0v/LittleBeeGeo"
       }
     ],
+=======
+    "workspace": [],
+>>>>>>> parent of 9f6e534... conflict
 =======
     "workspace": [],
 >>>>>>> parent of 9f6e534... conflict
@@ -377,9 +397,13 @@
     "tag": ["g0v", "活動", "黑客松"],
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     "category": [
       "g0v基礎建設"
     ],
+=======
+    "category": [],
+>>>>>>> parent of 9f6e534... conflict
 =======
     "category": [],
 >>>>>>> parent of 9f6e534... conflict
@@ -536,7 +560,10 @@
 =======
     "tool": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       "PixFramework",
+=======
+>>>>>>> parent of 9f6e534... conflict
 =======
 >>>>>>> parent of 9f6e534... conflict
       "PHP"
@@ -581,7 +608,11 @@
     "story": [
       {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "title": "Blog 介紹",
+=======
+        "title": "Blog介紹",
+>>>>>>> parent of 9f6e534... conflict
 =======
         "title": "Blog介紹",
 >>>>>>> parent of 9f6e534... conflict
@@ -624,9 +655,13 @@
     "license": ["BSD"],
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     "tool": [
       "JsDiff"
     ],
+=======
+    "tool": [],
+>>>>>>> parent of 9f6e534... conflict
 =======
     "tool": [],
 >>>>>>> parent of 9f6e534... conflict
@@ -681,11 +716,15 @@
       "新媒體"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "tag": [
       "媒體",
       "詞彙",
       "用語"
     ],
+=======
+    "tag": [],
+>>>>>>> parent of 9f6e534... conflict
 =======
     "tag": [],
 >>>>>>> parent of 9f6e534... conflict
@@ -719,6 +758,7 @@
       }
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "workspace": [
       {
         "type": "Github",
@@ -726,6 +766,9 @@
         "url": "https://github.com/youchenlee/news-seg"
       }
     ],
+=======
+    "workspace": [],
+>>>>>>> parent of 9f6e534... conflict
 =======
     "workspace": [],
 >>>>>>> parent of 9f6e534... conflict
