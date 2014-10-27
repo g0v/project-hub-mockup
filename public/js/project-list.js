@@ -222,7 +222,7 @@
       "tag": ['g0v', '活動', '黑客松'],
       "participant": {},
       "tool": [],
-      "license": "CC BY 3.0",
+      "license": ["CC BY 3.0"],
       "homepage": "",
       "achievement": [{
         "type": "Web",

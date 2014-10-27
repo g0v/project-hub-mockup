@@ -207,7 +207,9 @@
   "participant": {}
   "tool": <[]>
   "license":
+    [
     * "CC BY 3.0"
+    ]
   "homepage": ""
   "achievement":
     [{
