@@ -2,7 +2,7 @@
 * "id": ""
   "name":
     "zh": "2014九合一選舉黃頁"
-    "en": ""
+    "en": "2014 Taiwan Elections"
   "logo": ""
   "intro":
     "zh":
@@ -13,11 +13,15 @@
       "short": ""
       "medium": ""
       "long": ""
-  "category": <[]>
+  "category": <[ 開放政府 ]>
   "tag": <[ 投票 立委 議員 鄉長 縣長 市長 區長 候選人 ]>
   "participant": {}
-  "tool": <[]>
-  "license": <[]>
+  "tool":
+    * "Google Maps"
+      "CakePHP"
+      "MySQL"
+  "license":
+    * "CC0 1.0 Universal"
   "homepage": ""
   "achievement":
     [{
@@ -33,7 +37,7 @@
 * "id": ""
   "name":
     "zh": "g0v summit 2014"
-    "en": ""
+    "en": "g0v summit 2014"
   "logo": ""
   "intro":
     "zh":
@@ -44,11 +48,11 @@
       "short": ""
       "medium": ""
       "long": ""
-  "category": <[]>
+  "category": <[ 其他 ]>
   "tag": <[ g0v 活動 黑客松 寫程式 炸雞 披薩 ]>
   "participant": {}
-  "tool": <[]>
-  "license": <[]>
+  "tool": <[ Node.js ]>
+  "license": <[ MIT ]>
   "homepage": ""
   "achievement":
     [{
@@ -59,7 +63,12 @@
   "workspace":
     [{
       "type": ""
-      "phase": ""
+      "name": ""
+      "url": "https://github.com/g0v/summit.g0v.tw"
+    }
+    {
+      "type": ""
+      "name": ""
       "url": "http://hack.g0v.tw/g0v-summit2014/"
     }]
   "resource": []
@@ -80,11 +89,11 @@
       "short": ""
       "medium": ""
       "long": ""
-  "category": <[]>
+  "category": <[ 新媒體 ]>
   "tag": <[ 活動 宣傳 社運 學運 社會運動 學生運動 智慧型手機 app 平板 ]>
   "participant": {}
   "tool": <[]>
-  "license": <[]>
+  "license": <[ Proprietary ]>
   "homepage": ""
   "achievement":
     [{
@@ -152,11 +161,14 @@
       "short": ""
       "medium": ""
       "long": ""
-  "category": <[]>
+  "category": <[ 社會參與 ]>
   "tag": <[ 活動 小蜜蜂 宣傳 割闌尾 罷免 ]>
   "participant": {}
-  "tool": <[]>
-  "license": <[]>
+  "tool":
+    * "Angular-branch-seed-livescript"
+      "Python"
+      "Bottle"
+  "license": <[ MIT ]>
   "homepage": ""
   "achievement":
     [{
@@ -164,7 +176,12 @@
       "phase": "Production"
       "url": "http://beemap.tw/"
     }]
-  "workspace": []
+  "workspace":
+    [{
+      "type": ""
+      "name": ""
+      "url": "https://github.com/g0v/LittleBeeGeo"
+    }]
   "resource": []
   "follower": <[]>
   "story": []
@@ -172,7 +189,7 @@
 * "id": "g0v-photos"
   "name":
     "zh": "g0v.photos 自己的活動自己拍"
-    "en": ""
+    "en": "g0v Photos"
   "logo": ""
   "intro":
     "zh":
@@ -183,11 +200,12 @@
       "short": ""
       "medium": ""
       "long": ""
-  "category": <[]>
+  "category": <[ g0v基礎建設 ]>
   "tag": <[ g0v 活動 黑客松 ]>
   "participant": {}
   "tool": <[]>
-  "license": <[]>
+  "license":
+    * "CC BY 3.0"
   "homepage": ""
   "achievement":
     [{
@@ -215,10 +233,10 @@
       "medium": ""
       "long": ""
   "category": <[ 新媒體 ]>
-  "tag": <[ 第五權 評台 評臺 ]>
+  "tag": <[ 第五權 評台 評臺 評台 平臺 平台 ]>
   "participant": {}
   "tool": <[]>
-  "license": <[]>
+  "license": <[ MIT ]>
   "homepage": ""
   "achievement":
     [{
@@ -226,14 +244,24 @@
       "phase": "Production"
       "url": "http://a0000778.github.io/g8v/index.html"
     }]
-  "workspace": []
+  "workspace":
+    [{
+      "type": ""
+      "name": ""
+      "url": "https://github.com/a0000778/g8v"
+    }
+    {
+      "type": ""
+      "name": ""
+      "url": "http://hackfoldr.org/G8VTV"
+    }]
   "resource": []
   "follower": <[]>
   "story": []
   "related": <[]>
 * "id": "oldpaper"
   "name":
-    "zh": "LagNews腿新聞"
+    "zh": "LagNews 腿新聞"
     "en": ""
   "logo": ""
   "intro":
@@ -248,7 +276,7 @@
   "category": <[ 開放資料 ]>
   "tag": <[ 新聞 媒體 報紙 宣傳 ]>
   "participant": {}
-  "tool": <[ PHP ]>
+  "tool": <[ PixFramework PHP ]>
   "license": <[ BSD ]>
   "homepage": ""
   "achievement":
@@ -277,7 +305,7 @@
   "follower": <[]>
   "story":
     [{
-      "title": "Blog介紹"
+      "title": "Blog 介紹"
       "url": "http://ronnywang.pixnet.net/blog/post/32536633"
     }]
   "related": <[]>
@@ -298,7 +326,7 @@
   "category": <[ 新媒體 ]>
   "tag": <[ 新聞 媒體 宣傳 ]>
   "participant": {}
-  "tool": <[]>
+  "tool": <[ JsDiff ]>
   "license": <[ BSD ]>
   "homepage": ""
   "achievement":
@@ -324,7 +352,7 @@
   "logo": ""
   "intro":
     "zh":
-      "short": ""
+      "short": "將新聞標題與內容即時地斷詞，並計算每日詞頻"
       "medium": ""
       "long": ""
     "en":
@@ -332,10 +360,10 @@
       "medium": ""
       "long": ""
   "category": <[ 新媒體 ]>
-  "tag": <[  ]>
+  "tag": <[ 媒體 詞彙 用語 ]>
   "participant": {}
-  "tool": <[]>
-  "license": <[]>
+  "tool": <[ jQuery Bootstrap ]>
+  "license": <[ MIT ]>
   "homepage": ""
   "achievement":
     [{
@@ -343,7 +371,12 @@
       "phase": "Production"
       "url": "http://news-ckip.source.today/"
     }]
-  "workspace": []
+  "workspace":
+    [{
+    "type": "Github"
+    "name": ""
+    "url": "https://github.com/youchenlee/news-seg"
+    }]
   "resource": []
   "follower": <[]>
   "story": []
@@ -3972,8 +4005,8 @@
   "related": <[]>
 * "id": ""
   "name":
-    "zh": "InLiveTW 直播與活動"
-    "en": ""
+    "zh": "InLiveTW"
+    "en": "inLiveTW"
   "logo": ""
   "intro":
     "zh":
@@ -3987,8 +4020,9 @@
   "category": <[ 新媒體 ]>
   "tag": <[ hackfoldr 直播 活動 宣傳 瀏覽器擴充套件 附加元件 智慧型手機 app 平板 ]>
   "participant": {}
-  "tool": <[]>
-  "license": <[]>
+  "tool": <[ Node.js Firebase ]>
+  "license":
+    * "CC0 1.0 Universal"
   "homepage": ""
   "achievement":
     [{
@@ -4016,6 +4050,11 @@
       "type": ""
       "name": ""
       "url": "http://hack.g0v.tw/inLiveTW"
+    }
+    {
+      "type": ""
+      "name": ""
+      "url": "https://github.com/inLiveTW"
     }]
   "resource": []
   "follower": <[]>
