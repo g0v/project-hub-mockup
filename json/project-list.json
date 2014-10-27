@@ -18,22 +18,8 @@
         "long": ""
       }
     },
-<<<<<<< HEAD
     "category": ["開放政府"],
     "tag": ["投票", "立委", "議員", "鄉長", "縣長", "市長", "區長", "候選人"],
-=======
-    "category": [],
-    "tag": [
-      "投票",
-      "立委",
-      "議員",
-      "鄉長",
-      "縣長",
-      "市長",
-      "區長",
-      "候選人"
-    ],
->>>>>>> origin/gh-pages
     "participant": {},
     "tool": ["Google Maps", "CakePHP", "MySQL"],
     "license": "CC0 1.0 Universal",
@@ -70,25 +56,12 @@
         "long": ""
       }
     },
-<<<<<<< HEAD
     "category": ["其他"],
     "tag": ["g0v", "活動", "黑客松", "寫程式", "炸雞", "披薩"],
-=======
-    "category": [],
-    "tag": [
-      "g0v",
-      "活動",
-      "黑客松",
-      "寫程式",
-      "炸雞",
-      "披薩"
-    ],
->>>>>>> origin/gh-pages
     "participant": {},
     "tool": ["Node.js"],
     "license": ["MIT"],
     "homepage": "",
-<<<<<<< HEAD
     "achievement": [{
       "type": "Web",
       "phase": "Production",
@@ -102,19 +75,6 @@
       }, {
         "type": "",
         "name": "",
-=======
-    "achievement": [
-      {
-        "type": "Web",
-        "phase": "Production",
-        "url": "http://summit.g0v.tw"
-      }
-    ],
-    "workspace": [
-      {
-        "type": "",
-        "phase": "",
->>>>>>> origin/gh-pages
         "url": "http://hack.g0v.tw/g0v-summit2014/"
       }
     ],
@@ -142,23 +102,8 @@
         "long": ""
       }
     },
-<<<<<<< HEAD
     "category": ["新媒體"],
     "tag": ["活動", "宣傳", "社運", "學運", "社會運動", "學生運動", "智慧型手機", "app", "平板"],
-=======
-    "category": [],
-    "tag": [
-      "活動",
-      "宣傳",
-      "社運",
-      "學運",
-      "社會運動",
-      "學生運動",
-      "智慧型手機",
-      "app",
-      "平板"
-    ],
->>>>>>> origin/gh-pages
     "participant": {},
     "tool": [],
     "license": ["Proprietary"],
@@ -246,24 +191,12 @@
         "long": ""
       }
     },
-<<<<<<< HEAD
     "category": ["社會參與"],
     "tag": ["活動", "小蜜蜂", "宣傳", "割闌尾", "罷免"],
-=======
-    "category": [],
-    "tag": [
-      "活動",
-      "小蜜蜂",
-      "宣傳",
-      "割闌尾",
-      "罷免"
-    ],
->>>>>>> origin/gh-pages
     "participant": {},
     "tool": ["Angular-branch-seed-livescript", "Python", "Bottle"],
     "license": ["MIT"],
     "homepage": "",
-<<<<<<< HEAD
     "achievement": [{
       "type": "Web",
       "phase": "Production",
@@ -274,16 +207,6 @@
       "name": "",
       "url": "https://github.com/g0v/LittleBeeGeo"
     }],
-=======
-    "achievement": [
-      {
-        "type": "Web",
-        "phase": "Production",
-        "url": "http://beemap.tw/"
-      }
-    ],
-    "workspace": [],
->>>>>>> origin/gh-pages
     "resource": [],
     "follower": [],
     "story": [],
@@ -308,17 +231,8 @@
         "long": ""
       }
     },
-<<<<<<< HEAD
     "category": ["g0v基礎建設"],
     "tag": ["g0v", "活動", "黑客松"],
-=======
-    "category": [],
-    "tag": [
-      "g0v",
-      "活動",
-      "黑客松"
-    ],
->>>>>>> origin/gh-pages
     "participant": {},
     "tool": [],
     "license": "CC BY 3.0",
@@ -355,24 +269,12 @@
         "long": ""
       }
     },
-<<<<<<< HEAD
     "category": ["新媒體"],
     "tag": ["第五權", "評台", "評臺", "評台", "平臺", "平台"],
-=======
-    "category": [
-      "新媒體"
-    ],
-    "tag": [
-      "第五權",
-      "評台",
-      "評臺"
-    ],
->>>>>>> origin/gh-pages
     "participant": {},
     "tool": [],
     "license": ["MIT"],
     "homepage": "",
-<<<<<<< HEAD
     "achievement": [{
       "type": "Web",
       "phase": "Production",
@@ -389,16 +291,6 @@
         "url": "http://hackfoldr.org/G8VTV"
       }
     ],
-=======
-    "achievement": [
-      {
-        "type": "Web",
-        "phase": "Production",
-        "url": "http://a0000778.github.io/g8v/index.html"
-      }
-    ],
-    "workspace": [],
->>>>>>> origin/gh-pages
     "resource": [],
     "follower": [],
     "story": [],
@@ -433,17 +325,8 @@
       "宣傳"
     ],
     "participant": {},
-<<<<<<< HEAD
     "tool": ["PixFramework", "PHP"],
     "license": ["BSD"],
-=======
-    "tool": [
-      "PHP"
-    ],
-    "license": [
-      "BSD"
-    ],
->>>>>>> origin/gh-pages
     "homepage": "",
     "achievement": [
       {
@@ -471,19 +354,10 @@
     ],
     "resource": [],
     "follower": [],
-<<<<<<< HEAD
     "story": [{
       "title": "Blog 介紹",
       "url": "http://ronnywang.pixnet.net/blog/post/32536633"
     }],
-=======
-    "story": [
-      {
-        "title": "Blog介紹",
-        "url": "http://ronnywang.pixnet.net/blog/post/32536633"
-      }
-    ],
->>>>>>> origin/gh-pages
     "related": []
   },
   {
@@ -514,15 +388,8 @@
       "宣傳"
     ],
     "participant": {},
-<<<<<<< HEAD
     "tool": ["JsDiff"],
     "license": ["BSD"],
-=======
-    "tool": [],
-    "license": [
-      "BSD"
-    ],
->>>>>>> origin/gh-pages
     "homepage": "",
     "achievement": [
       {
@@ -562,20 +429,12 @@
         "long": ""
       }
     },
-<<<<<<< HEAD
     "category": ["新媒體"],
     "tag": ["媒體", "詞彙", "用語"],
-=======
-    "category": [
-      "新媒體"
-    ],
-    "tag": [],
->>>>>>> origin/gh-pages
     "participant": {},
     "tool": ["jQuery", "Bootstrap"],
     "license": ["MIT"],
     "homepage": "",
-<<<<<<< HEAD
     "achievement": [{
       "type": "Web",
       "phase": "Production",
@@ -586,16 +445,6 @@
       "name": "",
       "url": "https://github.com/youchenlee/news-seg"
     }],
-=======
-    "achievement": [
-      {
-        "type": "Web",
-        "phase": "Production",
-        "url": "http://news-ckip.source.today/"
-      }
-    ],
-    "workspace": [],
->>>>>>> origin/gh-pages
     "resource": [],
     "follower": [],
     "story": [],
