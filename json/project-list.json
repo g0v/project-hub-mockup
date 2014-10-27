@@ -37,7 +37,9 @@
       "CakePHP",
       "MySQL"
     ],
-    "license": "CC0 1.0 Universal",
+    "license": [
+      "CC0 1.0 Universal"
+    ],
     "homepage": "",
     "achievement": [
       {
@@ -304,7 +306,9 @@
     ],
     "participant": {},
     "tool": [],
-    "license": "CC BY 3.0",
+    "license": [
+      "CC BY 3.0"
+    ],
     "homepage": "",
     "achievement": [
       {
@@ -5626,7 +5630,9 @@
       "Node.js",
       "Firebase"
     ],
-    "license": "CC0 1.0 Universal",
+    "license": [
+      "CC0 1.0 Universal"
+    ],
     "homepage": "",
     "achievement": [
       {
