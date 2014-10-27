@@ -22,9 +22,13 @@
     "category": ["開放政府"],
     "tag": ["投票", "立委", "議員", "鄉長", "縣長", "市長", "區長", "候選人"],
 =======
+<<<<<<< HEAD
     "category": [
       "開放政府"
     ],
+=======
+    "category": [],
+>>>>>>> parent of 9f6e534... conflict
     "tag": [
       "投票",
       "立委",
@@ -80,9 +84,13 @@
     "category": ["其他"],
     "tag": ["g0v", "活動", "黑客松", "寫程式", "炸雞", "披薩"],
 =======
+<<<<<<< HEAD
     "category": [
       "其他"
     ],
+=======
+    "category": [],
+>>>>>>> parent of 9f6e534... conflict
     "tag": [
       "g0v",
       "活動",
@@ -128,6 +136,19 @@
 >>>>>>> origin/gh-pages
         "type": "",
         "name": "",
+=======
+    "achievement": [
+      {
+        "type": "Web",
+        "phase": "Production",
+        "url": "http://summit.g0v.tw"
+      }
+    ],
+    "workspace": [
+      {
+        "type": "",
+        "phase": "",
+>>>>>>> origin/gh-pages
         "url": "http://hack.g0v.tw/g0v-summit2014/"
       }
     ],
@@ -159,9 +180,13 @@
     "category": ["新媒體"],
     "tag": ["活動", "宣傳", "社運", "學運", "社會運動", "學生運動", "智慧型手機", "app", "平板"],
 =======
+<<<<<<< HEAD
     "category": [
       "新媒體"
     ],
+=======
+    "category": [],
+>>>>>>> parent of 9f6e534... conflict
     "tag": [
       "活動",
       "宣傳",
@@ -267,9 +292,13 @@
     "category": ["社會參與"],
     "tag": ["活動", "小蜜蜂", "宣傳", "割闌尾", "罷免"],
 =======
+<<<<<<< HEAD
     "category": [
       "社會參與"
     ],
+=======
+    "category": [],
+>>>>>>> parent of 9f6e534... conflict
     "tag": [
       "活動",
       "小蜜蜂",
@@ -307,6 +336,7 @@
         "url": "http://beemap.tw/"
       }
     ],
+<<<<<<< HEAD
     "workspace": [
       {
         "type": "",
@@ -314,6 +344,9 @@
         "url": "https://github.com/g0v/LittleBeeGeo"
       }
     ],
+=======
+    "workspace": [],
+>>>>>>> parent of 9f6e534... conflict
 >>>>>>> origin/gh-pages
     "resource": [],
     "follower": [],
@@ -343,9 +376,13 @@
     "category": ["g0v基礎建設"],
     "tag": ["g0v", "活動", "黑客松"],
 =======
+<<<<<<< HEAD
     "category": [
       "g0v基礎建設"
     ],
+=======
+    "category": [],
+>>>>>>> parent of 9f6e534... conflict
     "tag": [
       "g0v",
       "活動",
@@ -391,10 +428,21 @@
 <<<<<<< HEAD
     "category": ["新媒體"],
     "tag": ["第五權", "評台", "評臺", "評台", "平臺", "平台"],
+=======
+    "category": [
+      "新媒體"
+    ],
+    "tag": [
+      "第五權",
+      "評台",
+      "評臺"
+    ],
+>>>>>>> origin/gh-pages
     "participant": {},
     "tool": [],
     "license": ["MIT"],
     "homepage": "",
+<<<<<<< HEAD
     "achievement": [{
       "type": "Web",
       "phase": "Production",
@@ -438,6 +486,16 @@
         "url": "http://hackfoldr.org/G8VTV"
       }
     ],
+=======
+    "achievement": [
+      {
+        "type": "Web",
+        "phase": "Production",
+        "url": "http://a0000778.github.io/g8v/index.html"
+      }
+    ],
+    "workspace": [],
+>>>>>>> origin/gh-pages
     "resource": [],
     "follower": [],
     "story": [],
@@ -477,7 +535,10 @@
     "license": ["BSD"],
 =======
     "tool": [
+<<<<<<< HEAD
       "PixFramework",
+=======
+>>>>>>> parent of 9f6e534... conflict
       "PHP"
     ],
     "license": [
@@ -519,7 +580,11 @@
 =======
     "story": [
       {
+<<<<<<< HEAD
         "title": "Blog 介紹",
+=======
+        "title": "Blog介紹",
+>>>>>>> parent of 9f6e534... conflict
         "url": "http://ronnywang.pixnet.net/blog/post/32536633"
       }
     ],
@@ -558,9 +623,13 @@
     "tool": ["JsDiff"],
     "license": ["BSD"],
 =======
+<<<<<<< HEAD
     "tool": [
       "JsDiff"
     ],
+=======
+    "tool": [],
+>>>>>>> parent of 9f6e534... conflict
     "license": [
       "BSD"
     ],
@@ -611,11 +680,15 @@
     "category": [
       "新媒體"
     ],
+<<<<<<< HEAD
     "tag": [
       "媒體",
       "詞彙",
       "用語"
     ],
+=======
+    "tag": [],
+>>>>>>> parent of 9f6e534... conflict
 >>>>>>> origin/gh-pages
     "participant": {},
     "tool": [
@@ -645,6 +718,7 @@
         "url": "http://news-ckip.source.today/"
       }
     ],
+<<<<<<< HEAD
     "workspace": [
       {
         "type": "Github",
@@ -652,6 +726,9 @@
         "url": "https://github.com/youchenlee/news-seg"
       }
     ],
+=======
+    "workspace": [],
+>>>>>>> parent of 9f6e534... conflict
 >>>>>>> origin/gh-pages
     "resource": [],
     "follower": [],
